@@ -18,10 +18,10 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "teeth-whitening-in-mumbai-cost-and-considerations",
     title: "Teeth Whitening in Mumbai: Cost and Considerations",
-    excerpt: "Do you want to smile more broadly and feel more confident? Whitening your teeth might be the solution. Many factors can affect how much teeth whitening in Mumbai costs. Let's examine what teeth whitening is, the reasons for price variations, and what to anticipate in terms of prices.",
+    excerpt: "Do you want to smile more broadly and feel more confident? Whitening your teeth might be the solution. Learn pricing, treatment options, and what to expect in Mumbai.",
     featuredImage: "/images/blog/teeth-whitening.png",
     author: {
-      name: "Dental Essential",
+      name: "Dental Essential ",
       avatar: "/doctors/dr-sameer.jpg",
       role: "Dental Team"
     },
@@ -59,20 +59,52 @@ The following factors influence the final rates for teeth whitening costs in Mum
 
 Whitening your teeth might be a great method to boost your confidence and smile more. While teeth whitening costs in Mumbai can vary, it's important to consider the variables that may influence costs and speak with a dentist to choose the best course of action. You can get a whiter, more attractive smile with the appropriate technique.
 
+## Frequently Asked Questions (FAQs) regarding Teeth Whitening Cost in Mumbai
+
+1. **What is the price of teeth whitening in Mumbai?**
+The type of therapy and the clinic can have an impact on the price of teeth whitening in Mumbai. Prices can generally be found anywhere from INR 5,000 and INR 20,000 or more.
+
+2. **What variables may influence tooth whitening prices?**
+The kind of therapy, the dentist's experience, the clinic's location, and any other services provided can all affect how much teeth whitening costs.
+
+3. **Is it possible to get various teeth-whitening procedures in Mumbai?**
+Yes, several teeth-whitening procedures are available, such as at-home whitening kits and in-office procedures. Although in-office procedures are usually more costly, they produce faster and more obvious effects.
+
+4. **What is the duration of tooth whitening?**
+The length of teeth whitening effects is subject to change based on several factors, including lifestyle choices, dental health, and food. The results of tooth whitening often persist between six months and two years.
+
+5. **Is it safe to whiten teeth?**
+When done by a licenced dentist, teeth whitening is regarded as safe. But be careful, using too many whitening solutions might cause tooth sensitivity and other problems. Instead, pay attention to what the dentist says.
+
+6. **If I have sensitive teeth, can I still have teeth whitening?**
+If you have sensitive teeth, it is best to speak with a dentist before getting teeth whitening. Your dentist can evaluate your oral health and suggest the best course of action for you.
+
+7. **Do teeth whitening side effects exist?**
+After teeth whitening, some people may have gum irritation or tooth sensitivity. When used properly, these side effects are usually transient and manageable.
+
+8. **How can I keep my teeth whitening results going?**
+It's crucial to preserve the effects of teeth whitening by maintaining proper oral hygiene, avoiding foods and beverages that can discolour teeth, and according to any post-treatment advice your dentist may provide.
+
+9. **Does insurance cover tooth whitening?**
+Teeth whitening is typically not covered by dental insurance since it is regarded as a cosmetic procedure. It's advisable to contact your insurance company to find out if there is any coverage, though.
+
+10. **How can I locate a trustworthy dentist in Mumbai that offers teeth whitening?**
+By getting referrals from friends and relatives, reading internet reviews, and making appointments to go over your options, you can locate a trustworthy dentist in Mumbai for teeth whitening.
+
 **If you are planning treatment, always consult a qualified dentist for personalized advice.**
     `
   },
   {
     slug: "braces-vs-aligners-which-is-best-for-you",
     title: "Braces vs. Aligners - which is best for you",
-    excerpt: "Choosing between braces and aligners can be a big decision when it comes to straightening your teeth. Orthodontic treatment has come a long way, offering patients effective options to achieve a straighter, more confident smile.",
+    excerpt: "Braces vs. aligners - which is best for you. Orthodontic treatment has come a long way, offering patients effective options to achieve a straighter smile.",
     featuredImage: "/images/blog/braces-aligners.jpg",
     author: {
-      name: "Dental Essential",
+      name: "Dental Essential ",
       avatar: "/doctors/dr-sameer.jpg",
       role: "Dental Team"
     },
-    publishDate: "2024-02-06",
+    publishDate: "2024-02-08",
     readTime: "6 min read",
     category: "Orthodontics",
     content: `
@@ -109,12 +141,284 @@ Consult an orthodontist to determine the best treatment plan for your smile.
     `
   },
   {
+    slug: "clear-aligners-vs-braces-complete-guide",
+    title: "Clear Aligners vs Braces: A Complete Guide for 2024",
+    excerpt: "Confused between clear aligners and traditional braces? This comprehensive guide breaks down the pros, cons, costs, and suitability of each option to help you make the right choice.",
+    featuredImage: "/images/blog/clear-aligners vs braces.jpeg",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-03-18",
+    readTime: "7 min read",
+    category: "Orthodontics",
+    content: `
+## Clear Aligners vs Braces: A Complete Guide
+
+Choosing between clear aligners and traditional braces is one of the most common questions orthodontic patients face today. Both are effective treatment options, but they work differently and suit different lifestyles. This guide will help you make an informed decision.
+
+### What Are Clear Aligners?
+
+Clear aligners are a series of custom-made, removable, transparent plastic trays that gradually shift your teeth into their correct positions. You replace each set of trays every 1–2 weeks as your teeth move.
+
+**Popular brands include:** Invisalign, ClearCorrect, and SmileDirectClub.
+
+### What Are Traditional Braces?
+
+Traditional braces consist of metal or ceramic brackets glued to your teeth, connected by a wire that is periodically tightened by an orthodontist to gently move teeth over time.
+
+### Key Comparisons
+
+| Feature | Clear Aligners | Traditional Braces |
+|---|---|---|
+| Visibility | Nearly invisible | Noticeable |
+| Removability | Yes | No |
+| Comfort | Generally more comfortable | May cause irritation |
+| Cleaning | Easy to remove and clean | Requires special tools |
+| Treatment Duration | 6–18 months (mild-moderate cases) | 12–24 months |
+| Cost | Higher | Generally lower |
+| Compliance Required | High (must wear 20-22 hrs/day) | Not required |
+
+### Who Should Choose Clear Aligners?
+
+- Adults and older teenagers
+- Mild to moderate spacing, crowding, or bite issues
+- People who prioritize aesthetics
+- Those with upcoming events (weddings, interviews)
+- Patients committed to wearing aligners consistently
+
+### Who Should Choose Braces?
+
+- Children and younger teens
+- Complex orthodontic cases
+- Patients who may struggle with compliance
+- Those with severe crowding or bite issues
+- More budget-conscious patients
+
+### Cost in India
+
+- Clear Aligners: INR 80,000 – INR 3,00,000
+- Traditional Braces: INR 20,000 – INR 80,000
+
+The cost varies based on the severity of the case, the dentist's expertise, and the clinic's location.
+
+### Final Recommendation
+
+Both options can give you a beautiful, straight smile. The best choice depends on your specific dental needs, lifestyle, and budget. Schedule a consultation with our orthodontist at Dental Essential to get a personalized treatment plan.
+
+**Always consult a qualified dentist before starting any orthodontic treatment.**
+    `
+  },
+  {
+    slug: "root-canal-treatment-myths-and-facts",
+    title: "Root Canal Treatment: Myths, Facts & What to Expect",
+    excerpt: "Root canal treatment is one of the most misunderstood dental procedures. Let's bust the myths and walk you through what actually happens during a modern, painless root canal.",
+    featuredImage: "/images/blog/root-canal.png",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-02-20",
+    readTime: "6 min read",
+    category: "Treatments",
+    content: `
+## Root Canal Treatment: Myths, Facts & What to Expect
+
+Root canal treatment (RCT) is arguably the most feared dental procedure — but it shouldn't be. Modern dentistry has transformed it into a comfortable, routine treatment that relieves pain rather than causing it. Let's separate fact from fiction.
+
+### Common Myths About Root Canal Treatment
+
+**Myth 1: Root canals are extremely painful**
+*Fact:* With modern anesthetics and techniques, root canal treatment is no more painful than getting a filling. The procedure relieves the severe toothache caused by the infected pulp.
+
+**Myth 2: It's better to just extract the tooth**
+*Fact:* Saving your natural tooth is almost always the better option. Root canal treatment preserves your tooth, maintaining proper chewing function and preventing bone loss.
+
+**Myth 3: Root canals cause illness**
+*Fact:* This myth originated from poorly designed research from the 1920s. Modern scientific evidence confirms root canal treatment is safe and does not cause systemic disease.
+
+**Myth 4: The results don't last long**
+*Fact:* A properly done root canal followed by a dental crown can last a lifetime with good oral hygiene.
+
+### What Actually Happens During RCT
+
+1. **Diagnosis & X-Ray** — The dentist confirms infection using X-rays
+2. **Local Anesthesia** — The tooth and surrounding area are completely numbed
+3. **Pulp Removal** — The infected pulp tissue is carefully removed
+4. **Cleaning & Shaping** — The canals are disinfected and shaped
+5. **Filling** — The canals are filled with a biocompatible material (gutta-percha)
+6. **Crown Placement** — A dental crown is placed to protect the tooth
+
+### When Do You Need Root Canal Treatment?
+
+- Severe toothache or sensitivity to hot/cold that lingers
+- Darkening or discoloration of a tooth
+- Swelling or tenderness in nearby gums
+- A persistent or recurring pimple on the gums
+- Tooth pain when chewing or applying pressure
+
+### Recovery & Aftercare
+
+Most patients return to normal activities the next day. Some mild soreness for 2–3 days is normal and managed with over-the-counter pain relief. Avoid chewing on the treated side until the crown is placed.
+
+### Cost of Root Canal Treatment in Navi Mumbai
+
+Root canal treatment typically costs between INR 3,000 to INR 8,000 per tooth, depending on the tooth type and complexity. A crown adds INR 3,000 to INR 15,000 more.
+
+At Dental Essential, we offer painless root canal treatment using advanced rotary endodontic equipment for faster, more precise results.
+
+**If you're experiencing tooth pain, don't wait. Contact us today for a consultation.**
+    `
+  },
+  {
+    slug: "wisdom-tooth-extraction-what-you-need-to-know",
+    title: "Wisdom Tooth Extraction: Everything You Need to Know",
+    excerpt: "Wisdom teeth can cause pain, crowding, and infection. Learn when extraction is necessary, what the procedure involves, and how to recover quickly and comfortably.",
+    featuredImage: "/images/blog/wisdom-tooth.png",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-01-25",
+    readTime: "5 min read",
+    category: "Treatments",
+    content: `
+## Wisdom Tooth Extraction: Everything You Need to Know
+
+Wisdom teeth, or third molars, are the last teeth to emerge — usually between the ages of 17 and 25. While some people have no problems with their wisdom teeth, many experience pain, crowding, and infection that makes extraction necessary.
+
+### Why Do Wisdom Teeth Cause Problems?
+
+Most people don't have enough jaw space to accommodate four additional molars. This can lead to:
+
+- **Impaction** — The wisdom tooth cannot fully emerge and gets trapped in the jawbone or gum
+- **Crowding** — Wisdom teeth push against adjacent teeth, causing misalignment
+- **Infection** — Partially erupted wisdom teeth create a flap of gum tissue where bacteria can accumulate
+- **Cysts or Tumors** — Impacted wisdom teeth can develop cysts that damage nearby bone and teeth
+
+### Signs You May Need Wisdom Tooth Removal
+
+- Pain or stiffness at the back of the jaw
+- Swollen, red, or bleeding gums near the tooth
+- Repeated infections in the gum at the back of the mouth
+- Difficulty opening the mouth fully
+- Crowding of front teeth
+
+### The Extraction Procedure
+
+**Step 1:** X-ray to assess the tooth's position and roots
+**Step 2:** Local anesthetic (or sedation for complex cases)
+**Step 3:** The gum is gently opened if needed, bone is removed if required
+**Step 4:** The tooth is extracted (sometimes in pieces for impacted teeth)
+**Step 5:** The site is stitched closed and gauze is placed to control bleeding
+
+The entire procedure typically takes 20–40 minutes per tooth.
+
+### Recovery Tips
+
+- Bite firmly on gauze for 30–45 minutes after the procedure
+- Apply an ice pack to the cheek for 15 minutes on/off cycles
+- Eat soft foods: yogurt, mashed potatoes, smoothies, soups
+- Avoid smoking, drinking through a straw, or spitting for 48 hours (prevents dry socket)
+- Take prescribed pain medication as directed
+- Rinse gently with warm salt water after 24 hours
+
+### Full recovery** typically takes 3–7 days for simple extractions and up to 2 weeks for impacted teeth.
+
+### Cost of Wisdom Tooth Extraction in Navi Mumbai
+
+Simple extraction: INR 1,500 – INR 3,000 per tooth
+Surgical extraction (impacted): INR 4,000 – INR 12,000 per tooth
+
+At Dental Essential, we ensure a smooth, comfortable extraction experience using the latest surgical techniques.
+
+**Don't ignore wisdom tooth pain — early intervention prevents complications.**
+    `
+  },
+  {
+    slug: "best-dentist-in-navi-mumbai-panvel",
+    title: "Why Dental Essential is the Best Dental Clinic in Navi Mumbai",
+    excerpt: "Looking for the best dentist in Navi Mumbai or Panvel? Discover what makes Dental Essential stand out — from expert doctors and advanced technology to compassionate patient care.",
+    featuredImage: "/images/blog/best-dentist.png",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-03-25",
+    readTime: "5 min read",
+    category: "About Us",
+    content: `
+## Why Dental Essential is the Best Dental Clinic in Navi Mumbai
+
+Finding a trusted dentist can feel overwhelming. With so many options available, how do you know which clinic is right for you and your family? Here's why patients across Panvel and Navi Mumbai trust Dental Essential for all their dental needs.
+
+### Expert Team Led by Dr. Sameer Gharat
+
+At the heart of Dental Essential is **Dr. Sameer Ramchandra Gharat**, a highly qualified dental professional with a Master's Degree in Prosthodontics & Implantology and over 16 years of experience. He is a **Famdent Excellence Award winner** — one of India's most prestigious distinctions in dentistry.
+
+Dr. Gharat is joined by **Dr. Nikita**, who brings additional expertise to the team, allowing the clinic to handle a wide variety of dental cases with precision and care.
+
+### Advanced Technology & Equipment
+
+We believe that great dental care requires both skilled hands and the best tools. At Dental Essential, we use:
+
+- **Digital X-rays** for accurate, low-radiation imaging
+- **Rotary endodontic systems** for painless root canal treatment
+- **Advanced sterilization protocols** maintaining the highest hygiene standards
+- **Modern dental chairs** for patient comfort
+
+### Comprehensive Services Under One Roof
+
+From preventive dentistry to complex restorations, we offer a full range of treatments:
+
+- Painless Root Canal Treatment
+- Dental Implants
+- Braces & Clear Aligners
+- Smile Designing & Veneers
+- Pediatric Dentistry (children's dental care)
+- Crowns, Bridges & Dentures
+- Wisdom Tooth Extraction
+- Full Mouth Rehabilitation
+
+### Patient-First Approach
+
+Every patient at Dental Essential receives personalized attention. We take time to:
+
+- Explain your diagnosis and treatment options clearly
+- Answer all questions without rushing
+- Ensure you are comfortable throughout every procedure
+- Follow up on your recovery progress
+
+### What Our Patients Say
+
+★★★★★ *"The treatment was extremely smooth, painless, and well-managed. I previously had trauma related to root canal, but this time the entire procedure was completely pain-free."* — Sakshi Kolse
+
+★★★★★ *"Dr. Sameer Gharat is incredibly caring and patient. Each visit was smooth and he truly cares about his patients."* — Dev Wable
+
+### Convenient Location & Hours
+
+**Address:** Panvel, Navi Mumbai, Maharashtra
+**Timings:** 10:00 AM – 2:00 PM | 5:00 PM – 9:00 PM
+**Book Online:** Available on Practo
+
+### Ready to Experience the Difference?
+
+Don't settle for less when it comes to your smile. Book an appointment with Dental Essential today and experience dental care that combines expertise, technology, and genuine compassion.
+
+**Call us at +91 877-9648573 or book online on Practo.**
+    `
+  },
+  {
     slug: "myths-and-facts-about-dental-implants",
     title: "Myths and Facts about Dental Implants: Procedures, Advantages, and Recovery",
-    excerpt: "Dental implants have revolutionized the field of dentistry, offering a permanent and natural-looking solution for individuals seeking to restore their smiles and regain full functionality.",
+    excerpt: "Dental implant treatment has revolutionized the field of dentistry, offering a reliable solution for individuals seeking to restore their smiles and regain functionality.",
     featuredImage: "/images/services/dental-implants.jpg",
     author: {
-      name: "Dental Essential",
+      name: "Dental Essential ",
       avatar: "/doctors/dr-sameer.jpg",
       role: "Dental Team"
     },
@@ -150,176 +454,6 @@ Most patients return to routine activities soon after the procedure. Regular fol
 
 For a complete evaluation and treatment planning, consult your dentist.
     `
-  },
-  {
-    slug: "wisdom-tooth-extraction-everything-you-need-to-know",
-    title: "Wisdom Tooth Extraction: Everything You Need to Know, From Prep to Recovery",
-    excerpt: "Wisdom tooth extraction is a common dental procedure that many people undergo at some point in their lives. From preparation to recovery, we'll guide you through everything you need to know about this procedure.",
-    featuredImage: "/images/blog/wisdom-tooth.png",
-    author: {
-      name: "Dental Essential",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Dental Team"
-    },
-    publishDate: "2023-12-28",
-    readTime: "7 min read",
-    category: "Oral Surgery",
-    content: `
-## Wisdom Tooth Extraction: Everything You Need to Know
-
-Welcome to our blog on wisdom tooth extraction! If you're an adult facing this common dental procedure, you're in the right place. We'll guide you through everything from preparation to a smooth recovery.
-
-### What Are Wisdom Teeth?
-
-Wisdom teeth are the third molars at the back of your mouth, typically emerging in your late teens or early twenties. They often need to be removed when there isn't enough space for them to grow properly.
-
-### Why Do Wisdom Teeth Need to Be Removed?
-
-- **Impaction:** When wisdom teeth don't have room to emerge, they can become trapped in the jawbone or gums.
-- **Pain and Swelling:** Impacted wisdom teeth can cause significant discomfort.
-- **Infection:** Partially erupted wisdom teeth create pockets where bacteria can thrive.
-- **Damage to Adjacent Teeth:** Wisdom teeth can push against neighbouring teeth, causing damage.
-
-### What to Expect Before the Procedure
-
-1. **Consultation:** Your dentist will take X-rays to assess the position of your wisdom teeth.
-2. **Medical History Review:** Inform your dentist about any medications you're taking.
-3. **Anesthesia Options:** Local, sedation, or general anesthesia may be recommended.
-
-### The Extraction Process
-
-The procedure typically takes 30 to 60 minutes. After the tooth is removed, the area will be cleaned and stitches may be placed if necessary.
-
-### Recovery Tips
-
-- Apply ice packs to reduce swelling
-- Take prescribed medications as directed
-- Eat soft foods for the first few days
-- Avoid smoking and alcohol
-- Keep the extraction site clean
-
-### When to Call Your Dentist
-
-Contact your dentist if you experience severe pain, excessive bleeding, or signs of infection after extraction.
-
-**Always follow your dentist's post-operative instructions for a smooth recovery.**
-    `
-  },
-  {
-    slug: "signs-you-need-a-root-canal-treatment",
-    title: "Signs You Need a Root Canal Treatment: Identifying Dental Problems",
-    excerpt: "Dental health is an essential aspect of overall well-being, yet many people ignore signs of dental problems until they become severe. Learn the key signs that indicate you may need a root canal treatment.",
-    featuredImage: "/images/blog/root-canal.png",
-    author: {
-      name: "Dental Essential",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Dental Team"
-    },
-    publishDate: "2023-12-15",
-    readTime: "6 min read",
-    category: "Treatments",
-    content: `
-## Signs You Need a Root Canal Treatment
-
-When it comes to dental health, understanding the signs that indicate a need for root canal treatment is crucial. Ignoring these symptoms might lead to more serious complications. Here's what you should watch out for:
-
-### What Is a Root Canal?
-
-A root canal is a dental procedure used to treat infection at the centre of a tooth. It involves removing the infected pulp, cleaning and disinfecting the root canals, and then filling and sealing the tooth.
-
-### Key Signs You May Need a Root Canal
-
-1. **Severe Toothache:** Persistent and intense pain, especially when chewing or applying pressure, is a major warning sign.
-
-2. **Prolonged Sensitivity:** If your tooth remains sensitive to hot or cold temperatures long after the stimulus is removed, this may indicate nerve damage.
-
-3. **Darkening of the Tooth:** A discoloured tooth can signal that the nerve tissue inside is dying.
-
-4. **Swelling and Tenderness:** Swelling in the nearby gums, or a persistent pimple on the gums, can indicate infection.
-
-5. **Cracked or Chipped Tooth:** A damaged tooth can allow bacteria to enter and infect the pulp.
-
-6. **Loose Tooth:** An infected tooth may feel looser due to the softening of the supporting bone.
-
-### What Happens During Root Canal Treatment?
-
-- **Examination and X-rays:** Your dentist will examine the tooth and take X-rays.
-- **Anesthesia:** Local anesthesia is administered to numb the area.
-- **Pulp Removal:** The infected pulp is carefully removed.
-- **Cleaning and Sealing:** The canals are cleaned, shaped, and sealed.
-- **Crown Placement:** A crown is often placed to protect the treated tooth.
-
-### Don't Delay Treatment
-
-Early intervention can save your tooth and prevent the infection from spreading. If you experience any of these signs, consult your dentist promptly.
-
-**Root canal treatment is often the best option to relieve pain and preserve your natural tooth.**
-    `
-  },
-  {
-    slug: "how-to-choose-best-dentist-in-navi-mumbai",
-    title: "How to Choose Best Dentist in Navi Mumbai?",
-    excerpt: "Choosing a dentist is a crucial decision that impacts your oral health. In the bustling city of Navi Mumbai, finding the right dentist can be overwhelming. Here's a complete guide to help you make the best choice.",
-    featuredImage: "/images/blog/best-dentist.png",
-    author: {
-      name: "Dental Essential",
-      avatar: "/doctors/dr-sameer.jpg",
-      role: "Dental Team"
-    },
-    publishDate: "2023-10-23",
-    readTime: "5 min read",
-    category: "Dental Tips",
-    content: `
-## How to Choose the Best Dentist in Navi Mumbai
-
-Choosing the best dentist for your oral health is a crucial decision that can significantly impact your smile and overall health. In the bustling city of Navi Mumbai, where options are abundant, finding the right dental professional can be overwhelming. This guide will help you make an informed decision.
-
-### 1. Check Qualifications and Experience
-
-Look for a dentist with verified credentials and relevant experience. A BDS or MDS degree from a recognized institution is essential. Ask about their specialty if you need specific treatments.
-
-### 2. Read Reviews and Testimonials
-
-Online reviews from previous patients can give you valuable insights into:
-- Quality of care
-- Clinic environment
-- Staff friendliness
-- Waiting times
-
-### 3. Assess the Clinic's Facilities
-
-A good dental clinic should have:
-- Modern equipment and technology
-- Clean and hygienic environment
-- Comfortable waiting and treatment areas
-- Digital X-rays and other advanced diagnostic tools
-
-### 4. Consider Location and Accessibility
-
-Choose a clinic that's conveniently located near your home or workplace. Easy access encourages regular visits, which are essential for preventive care.
-
-### 5. Evaluate Communication and Comfort
-
-Your dentist should:
-- Listen to your concerns
-- Explain procedures clearly in simple language
-- Make you feel comfortable and at ease
-- Discuss all treatment options and costs transparently
-
-### 6. Check Emergency Availability
-
-Dental emergencies can happen anytime. Choose a dentist who offers emergency appointments or has a protocol for urgent care situations.
-
-### 7. Review Treatment Costs
-
-Before starting treatment, ask for a detailed cost breakdown. A good clinic will offer transparent pricing and discuss payment options or EMI plans if needed.
-
-### Why Choose Dental Essential in Navi Mumbai?
-
-At Dental Essential, we combine years of expertise with a patient-first approach. Our team is dedicated to providing you with comprehensive dental care in a comfortable, modern setting.
-
-**Schedule a consultation today and take the first step towards your best smile!**
-    `
   }
 ];
 
@@ -337,13 +471,5 @@ export function formatDate(dateString: string): string {
     year: 'numeric',
     month: 'short',
     day: 'numeric'
-  });
-}
-
-export function formatDateShort(dateString: string): string {
-  const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', {
-    day: '2-digit',
-    month: 'short'
   });
 }
