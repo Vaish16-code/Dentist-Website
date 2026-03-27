@@ -28,29 +28,29 @@ export default function DoctorProfileCarousel() {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section className="bg-white py-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
-          <span className="text-pink-500 text-xl md:text-2xl font-semibold tracking-wider uppercase">Doctor Profile</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mt-2">
+          <span className="section-label">Doctor Profile</span>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1565A8] mt-1">
             Meet Our Dentist In Panvel
           </h2>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+        <div className="bg-white rounded-3xl shadow-xl border border-[#E0F0FF] overflow-hidden">
           <div className="grid md:grid-cols-2 gap-0">
-            {/* Image Carousel */}
-            <div className="relative h-[450px] md:h-[500px] bg-gradient-to-br from-amber-50 to-white">
+            {/* Image Carousel Side */}
+            <div className="relative h-[450px] md:h-[500px] bg-gradient-to-br from-[#F0F8FF] to-white">
               {/* Decorative dots */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block z-10">
+              <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block z-10 opacity-50">
                 <div className="grid grid-cols-6 gap-2 p-4">
                   {[...Array(36)].map((_, i) => (
-                    <div key={i} className="w-2 h-2 rounded-full bg-sky-300"></div>
+                    <div key={i} className="w-2 h-2 rounded-full bg-[#1D96D3]" />
                   ))}
                 </div>
               </div>
-              
-              {/* Slide Images */}
+
+              {/* Slides */}
               <div className="relative h-full w-full p-8">
                 {slides.map((slide, index) => (
                   <div
@@ -69,72 +69,66 @@ export default function DoctorProfileCarousel() {
                 ))}
               </div>
 
-              {/* Slide indicator */}
+              {/* Dot indicators */}
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
                 {slides.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => setCurrentSlide(index)}
-                    className={`w-2 h-2 rounded-full transition-all ${
-                      currentSlide === index ? 'bg-sky-500 w-6' : 'bg-gray-300'
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      currentSlide === index ? 'bg-[#1D96D3] w-6' : 'bg-[#A8D4F0] w-2'
                     }`}
                   />
                 ))}
               </div>
             </div>
 
-            {/* Doctor Info */}
+            {/* Doctor Info Side */}
             <div className="p-8 md:p-12 flex flex-col justify-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
+              <h3 className="text-2xl md:text-3xl font-extrabold text-[#1565A8] mb-1">
                 Dr. Sameer Ramchandra Gharat
               </h3>
-              <p className="text-gray-600 mb-4">
-                Masters Degree In Prosthodontics & Implantology
+              <p className="text-[#1D96D3] font-semibold mb-1 text-sm">
+                Masters Degree In Prosthodontics &amp; Implantology
               </p>
-              
-              <div className="mb-6">
-                <p className="font-bold text-gray-800">Chief Dentist,</p>
-                <p className="font-bold text-gray-800">16+ Years Experience</p>
+              <div className="flex items-center gap-2 mb-5">
+                <span className="inline-block bg-[#E0F0FF] text-[#1565A8] text-xs font-semibold px-3 py-1 rounded-full">Chief Dentist</span>
+                <span className="inline-block bg-[#E0F0FF] text-[#1565A8] text-xs font-semibold px-3 py-1 rounded-full">16+ Years</span>
               </div>
 
-              <p className="text-gray-600 leading-relaxed mb-8">
-                Dr. Sameer Gharat Is One Of The Best Dentists In Panvel. 
-                He Has Completed His Graduation From One Of India&apos;s Premier 
-                Institutions And Also Holds A Master&apos;s Degree In Prosthodontics & Implantology. 
-                He Specializes In Dental Implants, Crowns, Bridges And Complete Smile Makeovers.
+              <p className="text-[#4A5E72] leading-relaxed mb-8 text-sm">
+                Dr. Sameer Gharat is one of the best dentists in Panvel. He has completed his graduation from one of India&apos;s premier institutions and holds a Master&apos;s Degree in Prosthodontics &amp; Implantology. He specialises in dental implants, crowns, bridges, and complete smile makeovers.
               </p>
 
               {/* Stats */}
-              <div className="grid grid-cols-3 gap-4 border-t pt-8">
-                <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">200+</p>
-                  <p className="text-gray-500 text-sm">Patients Treated</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">1</p>
-                  <p className="text-gray-500 text-sm">Certificate</p>
-                </div>
-                <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">16+</p>
-                  <p className="text-gray-500 text-sm">Years Experience</p>
-                </div>
+              <div className="grid grid-cols-3 gap-4 border-t border-[#E0F0FF] pt-7">
+                {[
+                  { num: '5000+', label: 'Patients Treated' },
+                  { num: '1', label: 'Excellence Award' },
+                  { num: '16+', label: 'Years Experience' },
+                ].map((s) => (
+                  <div key={s.label} className="text-center">
+                    <p className="text-2xl md:text-3xl font-extrabold text-[#1565A8]">{s.num}</p>
+                    <p className="text-[#8096A7] text-xs mt-0.5">{s.label}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex justify-center gap-4 pb-8">
-            <button 
+          <div className="flex justify-center gap-3 pb-7 pt-2">
+            <button
               onClick={prevSlide}
-              className="w-10 h-10 rounded-full border-2 border-gray-800 flex items-center justify-center hover:bg-gray-800 hover:text-white transition"
+              className="w-10 h-10 rounded-full border-2 border-[#E0F0FF] bg-white flex items-center justify-center hover:border-[#1565A8] hover:bg-[#1565A8] hover:text-white text-[#1565A8] transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
             </button>
-            <button 
+            <button
               onClick={nextSlide}
-              className="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-700 transition"
+              className="w-10 h-10 rounded-full bg-[#1565A8] text-white flex items-center justify-center hover:bg-[#1D96D3] transition-all duration-200"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

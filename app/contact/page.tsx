@@ -63,14 +63,7 @@ export default function ContactPage() {
         message: 'Appointment request sent successfully. Our receptionist will contact you soon.',
       });
 
-      setFormData({
-        firstName: '',
-        lastName: '',
-        email: '',
-        phone: '',
-        service: '',
-        message: '',
-      });
+      setFormData({ firstName: '', lastName: '', email: '', phone: '', service: '', message: '' });
     } catch (error) {
       setFormStatus({
         type: 'error',
@@ -81,94 +74,144 @@ export default function ContactPage() {
     }
   };
 
-  return (
-    <div className="bg-gray-50 min-h-screen py-24">
+  const inputClass = "w-full px-4 py-3 border border-[#D8E6F5] rounded-xl focus:ring-2 focus:ring-[#1D96D3] focus:border-[#1D96D3] outline-none bg-white text-[#1E2B3A] placeholder:text-[#8096A7] text-sm transition-all duration-200";
 
-      {/* HEADER */}
-      <div className="text-center mb-16 px-6">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Contact <span className="text-sky-600">Us</span>
+  return (
+    <div className="bg-[#F0F8FF] min-h-screen">
+
+      {/* ── PAGE HEADER ── */}
+      <div className="bg-[#1565A8] py-16 px-6 text-center">
+        <span className="section-label text-[#38BDF8] mb-3 block">Get In Touch</span>
+        <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+          Book an Appointment
         </h1>
-        <p className="text-gray-500 max-w-xl mx-auto">
-          Book your appointment and experience professional, gentle dental care.
+        <p className="text-slate-300 max-w-xl mx-auto text-sm">
+          Book your appointment and experience professional, gentle dental care at Dental Essential.
         </p>
       </div>
 
-      {/* CONTENT */}
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 px-6">
+      {/* ── QUICK CONTACT CARDS ── */}
+      <div className="max-w-5xl mx-auto px-6 py-10 grid sm:grid-cols-3 gap-5 -mt-0">
+        {[
+          {
+            icon: (
+              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            ),
+            label: 'Call Us',
+            value: '+91 877-9648573',
+            href: 'tel:+918779648573',
+          },
+          {
+            icon: (
+              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            ),
+            label: 'Find Us',
+            value: 'Vishrali Naka, Old Panvel – 410206',
+            href: 'https://maps.google.com/?q=Dental+Essential+Panvel',
+          },
+          {
+            icon: (
+              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            ),
+            label: 'Opening Hours',
+            value: '10 AM–2 PM / 5–9 PM',
+            href: null,
+          },
+        ].map((card) => (
+          <div
+            key={card.label}
+            className="bg-white rounded-2xl p-5 border border-[#E0F0FF] shadow-sm flex items-center gap-4"
+          >
+            <div className="w-10 h-10 rounded-xl bg-[#E0F0FF] flex items-center justify-center flex-shrink-0">
+              {card.icon}
+            </div>
+            <div>
+              <p className="text-[#8096A7] text-xs font-medium uppercase tracking-wide">{card.label}</p>
+              {card.href ? (
+                <a href={card.href} className="text-[#1565A8] font-semibold text-sm hover:text-[#1D96D3] transition-colors">
+                  {card.value}
+                </a>
+              ) : (
+                <p className="text-[#1565A8] font-semibold text-sm">{card.value}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
 
-        {/* MAP SECTION */}
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
+      {/* ── MAIN CONTENT ── */}
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-20">
+
+        {/* Map + Address */}
+        <div className="bg-white rounded-2xl shadow-sm border border-[#E0F0FF] overflow-hidden">
           <iframe
             src="https://www.google.com/maps?q=Dental%20Essential%20Advanced%20Dental%20Clinic&ll=18.980009,73.1144911&z=18&output=embed"
-            height="350"
+            height="320"
             className="w-full"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
           />
-
-          <div className="p-6">
-            <div className="space-y-4">
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+          <div className="p-6 space-y-4">
+            {[
+              {
+                icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z" />,
+                title: 'Clinic Address',
+                content: 'Shop no. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka, Old Panvel – 410206'
+              },
+              {
+                icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />,
+                title: 'Phone',
+                content: '+91 877-9648573'
+              },
+              {
+                icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />,
+                title: 'Working Hours',
+                content: 'Mon – Sat: 10:00 AM – 2:00 PM / 5:00 PM – 9:00 PM\nSunday: Closed'
+              }
+            ].map((item) => (
+              <div key={item.title} className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-lg bg-[#E0F0FF] flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-4 h-4 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {item.icon}
+                  </svg>
+                </div>
                 <div>
-                  <p className="font-semibold text-gray-800 mb-1">Our Clinic Address</p>
-                  <p className="text-gray-600 text-sm">
-                    Shop no. 16, Building No. 7/B, Gurusharnam Complex,<br />
-                    Vishrali Naka, Old Panvel – 410206
-                  </p>
+                  <p className="font-semibold text-[#1565A8] text-sm mb-0.5">{item.title}</p>
+                  <p className="text-[#4A5E72] text-sm leading-relaxed whitespace-pre-line">{item.content}</p>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                <div>
-                  <p className="font-semibold text-gray-800 mb-1">Phone</p>
-                  <p className="text-gray-600 text-sm">+91 877-9648573</p>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <svg className="w-5 h-5 text-sky-600 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div>
-                  <p className="font-semibold text-gray-800 mb-1">Working Hours</p>
-                  <p className="text-gray-600 text-sm">
-                    Mon - Sat: 10:00 AM – 2:00 PM / 5:00 PM – 9:00 PM<br />
-                    Sunday: Closed
-                  </p>
-                </div>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
 
-        {/* FORM SECTION */}
-        <div className="bg-white p-10 rounded-3xl shadow-xl">
-
-          <h2 className="text-2xl font-semibold mb-8 text-sky-700">
-            Book an Appointment
+        {/* Appointment Form */}
+        <div className="bg-white p-8 rounded-2xl shadow-sm border border-[#E0F0FF]">
+          <span className="section-label">Appointment</span>
+          <h2 className="text-2xl font-extrabold text-[#1565A8] mt-1 mb-7">
+            Book Your Visit
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-
-            <div className="grid md:grid-cols-2 gap-6">
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div className="grid grid-cols-2 gap-4">
               <input
                 value={formData.firstName}
-                onChange={(event) => setFormData((prev) => ({ ...prev, firstName: event.target.value }))}
-                className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
+                onChange={(e) => setFormData((prev) => ({ ...prev, firstName: e.target.value }))}
+                className={inputClass}
                 placeholder="First Name"
                 required
               />
               <input
                 value={formData.lastName}
-                onChange={(event) => setFormData((prev) => ({ ...prev, lastName: event.target.value }))}
-                className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
+                onChange={(e) => setFormData((prev) => ({ ...prev, lastName: e.target.value }))}
+                className={inputClass}
                 placeholder="Last Name"
                 required
               />
@@ -177,26 +220,26 @@ export default function ContactPage() {
             <input
               type="email"
               value={formData.email}
-              onChange={(event) => setFormData((prev) => ({ ...prev, email: event.target.value }))}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
+              onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
+              className={inputClass}
               placeholder="Email Address"
               required
             />
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4">
               <input
                 type="tel"
                 value={formData.phone}
-                onChange={(event) => setFormData((prev) => ({ ...prev, phone: event.target.value }))}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
+                onChange={(e) => setFormData((prev) => ({ ...prev, phone: e.target.value }))}
+                className={inputClass}
                 placeholder="Phone Number"
                 required
               />
 
               <select
                 value={formData.service}
-                onChange={(event) => setFormData((prev) => ({ ...prev, service: event.target.value }))}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900"
+                onChange={(e) => setFormData((prev) => ({ ...prev, service: e.target.value }))}
+                className={inputClass}
                 required
               >
                 <option value="" disabled>Select Service</option>
@@ -210,32 +253,31 @@ export default function ContactPage() {
 
             <textarea
               value={formData.message}
-              onChange={(event) => setFormData((prev) => ({ ...prev, message: event.target.value }))}
-              className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-sky-400 focus:border-sky-400 outline-none bg-white text-gray-900 placeholder:text-gray-500"
-              placeholder="Message"
+              onChange={(e) => setFormData((prev) => ({ ...prev, message: e.target.value }))}
+              className={inputClass}
+              placeholder="Message (optional)"
               rows={4}
-              required
             />
 
             {formStatus && (
-              <p
-                className={`text-sm ${formStatus.type === 'success' ? 'text-green-600' : 'text-red-600'}`}
-              >
+              <div className={`rounded-xl px-4 py-3 text-sm font-medium ${
+                formStatus.type === 'success'
+                  ? 'bg-green-50 text-green-700 border border-green-200'
+                  : 'bg-red-50 text-red-700 border border-red-200'
+              }`}>
                 {formStatus.message}
-              </p>
+              </div>
             )}
 
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-sky-600 text-white py-3 rounded-full hover:bg-sky-700 transition duration-300 shadow-md disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full bg-[#1565A8] hover:bg-[#1D96D3] text-white py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Book Appointment'}
             </button>
-
           </form>
         </div>
-
       </div>
     </div>
   );

@@ -1,73 +1,81 @@
 'use client';
 
-import { blogPosts } from '@/data/blog';
-import BlogCard from '@/components/BlogCard';
+import { blogPosts, formatDate, formatDateShort } from '@/data/blog';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
 
 export default function BlogPage() {
-  // Get unique categories
-  const categories = [...new Set(blogPosts.map(post => post.category))];
+  const categories = ['All Posts', ...new Set(blogPosts.map(post => post.category))];
   const [selectedCategory, setSelectedCategory] = useState<string>('All Posts');
-  
-  // Filter posts based on selected category
-  const filteredPosts = selectedCategory === 'All Posts' 
-    ? blogPosts 
+
+  const filteredPosts = selectedCategory === 'All Posts'
+    ? blogPosts
     : blogPosts.filter(post => post.category === selectedCategory);
 
+  const featuredPost = filteredPosts[0];
+  const gridPosts = filteredPosts.slice(1);
+
   return (
-    <main className="min-h-screen">
-      {/* Hero Banner */}
-      <section className="relative bg-gradient-to-br from-sky-500 to-sky-600 py-20">
-        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
-        <div className="max-w-7xl mx-auto px-4 text-center relative">
-          <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">
-            DENTAL HEALTH INSIGHTS
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Blog
+    <main style={{ minHeight: '100vh', backgroundColor: '#F4F7FF', fontFamily: "'Poppins', sans-serif" }}>
+
+      {/* Page Header */}
+      <section style={{
+        background: 'linear-gradient(135deg, #003580 0%, #0057B8 60%, #00AEEF 100%)',
+        padding: '60px 20px 40px',
+        textAlign: 'center',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div style={{
+          position: 'absolute', inset: 0, opacity: 0.07,
+          backgroundImage: 'radial-gradient(circle at 25% 50%, white 1px, transparent 1px), radial-gradient(circle at 75% 50%, white 1px, transparent 1px)',
+          backgroundSize: '40px 40px'
+        }} />
+        <div style={{ position: 'relative', maxWidth: '800px', margin: '0 auto' }}>
+          <h1 style={{
+            fontSize: 'clamp(2rem, 5vw, 3.2rem)',
+            fontWeight: '800',
+            color: '#ffffff',
+            margin: '0 0 12px',
+            letterSpacing: '-0.5px'
+          }}>
+            Latest Blog
           </h1>
-          <p className="text-sky-100 max-w-2xl mx-auto text-lg">
-            Stay informed with the latest dental health tips, treatment guides, and expert advice 
-            from our experienced team at Dental Essential.
+          <p style={{ color: 'rgba(255,255,255,0.85)', fontSize: '1.05rem', lineHeight: 1.6, margin: 0 }}>
+            Stay informed with the latest dental health tips, treatment guides, and expert advice from our experienced team at Dental Essential.
           </p>
         </div>
-        
-        {/* Wave decoration */}
-        <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 100V0C240 66.6667 480 100 720 100C960 100 1200 66.6667 1440 0V100H0Z" fill="white"/>
+        {/* Wave bottom */}
+        <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, lineHeight: 0 }}>
+          <svg viewBox="0 0 1440 60" preserveAspectRatio="none" style={{ width: '100%', height: '60px' }}>
+            <path d="M0 60V20C240 60 480 60 720 40C960 20 1200 0 1440 20V60H0Z" fill="#F4F7FF" />
           </svg>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="py-8 bg-white border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <span className="text-gray-600 font-medium">Categories:</span>
-            <button 
-              onClick={() => setSelectedCategory('All Posts')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                selectedCategory === 'All Posts'
-                  ? 'bg-sky-500 text-white'
-                  : 'bg-gray-100 hover:bg-sky-100 text-gray-700 hover:text-sky-600'
-              }`}
-            >
-              All Posts
-            </button>
-            {categories.map((category) => (
+      {/* Category Filter */}
+      <section style={{ padding: '30px 20px 0', backgroundColor: '#F4F7FF' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'center' }}>
+            {categories.map((cat) => (
               <button
-                key={category}
-                onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  selectedCategory === category
-                    ? 'bg-sky-500 text-white'
-                    : 'bg-gray-100 hover:bg-sky-100 text-gray-700 hover:text-sky-600'
-                }`}
+                key={cat}
+                onClick={() => setSelectedCategory(cat)}
+                style={{
+                  padding: '8px 20px',
+                  borderRadius: '50px',
+                  fontSize: '0.875rem',
+                  fontWeight: '600',
+                  border: selectedCategory === cat ? '2px solid #0057B8' : '2px solid #d1daf0',
+                  backgroundColor: selectedCategory === cat ? '#0057B8' : '#ffffff',
+                  color: selectedCategory === cat ? '#ffffff' : '#4a5568',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease',
+                  boxShadow: selectedCategory === cat ? '0 4px 14px rgba(0,87,184,0.3)' : '0 2px 6px rgba(0,0,0,0.06)'
+                }}
               >
-                {category}
+                {cat}
               </button>
             ))}
           </div>
@@ -75,99 +83,157 @@ export default function BlogPage() {
       </section>
 
       {/* Featured Post */}
-      {filteredPosts.length > 0 && (
-        <section className="py-12 bg-white">
-          <div className="max-w-7xl mx-auto px-4">
-            <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-2xl overflow-hidden">
-              <div className="grid lg:grid-cols-2 gap-8 p-8">
+      {featuredPost && (
+        <section style={{ padding: '40px 20px 20px' }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <Link href={`/blog/${featuredPost.slug}`} style={{ textDecoration: 'none' }}>
+              <div style={{
+                backgroundColor: '#ffffff',
+                borderRadius: '20px',
+                overflow: 'hidden',
+                boxShadow: '0 4px 24px rgba(0, 55, 128, 0.10)',
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+                transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+              }}
+                onMouseEnter={e => {
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = '0 12px 40px rgba(0, 55, 128, 0.18)';
+                  (e.currentTarget as HTMLDivElement).style.transform = 'translateY(-3px)';
+                }}
+                onMouseLeave={e => {
+                  (e.currentTarget as HTMLDivElement).style.boxShadow = '0 4px 24px rgba(0, 55, 128, 0.10)';
+                  (e.currentTarget as HTMLDivElement).style.transform = 'translateY(0)';
+                }}
+              >
                 {/* Image */}
-                <div className="relative h-64 lg:h-auto rounded-xl overflow-hidden">
+                <div style={{ position: 'relative', minHeight: '300px' }}>
                   <Image
-                    src={filteredPosts[0].featuredImage}
-                    alt={filteredPosts[0].title}
+                    src={featuredPost.featuredImage}
+                    alt={featuredPost.title}
                     fill
                     className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                   />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-pink-500 text-white text-xs font-medium px-3 py-1 rounded-full">
-                      Featured
-                    </span>
+                  {/* Date overlay */}
+                  <div style={{
+                    position: 'absolute',
+                    bottom: '16px',
+                    left: '16px',
+                    backgroundColor: '#0057B8',
+                    color: '#fff',
+                    padding: '6px 14px',
+                    borderRadius: '8px',
+                    fontSize: '0.8rem',
+                    fontWeight: '700',
+                    letterSpacing: '0.5px'
+                  }}>
+                    {formatDateShort(featuredPost.publishDate)}
+                  </div>
+                  {/* Featured badge */}
+                  <div style={{
+                    position: 'absolute',
+                    top: '16px',
+                    left: '16px',
+                    backgroundColor: '#00AEEF',
+                    color: '#fff',
+                    padding: '4px 14px',
+                    borderRadius: '50px',
+                    fontSize: '0.75rem',
+                    fontWeight: '700',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px'
+                  }}>
+                    Featured
                   </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col justify-center">
-                  <span className="text-sky-600 font-medium text-sm mb-2">
-                    {filteredPosts[0].category} • {filteredPosts[0].readTime}
+                <div style={{ padding: '36px 40px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                  <span style={{
+                    fontSize: '0.8rem',
+                    fontWeight: '600',
+                    color: '#00AEEF',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
+                    marginBottom: '10px',
+                    display: 'block'
+                  }}>
+                    {featuredPost.category} · {featuredPost.readTime}
                   </span>
-                  <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                    <Link href={`/blog/${filteredPosts[0].slug}`} className="hover:text-sky-600 transition-colors">
-                      {filteredPosts[0].title}
-                    </Link>
+                  <h2 style={{
+                    fontSize: 'clamp(1.3rem, 2.5vw, 1.8rem)',
+                    fontWeight: '800',
+                    color: '#1a2744',
+                    margin: '0 0 14px',
+                    lineHeight: 1.35
+                  }}>
+                    {featuredPost.title}
                   </h2>
-                  <p className="text-gray-600 mb-6 line-clamp-3">
-                    {filteredPosts[0].excerpt}
+                  <p style={{
+                    color: '#6b7a99',
+                    fontSize: '0.97rem',
+                    lineHeight: 1.7,
+                    margin: '0 0 24px',
+                    display: '-webkit-box',
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden'
+                  }}>
+                    {featuredPost.excerpt}
                   </p>
-                  <div className="flex items-center gap-4">
-                    <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-full bg-sky-200 flex items-center justify-center">
-                        <span className="text-sky-700 font-semibold text-sm">
-                          {filteredPosts[0].author.name.split(' ').map(n => n[0]).join('')}
-                        </span>
-                      </div>
-                      <div>
-                        <p className="font-medium text-gray-800">{filteredPosts[0].author.name}</p>
-                        <p className="text-sm text-gray-500">{filteredPosts[0].author.role}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <Link
-                    href={`/blog/${filteredPosts[0].slug}`}
-                    className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-medium mt-6 w-fit transition-colors"
-                  >
-                    Read Article
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  <div style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    color: '#ffffff',
+                    backgroundColor: '#0057B8',
+                    padding: '10px 24px',
+                    borderRadius: '10px',
+                    fontWeight: '600',
+                    fontSize: '0.9rem',
+                    width: 'fit-content',
+                    border: '2px solid #0057B8',
+                    transition: 'background 0.2s'
+                  }}>
+                    Learn More
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
                     </svg>
-                  </Link>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
         </section>
       )}
 
       {/* Blog Grid */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              <span className="text-pink-500">{selectedCategory === 'All Posts' ? 'Latest' : selectedCategory}</span>{' '}
-              <span className="text-sky-500">Articles</span>
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              {selectedCategory === 'All Posts' 
-                ? 'Explore our collection of articles covering dental treatments, oral hygiene tips, and everything you need for a healthy smile.'
-                : `Browse our ${selectedCategory.toLowerCase()} articles and expert insights.`
-              }
-            </p>
-          </div>
-
-          {/* Blog Cards Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredPosts.slice(1).map((post) => (
-              <BlogCard key={post.slug} post={post} />
-            ))}
-          </div>
-
-          {/* No posts message */}
-          {filteredPosts.length <= 1 && (
-            <div className="text-center py-12">
-              <p className="text-gray-500 text-lg">No articles found in this category.</p>
-              <button 
+      <section style={{ padding: '30px 20px 60px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          {gridPosts.length > 0 ? (
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+              gap: '28px'
+            }}>
+              {gridPosts.map((post) => (
+                <BlogCard key={post.slug} post={post} />
+              ))}
+            </div>
+          ) : (
+            <div style={{ textAlign: 'center', padding: '60px 20px' }}>
+              <p style={{ color: '#6b7a99', fontSize: '1.1rem' }}>No articles found in this category.</p>
+              <button
                 onClick={() => setSelectedCategory('All Posts')}
-                className="mt-4 text-sky-600 hover:text-sky-700 font-medium"
+                style={{
+                  marginTop: '16px',
+                  color: '#0057B8',
+                  background: 'none',
+                  border: 'none',
+                  fontWeight: '600',
+                  cursor: 'pointer',
+                  fontSize: '1rem'
+                }}
               >
                 View all posts →
               </button>
@@ -177,25 +243,48 @@ export default function BlogPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
-            <span className="text-pink-500">Have Questions?</span>{' '}
-            <span className="text-sky-500">We're Here to Help</span>
+      <section style={{
+        background: 'linear-gradient(135deg, #003580 0%, #0057B8 100%)',
+        padding: '60px 20px',
+        textAlign: 'center'
+      }}>
+        <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+          <h2 style={{ color: '#ffffff', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: '800', margin: '0 0 14px' }}>
+            Have Questions? We&apos;re Here to Help
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p style={{ color: 'rgba(255,255,255,0.82)', fontSize: '1rem', lineHeight: 1.6, margin: '0 0 32px' }}>
             Our team is ready to answer your dental health questions and help you achieve the smile you deserve.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', justifyContent: 'center' }}>
             <Link
-              href="/contact"
-              className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-3 rounded-lg font-semibold shadow-lg transition-colors"
+              href="/book"
+              style={{
+                backgroundColor: '#ffffff',
+                color: '#0057B8',
+                padding: '13px 32px',
+                borderRadius: '10px',
+                fontWeight: '700',
+                fontSize: '0.95rem',
+                textDecoration: 'none',
+                boxShadow: '0 4px 14px rgba(0,0,0,0.15)',
+                transition: 'transform 0.2s'
+              }}
             >
               Book Appointment
             </Link>
             <Link
               href="/contact"
-              className="border-2 border-sky-500 text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold transition-colors"
+              style={{
+                backgroundColor: 'transparent',
+                color: '#ffffff',
+                padding: '13px 32px',
+                borderRadius: '10px',
+                fontWeight: '700',
+                fontSize: '0.95rem',
+                textDecoration: 'none',
+                border: '2px solid rgba(255,255,255,0.6)',
+                transition: 'transform 0.2s'
+              }}
             >
               Contact Us
             </Link>
@@ -203,5 +292,125 @@ export default function BlogPage() {
         </div>
       </section>
     </main>
+  );
+}
+
+// Inline BlogCard component styled like Smile Avenue
+function BlogCard({ post }: { post: import('@/data/blog').BlogPost }) {
+  return (
+    <Link href={`/blog/${post.slug}`} style={{ textDecoration: 'none' }}>
+      <article
+        style={{
+          backgroundColor: '#ffffff',
+          borderRadius: '16px',
+          overflow: 'hidden',
+          boxShadow: '0 2px 16px rgba(0, 55, 128, 0.08)',
+          transition: 'box-shadow 0.3s ease, transform 0.3s ease',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          cursor: 'pointer'
+        }}
+        onMouseEnter={e => {
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 10px 32px rgba(0, 55, 128, 0.15)';
+          (e.currentTarget as HTMLElement).style.transform = 'translateY(-5px)';
+        }}
+        onMouseLeave={e => {
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 2px 16px rgba(0, 55, 128, 0.08)';
+          (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
+        }}
+      >
+        {/* Image */}
+        <div style={{ position: 'relative', height: '200px', flexShrink: 0 }}>
+          <Image
+            src={post.featuredImage}
+            alt={post.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ transition: 'transform 0.4s ease' }}
+          />
+          {/* Date on image */}
+          <div style={{
+            position: 'absolute',
+            bottom: '12px',
+            left: '14px',
+            backgroundColor: '#0057B8',
+            color: '#ffffff',
+            padding: '4px 12px',
+            borderRadius: '7px',
+            fontSize: '0.75rem',
+            fontWeight: '700',
+            letterSpacing: '0.3px'
+          }}>
+            {formatDateShort(post.publishDate)}
+          </div>
+        </div>
+
+        {/* Content */}
+        <div style={{ padding: '22px 24px 26px', flex: 1, display: 'flex', flexDirection: 'column' }}>
+          {/* Category */}
+          <span style={{
+            fontSize: '0.72rem',
+            fontWeight: '700',
+            color: '#00AEEF',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            display: 'block',
+            marginBottom: '8px'
+          }}>
+            {post.category}
+          </span>
+
+          {/* Title */}
+          <h3 style={{
+            fontSize: '1.05rem',
+            fontWeight: '700',
+            color: '#1a2744',
+            margin: '0 0 10px',
+            lineHeight: 1.4,
+            display: '-webkit-box',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            flex: 0
+          }}>
+            {post.title}
+          </h3>
+
+          {/* Excerpt */}
+          <p style={{
+            color: '#7a8aaa',
+            fontSize: '0.875rem',
+            lineHeight: 1.65,
+            margin: '0 0 20px',
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden',
+            flex: 1
+          }}>
+            {post.excerpt}
+          </p>
+
+          {/* Read More */}
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '6px',
+            color: '#0057B8',
+            fontWeight: '600',
+            fontSize: '0.875rem',
+            paddingTop: '14px',
+            borderTop: '1px solid #edf2fb'
+          }}>
+            Read More
+            <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+        </div>
+      </article>
+    </Link>
   );
 }
