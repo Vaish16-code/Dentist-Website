@@ -43,41 +43,46 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <div className="bg-[#E9EEF2] text-slate-800 border-b border-slate-200 overflow-visible">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 py-1.5 flex items-center justify-between gap-4 text-xs sm:text-sm whitespace-nowrap overflow-visible">
-          <div className="flex items-center gap-2 font-medium leading-none min-w-0 flex-1">
-            <img
-              src="/images/clock-icon.svg"
-              alt="Clock"
-              className="w-5 h-5 shrink-0"
-            />
-            <span>Open Hour 10:00 AM - 02:00 PM / 05:00 PM - 09:00 PM</span>
+      <div className="bg-white text-slate-700 border-b border-sky-100">
+        {/* Mobile: two rows stacked. sm+: single row side-by-side */}
+        <div className="max-w-7xl mx-auto px-4 md:px-6">
+
+          {/* Row 1 (mobile only): Open hours — full width, centered */}
+          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-sky-700 font-medium text-xs border-b border-sky-50">
+            <img src="/images/clock-icon.svg" alt="Clock" className="w-3.5 h-3.5 shrink-0" />
+            <span>Open: 10 AM – 2 PM &amp; 5 PM – 9 PM</span>
           </div>
 
-          <div className="flex items-center gap-5 leading-none shrink-0 min-w-fit">
-            <a
-              href={practoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:opacity-95 transition-opacity flex items-center shrink-0"
-              aria-label="Open Practo profile"
-            >
-              <img
-                src="/images/practo-logo.png"
-                alt="Practo"
-                className="h-8 w-auto object-contain"
-              />
-            </a>
+          {/* Main row */}
+          <div className="flex items-center justify-between gap-4 py-2">
+            {/* Open hours — visible on sm+ in main row */}
+            <div className="hidden sm:flex items-center gap-2 font-medium text-xs md:text-sm leading-none text-sky-700 flex-1">
+              <img src="/images/clock-icon.svg" alt="Clock" className="w-4 h-4 shrink-0" />
+              <span>Open: 10 AM – 2 PM &amp; 5 PM – 9 PM</span>
+            </div>
 
-            <a href="tel:+918779648573" className="flex items-center gap-2 shrink-0 text-slate-800 hover:text-sky-700 transition-colors">
-              <img
-                src="/images/contact-icon.svg"
-                alt="Phone"
-                className="w-5 h-5 shrink-0"
-              />
-              <span className="font-medium">+91 877-9648573</span>
-            </a>
+            <div className="flex items-center gap-4 md:gap-6 shrink-0 ml-auto">
+              <a
+                href={practoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity flex items-center shrink-0"
+                aria-label="Open Practo profile"
+              >
+                <img
+                  src="/images/practo-logo.png"
+                  alt="Practo"
+                  className="h-7 sm:h-8 md:h-10 w-auto object-contain"
+                />
+              </a>
+
+              <a href="tel:+918779648573" className="flex items-center gap-1.5 md:gap-2 shrink-0 text-slate-700 hover:text-sky-600 transition-colors">
+                <img src="/images/contact-icon.svg" alt="Phone" className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+                <span className="font-semibold text-xs sm:text-sm md:text-base">+91 877-9648573</span>
+              </a>
+            </div>
           </div>
+
         </div>
       </div>
 
