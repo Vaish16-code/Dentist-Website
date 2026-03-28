@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BlogPost, formatDate } from '@/data/blog';
+import { BlogPost } from '@/data/blog';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -30,13 +30,6 @@ export default function BlogCard({ post }: BlogCardProps) {
 
       {/* Content */}
       <div className="p-6">
-        {/* Meta Info */}
-        <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
-          <span>{formatDate(post.publishDate)}</span>
-          <span>•</span>
-          <span>{post.readTime}</span>
-        </div>
-
         {/* Title */}
         <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-sky-600 transition-colors line-clamp-2">
           <Link href={`/blog/${post.slug}`}>

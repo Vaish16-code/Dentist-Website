@@ -19,7 +19,7 @@ const reviews = [
     name: "Dev Wable", 
     initial: "D", 
     date: "Google Review", 
-    review: "I can’t say enough good things about Dr. Sameer Gharat! I came in with 7 deep cavities and was honestly pretty nervous, but he made the entire process feel effortless. He was incredibly caring, patient, and made sure I felt comfortable every step of the way. Each visit was smooth, and he took the time to explain everything clearly without ever rushing. You can tell he truly cares about his patients and takes pride in his work. I’m so grateful to have found such a skilled and compassionate dentist — highly recommend!" 
+    review: "I can't say enough good things about Dr. Sameer Gharat! I came in with 7 deep cavities and was honestly pretty nervous, but he made the entire process feel effortless. He was incredibly caring, patient, and made sure I felt comfortable every step of the way. Each visit was smooth, and he took the time to explain everything clearly without ever rushing. You can tell he truly cares about his patients and takes pride in his work. I'm so grateful to have found such a skilled and compassionate dentist — highly recommend!" 
   },
   { 
     name: "Sfurti Sinha", 
@@ -60,12 +60,12 @@ export default function ReviewsCarousel() {
   );
 
   return (
-    <section className="py-16 bg-amber-50/50">
+    <section className="py-16 bg-[#F0F8FF]">
       <div className="max-w-5xl mx-auto px-4">
-        <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">
+        <p className="text-sky-500 text-2xl md:text-3xl font-bold mb-2">
           Success Stories
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-10">
           Happy Patient Saying....
         </h2>
 
@@ -73,17 +73,17 @@ export default function ReviewsCarousel() {
           {visibleReviews.map((review, index) => (
             <div
               key={currentIndex * cardsToShow + index}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-gray-200"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-sky-100 hover:shadow-md transition-shadow duration-300"
             >
               {/* Header with avatar, name, and Google logo */}
               <div className="flex items-start justify-between mb-1">
                 <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white font-bold text-xl">
+                  <div className="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center text-white font-bold text-xl">
                     {review.initial}
                   </div>
                   <div>
-                    <h4 className="font-semibold text-teal-700 text-base">{review.name}</h4>
-                    <p className="text-sm text-gray-500">{review.date}</p>
+                    <h4 className="font-semibold text-slate-800 text-base">{review.name}</h4>
+                    <p className="text-sm text-slate-400">{review.date}</p>
                     <div className="text-yellow-500 text-sm mt-0.5">★★★★★</div>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ export default function ReviewsCarousel() {
               </div>
 
               {/* Review text */}
-              <p className="text-gray-600 text-sm leading-relaxed mt-4">
+              <p className="text-slate-600 text-sm leading-relaxed mt-4">
                 {review.review}
               </p>
             </div>
@@ -107,17 +107,17 @@ export default function ReviewsCarousel() {
         <div className="flex justify-center gap-3">
           <button
             onClick={prevSlide}
-            className="w-12 h-12 rounded-lg border-2 border-gray-300 flex items-center justify-center hover:border-amber-500 hover:bg-amber-50 transition-colors"
+            className="w-12 h-12 rounded-lg border-2 border-sky-200 flex items-center justify-center hover:border-sky-500 hover:bg-sky-50 transition-all duration-200"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
           <button
             onClick={nextSlide}
-            className="w-12 h-12 rounded-lg border-2 border-amber-500 bg-white flex items-center justify-center hover:bg-amber-50 transition-colors"
+            className="w-12 h-12 rounded-lg border-2 border-sky-500 bg-sky-50 flex items-center justify-center hover:bg-sky-100 transition-all duration-200"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>

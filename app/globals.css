@@ -2,18 +2,18 @@
 @import "tailwindcss";
 
 :root {
-  /* ── Professional White & Light Blue Palette ── */
-  --navy:        #1565A8;   /* primary blue — headings, buttons */
-  --steel:       #1D96D3;   /* bright sky blue — hover, accents */
-  --sky:         #56C3F0;   /* light sky — highlights */
-  --ice:         #F0F8FF;   /* ice blue — section backgrounds */
-  --card-blue:   #E0F0FF;   /* light blue — cards */
-  --text-dark:   #1A3350;   /* body headings */
-  --text-mid:    #4A5E72;   /* paragraphs */
-  --text-light:  #8096A7;   /* captions, meta */
+  /* ── Unified White & Light-Blue Palette ── */
+  --sky:         #0EA5E9;   /* primary sky blue — buttons, links, accents */
+  --sky-hover:   #0284C7;   /* hover blue — button hover, active states */
+  --sky-light:   #38BDF8;   /* lighter sky — highlights, label accents */
+  --ice:         #F0F8FF;   /* ice blue — alternating section backgrounds */
+  --card-blue:   #E0F0FF;   /* light blue — card borders, icon backgrounds */
+  --text-dark:   #1E293B;   /* slate-900 — headings */
+  --text-mid:    #475569;   /* slate-600 — paragraphs */
+  --text-light:  #94A3B8;   /* slate-400 — captions, meta */
   --white:       #FFFFFF;
   --background:  #FFFFFF;
-  --foreground:  #1E2B3A;
+  --foreground:  #1E293B;
 }
 
 @theme inline {
@@ -65,7 +65,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--navy);  /* #1565A8 */
+  background: var(--sky);
   color: #fff;
   padding: 12px 28px;
   border-radius: 8px;
@@ -79,9 +79,9 @@ body {
 }
 
 .btn-primary:hover {
-  background: var(--steel);
+  background: var(--sky-hover);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(21, 101, 168, 0.22);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.22);
 }
 
 .btn-outline {
@@ -89,26 +89,26 @@ body {
   align-items: center;
   gap: 8px;
   background: transparent;
-  color: var(--navy);
+  color: var(--sky);
   padding: 11px 26px;
   border-radius: 8px;
   font-weight: 600;
   font-size: 0.925rem;
-  border: 2px solid var(--navy);
+  border: 2px solid var(--sky);
   transition: all 0.2s ease;
   text-decoration: none;
   cursor: pointer;
 }
 
 .btn-outline:hover {
-  background: var(--navy);
+  background: var(--sky);
   color: #fff;
 }
 
 /* ── Section label style ── */
 .section-label {
   display: inline-block;
-  color: var(--navy);
+  color: var(--sky);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -121,6 +121,6 @@ body {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .card-hover:hover {
-  box-shadow: 0 12px 40px rgba(11, 44, 95, 0.12);
+  box-shadow: 0 12px 40px rgba(14, 165, 233, 0.10);
   transform: translateY(-4px);
 }

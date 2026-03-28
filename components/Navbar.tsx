@@ -48,7 +48,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-6">
 
           {/* Row 1 (mobile only): Open hours — full width, centered */}
-          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-sky-700 font-medium text-xs border-b border-sky-50">
+          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-sky-600 font-medium text-xs border-b border-sky-50">
             <img src="/images/clock-icon.svg" alt="Clock" className="w-3.5 h-3.5 shrink-0" />
             <span>Open: 10 AM – 2 PM &amp; 5 PM – 9 PM</span>
           </div>
@@ -56,7 +56,7 @@ export default function Navbar() {
           {/* Main row */}
           <div className="flex items-center justify-between gap-4 py-2">
             {/* Open hours — visible on sm+ in main row */}
-            <div className="hidden sm:flex items-center gap-2 font-medium text-xs md:text-sm leading-none text-sky-700 flex-1">
+            <div className="hidden sm:flex items-center gap-2 font-medium text-xs md:text-sm leading-none text-sky-600 flex-1">
               <img src="/images/clock-icon.svg" alt="Clock" className="w-4 h-4 shrink-0" />
               <span>Open: 10 AM – 2 PM &amp; 5 PM – 9 PM</span>
             </div>
@@ -76,7 +76,7 @@ export default function Navbar() {
                 />
               </a>
 
-              <a href="tel:+918779648573" className="flex items-center gap-1.5 md:gap-2 shrink-0 text-slate-700 hover:text-sky-600 transition-colors">
+              <a href="tel:+918779648573" className="flex items-center gap-1.5 md:gap-2 shrink-0 text-slate-700 hover:text-sky-500 transition-colors">
                 <img src="/images/contact-icon.svg" alt="Phone" className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
                 <span className="font-semibold text-xs sm:text-sm md:text-base">+91 877-9648573</span>
               </a>
@@ -87,10 +87,11 @@ export default function Navbar() {
       </div>
 
       <nav
-        className={`max-w-7xl mx-auto px-4 md:px-6 py-2 flex items-center justify-between transition-all duration-300 ${
-          scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white'
+        className={`transition-all duration-300 border-b ${
+          scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-sky-100' : 'bg-white border-transparent'
         }`}
       >
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 flex items-center justify-between">
 
         {/* Logo Only */}
         <Link href="/" className="flex items-center group">
@@ -110,15 +111,15 @@ export default function Navbar() {
               href={link.path}
               className={`relative text-sm font-medium transition duration-300 ${
                 pathname === link.path
-                  ? 'text-sky-600'
-                  : 'text-gray-700 hover:text-sky-600'
+                  ? 'text-sky-500'
+                  : 'text-slate-700 hover:text-sky-500'
               }`}
             >
               {link.name}
 
               {/* Underline animation */}
               <span
-                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-600 transition-all duration-300 ${
+                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-500 transition-all duration-300 ${
                   pathname === link.path
                     ? 'w-full'
                     : 'w-0 group-hover:w-full'
@@ -137,8 +138,8 @@ export default function Navbar() {
               onClick={() => setServicesOpen((prev) => !prev)}
               className={`relative text-sm font-medium transition duration-300 flex items-center gap-1 ${
                 pathname.startsWith('/services')
-                  ? 'text-sky-600'
-                  : 'text-gray-700 hover:text-sky-600'
+                  ? 'text-sky-500'
+                  : 'text-slate-700 hover:text-sky-500'
               }`}
               aria-expanded={servicesOpen}
               aria-haspopup="menu"
@@ -148,14 +149,14 @@ export default function Navbar() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
               <span
-                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-600 transition-all duration-300 ${
+                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-500 transition-all duration-300 ${
                   pathname.startsWith('/services') ? 'w-full' : servicesOpen ? 'w-full' : 'w-0'
                 }`}
               />
             </button>
 
             <div
-              className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-white border border-gray-200 rounded-lg shadow-lg z-[60] transition-all duration-200 origin-top ${
+              className={`absolute top-full left-1/2 -translate-x-1/2 mt-3 w-64 bg-white border border-sky-100 rounded-xl shadow-lg z-[60] transition-all duration-200 origin-top ${
                 servicesOpen
                   ? 'opacity-100 translate-y-0 pointer-events-auto'
                   : 'opacity-0 -translate-y-2 pointer-events-none'
@@ -169,8 +170,8 @@ export default function Navbar() {
                     onClick={() => setServicesOpen(false)}
                     className={`block px-4 py-2.5 text-sm transition-colors ${
                       pathname === service.path
-                        ? 'bg-sky-50 text-sky-700 font-medium'
-                        : 'text-gray-700 hover:bg-gray-50 hover:text-sky-700'
+                        ? 'bg-sky-50 text-sky-600 font-medium'
+                        : 'text-slate-700 hover:bg-sky-50 hover:text-sky-600'
                     }`}
                   >
                     {service.name}
@@ -186,14 +187,14 @@ export default function Navbar() {
               href={link.path}
               className={`relative text-sm font-medium transition duration-300 ${
                 pathname === link.path
-                  ? 'text-sky-600'
-                  : 'text-gray-700 hover:text-sky-600'
+                  ? 'text-sky-500'
+                  : 'text-slate-700 hover:text-sky-500'
               }`}
             >
               {link.name}
 
               <span
-                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-600 transition-all duration-300 ${
+                className={`absolute left-0 -bottom-1 h-[2px] bg-sky-500 transition-all duration-300 ${
                   pathname === link.path
                     ? 'w-full'
                     : 'w-0 group-hover:w-full'
@@ -202,26 +203,34 @@ export default function Navbar() {
             </Link>
           ))}
 
+          {/* Book Appointment CTA Button */}
+          <Link
+            href="/contact"
+            className="ml-2 inline-flex items-center gap-2 border-2 border-sky-500 text-sky-500 hover:bg-sky-500 hover:text-white px-5 py-2 rounded-lg text-sm font-semibold transition-all duration-200"
+          >
+            Book Appointment
+          </Link>
         </div>
 
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-2xl text-gray-700"
+          className="md:hidden text-2xl text-slate-700"
           aria-label="Toggle navigation menu"
         >
           <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-white border-t shadow-md">
+        <div className="md:hidden bg-white border-t border-sky-100 shadow-md">
           <div className="flex flex-col p-6 gap-6">
 
-            <div className="flex items-center justify-between pb-2 border-b border-gray-100">
+            <div className="flex items-center justify-between pb-2 border-b border-sky-50">
               <img
                 src="/images/logo.png"
                 alt="Dental Essential Logo"
@@ -230,7 +239,7 @@ export default function Navbar() {
               <button
                 type="button"
                 onClick={() => setOpen(false)}
-                className="text-gray-700 hover:text-sky-600 transition-colors"
+                className="text-slate-700 hover:text-sky-500 transition-colors"
                 aria-label="Close navigation menu"
               >
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -246,8 +255,8 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className={`text-lg ${
                   pathname === link.path
-                    ? 'text-sky-600 font-semibold'
-                    : 'text-gray-700'
+                    ? 'text-sky-500 font-semibold'
+                    : 'text-slate-700'
                 }`}
               >
                 {link.name}
@@ -260,8 +269,8 @@ export default function Navbar() {
                 onClick={() => setMobileServicesOpen((prev) => !prev)}
                 className={`w-full flex items-center justify-between text-lg ${
                   pathname.startsWith('/services')
-                    ? 'text-sky-600 font-semibold'
-                    : 'text-gray-700'
+                    ? 'text-sky-500 font-semibold'
+                    : 'text-slate-700'
                 }`}
                 aria-expanded={mobileServicesOpen}
               >
@@ -276,7 +285,7 @@ export default function Navbar() {
                   mobileServicesOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <div className="pl-3 border-l border-gray-200 space-y-1">
+                <div className="pl-3 border-l-2 border-sky-200 space-y-1">
                   {serviceLinks.map((service) => (
                     <Link
                       key={service.path}
@@ -287,8 +296,8 @@ export default function Navbar() {
                       }}
                       className={`block py-2 text-base ${
                         pathname === service.path
-                          ? 'text-sky-600 font-semibold'
-                          : 'text-gray-700 hover:text-sky-600'
+                          ? 'text-sky-500 font-semibold'
+                          : 'text-slate-700 hover:text-sky-500'
                       }`}
                     >
                       {service.name}
@@ -305,13 +314,22 @@ export default function Navbar() {
                 onClick={() => setOpen(false)}
                 className={`text-lg ${
                   pathname === link.path
-                    ? 'text-sky-600 font-semibold'
-                    : 'text-gray-700'
+                    ? 'text-sky-500 font-semibold'
+                    : 'text-slate-700'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
+
+            {/* Mobile Book Appointment CTA */}
+            <Link
+              href="/contact"
+              onClick={() => setOpen(false)}
+              className="text-center bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-colors"
+            >
+              Book Appointment
+            </Link>
           </div>
         </div>
       )}
