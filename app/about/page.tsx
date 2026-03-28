@@ -6,9 +6,9 @@ export default function AboutPage() {
     <div className="w-full">
 
       {/* ── HERO SECTION ── */}
-      <div className="w-full h-[65vh] relative overflow-hidden">
+      <div className="w-full h-[82vh]  relative overflow-hidden">
         <Image
-          src="/smilewomen.png"
+          src="/images/about/about.jpg"
           alt="Dental Essential Clinic"
           fill
           className="object-cover"
@@ -57,11 +57,11 @@ export default function AboutPage() {
           <div className="relative">
             <div className="absolute -left-3 -top-3 w-14 h-14 bg-[#E0F0FF] rounded-xl hidden md:block" />
             <Image
-              src="/mission.jpg"
+              src="/images/about/mission.jpeg"
               alt="Our Mission"
-              width={500}
-              height={370}
-              className="rounded-2xl shadow-xl relative border border-[#E0F0FF]"
+              width={400}
+              height={350}
+              className="rounded-2xl shadow-xl ml-20 relative border border-[#E0F0FF]"
             />
           </div>
 
@@ -118,7 +118,7 @@ export default function AboutPage() {
                 objectPos: "object-top"
               },
               {
-                image: "/images/staff/orthodontist.jpeg",
+                image: "/images/about/orthodontist.png",
                 alt: "Visiting Orthodontist",
                 badge: "Visiting Specialist",
                 name: "Visiting Orthodontist",
@@ -128,7 +128,7 @@ export default function AboutPage() {
                 objectPos: "object-top"
               },
               {
-                image: "/images/staff/clinical-staff.jpeg",
+                image: "/images/about/dental.jpg",
                 alt: "Clinical Staff",
                 badge: "Clinical Team",
                 name: "Clinical Support Staff",
@@ -138,7 +138,7 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/staff/reception.jpeg",
+                image: "/images/about/reception.jpg",
                 alt: "Front Desk Staff",
                 badge: "Front Desk",
                 name: "Reception Team",
@@ -148,7 +148,7 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/staff/pediatric.jpeg",
+                image: "/images/about/pediatric.jpg",
                 alt: "Pediatric Dentist",
                 badge: "Visiting Specialist",
                 name: "Visiting Pediatric Dentist",
@@ -158,7 +158,7 @@ export default function AboutPage() {
                 objectPos: "object-top"
               },
               {
-                image: "/images/staff/sterilization.jpeg",
+                image: "/images/about/steralization.jpg",
                 alt: "Sterilization Staff",
                 badge: "Hygiene Team",
                 name: "Sterilisation Team",
