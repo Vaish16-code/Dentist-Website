@@ -11,8 +11,6 @@ export default function Navbar() {
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
 
-  const isHome = pathname === '/'; // ✅ KEY LINE
-
   const practoUrl = 'https://www.practo.com/navi-mumbai/clinic/dental-essential-old-panvel';
 
   useEffect(() => {
@@ -44,49 +42,40 @@ export default function Navbar() {
     { name: 'Full Mouth Rehabilitation', path: '/services/full-mouth-rehabilitation' },
   ];
 
-  // 🎨 COLORS
-  const topBarBg = isHome
-    ? 'bg-gradient-to-r from-[#b8962e] via-[#D4AF37] to-[#f0d46b] border-[#c5a646]'
-    : 'bg-gradient-to-r from-[#9D174D] to-[#BE185D] border-[#BE185D]';
-
-  const accentText = isHome ? 'text-[#c9a227]' : 'text-[#BE185D]';
-  const hoverText = isHome ? 'hover:text-[#b8962e]' : 'hover:text-[#BE185D]';
-  const underline = isHome ? 'bg-[#c9a227]' : 'bg-[#BE185D]';
-
-  const dropdownHover = isHome
-    ? 'hover:bg-[#fff7db] hover:text-[#b8962e]'
-    : 'hover:bg-pink-50 hover:text-[#BE185D]';
-
-  const ctaBtn = isHome
-    ? 'bg-gradient-to-r from-[#C9A227] to-[#E6C200]'
-    : 'bg-[#BE185D] hover:bg-[#9D174D]';
+  // Common palette for nav accents
+  const topBarBg = 'bg-[#c8d4e6] border-[#b7c6db]';
+  const accentText = 'text-slate-700';
+  const hoverText = 'hover:text-slate-700';
+  const underline = 'bg-slate-700';
+  const dropdownHover = 'hover:bg-slate-50 hover:text-slate-700';
+  const ctaBtn = 'bg-sky-500 hover:bg-sky-500';
 
   return (
     <header className="sticky top-0 z-50">
 
       {/* TOP BAR */}
-      <div className={`${topBarBg} text-white border-b shadow-sm`}>
+      <div className={`${topBarBg} text-slate-700 border-b shadow-sm`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
 
-          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-white/90 text-xs border-b border-white/20">
-            <img src="/images/clock-icon.svg" className="w-3.5 h-3.5" />
+          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-slate-700 text-xs border-b border-[#b7c6db]">
+            <img src="/images/clock-icon.svg" className="w-3.5 h-3.5" alt="Clock" />
             <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
           </div>
 
           <div className="flex items-center justify-between py-2">
-            <div className="hidden sm:flex items-center gap-2 text-white/90 text-sm">
-              <img src="/images/clock-icon.svg" className="w-4 h-4" />
+            <div className="hidden sm:flex items-center gap-2 text-slate-700 text-sm whitespace-nowrap">
+              <img src="/images/clock-icon.svg" className="w-4 h-4" alt="Clock" />
               <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
             </div>
 
-            <div className="flex items-center gap-5 ml-auto">
-              <a href={practoUrl} target="_blank" rel="noopener noreferrer">
-                <img src="/images/practo-logo.png" className="h-8 md:h-10" />
+            <div className="flex items-center gap-3 sm:gap-5 ml-auto whitespace-nowrap">
+              <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0">
+                <img src="/images/practo-logo.png" className="h-5 sm:h-8 md:h-10" alt="Practo" />
               </a>
 
-              <a href="tel:+918779648573" className="flex items-center gap-2 text-white hover:text-pink-100">
-                <img src="/images/contact-icon.svg" className="w-4 h-4 md:w-5 md:h-5" />
-                <span className="font-semibold text-sm md:text-base">
+              <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
+                <img src="/images/contact-icon.svg" className="w-4 h-4 md:w-5 md:h-5" alt="Phone" />
+                <span className="font-semibold text-xs sm:text-sm md:text-base leading-none">
                   +91 877-9648573
                 </span>
               </a>
@@ -118,7 +107,7 @@ export default function Navbar() {
                 }`}
               >
                 {link.name}
-                <span className={`absolute left-0 -bottom-1 h-[2px] ${underline} ${
+                <span className={`absolute left-0 -bottom-1 h-0.5 ${underline} ${
                   pathname === link.path ? 'w-full' : 'w-0 group-hover:w-full'
                 }`} />
               </Link>
@@ -130,8 +119,11 @@ export default function Navbar() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className={`text-sm ${hoverText}`}>
+              <button className={`relative text-sm ${pathname.startsWith('/services') ? accentText : hoverText}`}>
                 Services
+                <span className={`absolute left-0 -bottom-1 h-0.5 ${underline} ${
+                  pathname.startsWith('/services') ? 'w-full' : 'w-0'
+                }`} />
               </button>
 
               <div className={`absolute top-full mt-3 w-64 bg-white border rounded-xl shadow-xl ${
@@ -153,11 +145,14 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.path}
-                className={`text-sm ${
+                className={`relative text-sm ${
                   pathname === link.path ? accentText : `text-slate-700 ${hoverText}`
                 }`}
               >
                 {link.name}
+                <span className={`absolute left-0 -bottom-1 h-0.5 ${underline} ${
+                  pathname === link.path ? 'w-full' : 'w-0'
+                }`} />
               </Link>
             ))}
 
