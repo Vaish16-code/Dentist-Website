@@ -26,7 +26,7 @@ export default function AboutPage() {
               Advanced dental care in a warm, comfortable environment — led by Dr. Sameer Gharat and his dedicated team.
             </p>
             <Link
-              href="/book"
+              href="/contact"
               className="inline-flex items-center gap-2 bg-white text-[#1565A8] hover:bg-[#38BDF8] hover:text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-lg"
             >
               Book Appointment

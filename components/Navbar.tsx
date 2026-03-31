@@ -19,6 +19,11 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  useEffect(() => {
+    setOpen(false);
+    setMobileServicesOpen(false);
+  }, [pathname]);
+
   const beforeServicesLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
@@ -166,10 +171,78 @@ export default function Navbar() {
 
           </div>
 
-          <button onClick={() => setOpen(!open)} className="md:hidden text-2xl">
-            ☰
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden text-2xl text-slate-700"
+            aria-label="Toggle navigation menu"
+            aria-expanded={open}
+          >
+            {open ? '✕' : '☰'}
           </button>
         </div>
+
+        {open && (
+          <div className="md:hidden border-t border-slate-200 bg-white px-4 pb-4 pt-3 space-y-1">
+            {beforeServicesLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.path}
+                className={`block rounded-md px-3 py-2 text-sm font-medium ${
+                  pathname === link.path ? 'bg-sky-50 text-sky-700' : 'text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <div>
+              <button
+                type="button"
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
+                aria-expanded={mobileServicesOpen}
+              >
+                <span>Services</span>
+                <span>{mobileServicesOpen ? '−' : '+'}</span>
+              </button>
+
+              {mobileServicesOpen && (
+                <div className="ml-3 mt-1 space-y-1 border-l border-slate-200 pl-3">
+                  {serviceLinks.map((s) => (
+                    <Link
+                      key={s.path}
+                      href={s.path}
+                      className={`block rounded-md px-3 py-2 text-sm ${
+                        pathname === s.path ? 'bg-sky-50 text-sky-700' : 'text-slate-600 hover:bg-slate-50'
+                      }`}
+                    >
+                      {s.name}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {afterServicesLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.path}
+                className={`block rounded-md px-3 py-2 text-sm font-medium ${
+                  pathname === link.path ? 'bg-sky-50 text-sky-700' : 'text-slate-700 hover:bg-slate-50'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+
+            <Link
+              href="/contact"
+              className="mt-2 block rounded-lg bg-sky-500 px-4 py-2 text-center text-sm font-semibold text-white"
+            >
+              Book Appointment
+            </Link>
+          </div>
+        )}
       </nav>
 
     </header>
