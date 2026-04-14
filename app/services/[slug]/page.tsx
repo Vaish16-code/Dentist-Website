@@ -2,21 +2,21 @@ import { services, getServiceBySlug, getAllServiceSlugs } from '@/data/services'
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
-// Generate static params for all services
+// Generate static params for all treatments
 export function generateStaticParams() {
   return getAllServiceSlugs().map((slug) => ({
     slug: slug,
   }));
 }
 
-// Generate metadata for each service page
+// Generate metadata for each treatment page
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const service = getServiceBySlug(slug);
   
   if (!service) {
     return {
-      title: 'Service Not Found | Dental Essential',
+      title: 'Treatment Not Found | Dental Essential',
     };
   }
 
@@ -47,7 +47,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Back to Services
+            Back to Treatments
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -66,11 +66,11 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      {/* Service Description */}
+      {/* Treatment Description */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Service Image */}
+            {/* Treatment Image */}
             <div className="relative h-80 lg:h-96 bg-gradient-to-br from-sky-100 to-sky-200 rounded-2xl overflow-hidden shadow-lg">
               <img 
                 src={service.bannerImage} 
@@ -180,12 +180,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
-      {/* Related Services */}
+      {/* Related Treatments */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">
             <span className="text-pink-500">Other</span>{' '}
-            <span className="text-sky-500">Services</span>
+            <span className="text-sky-500">Treatments</span>
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -213,7 +213,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               href="/services"
               className="inline-flex items-center gap-2 text-sky-600 hover:text-sky-700 font-medium"
             >
-              View All Services
+              View All Treatments
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

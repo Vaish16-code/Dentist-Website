@@ -62,7 +62,7 @@ export default function Footer() {
               {[
                 { label: 'Home', path: '/' },
                 { label: 'About Us', path: '/about' },
-                { label: 'Services', path: '/services' },
+                { label: 'Treatments', path: '/services' },
                 { label: 'Blog', path: '/blog' },
                 { label: 'Contact', path: '/contact' },
               ].map((link) => (
@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* ── Services ── */}
           <div>
-            <h3 className="text-slate-800 text-sm font-bold uppercase tracking-wider mb-5">Our Services</h3>
+            <h3 className="text-slate-800 text-sm font-bold uppercase tracking-wider mb-5">Our Treatments</h3>
             <ul className="space-y-2.5 text-sm">
               {[
                 { label: 'Painless Root Canal', path: '/services/painless-root-canal' },

@@ -3,8 +3,8 @@ import ServiceCard from '@/components/ServiceCard';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Services | Dental Essential',
-  description: 'Explore our comprehensive dental services including root canal treatment, dental implants, braces, smile designing, and more.',
+  title: 'Our Treatments | Dental Essential',
+  description: 'Explore our comprehensive dental treatments including root canal treatment, dental implants, braces, smile designing, and more.',
 };
 
 export default function ServicesPage() {
@@ -18,10 +18,10 @@ export default function ServicesPage() {
             COMPREHENSIVE DENTAL CARE
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Services
+            Our Treatments
           </h1>
           <p className="text-sky-100 max-w-2xl mx-auto text-lg">
-            From routine check-ups to advanced treatments, we offer a full range of dental services 
+            From routine check-ups to advanced treatments, we offer a full range of dental treatments 
             to keep your smile healthy and beautiful.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Services Grid */}
+      {/* Treatments Grid */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
@@ -48,7 +48,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          {/* Services Grid */}
+          {/* Treatments Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />

@@ -242,7 +242,7 @@ export default function ContactPage() {
                 className={inputClass}
                 required
               >
-                <option value="" disabled>Select Service</option>
+                <option value="" disabled>Select Treatment</option>
                 {services.map((service) => (
                   <option key={service.slug} value={service.title}>
                     {service.title}

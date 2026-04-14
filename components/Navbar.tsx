@@ -118,14 +118,14 @@ export default function Navbar() {
               </Link>
             ))}
 
-            {/* SERVICES */}
+            {/* TREATMENTS */}
             <div
               className="relative"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
               <button className={`relative text-sm ${pathname.startsWith('/services') ? accentText : hoverText}`}>
-                Services
+                Treatments
                 <span className={`absolute left-0 -bottom-1 h-0.5 ${underline} ${
                   pathname.startsWith('/services') ? 'w-full' : 'w-0'
                 }`} />
@@ -202,7 +202,7 @@ export default function Navbar() {
                 className="flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50"
                 aria-expanded={mobileServicesOpen}
               >
-                <span>Services</span>
+<span>Treatments</span>
                 <span>{mobileServicesOpen ? '−' : '+'}</span>
               </button>
 

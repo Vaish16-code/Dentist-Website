@@ -10,42 +10,22 @@ export default function HomePage() {
 
   return (
     <main>
-      {/* HERO SECTION */}
-      <section className="relative min-h-[90vh]  flex items-center overflow-hidden">
-        
-        {/* VIDEO BACKGROUND */}
-        <div className="absolute inset-0 -z-10 overflow-hidden">
-          <video
-            className="w-full h-full object-cover object-center"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="auto"
-          >
-            {/* IMPORTANT: no `public` in path */}
-            <source src="/videos/homebg1.mp4" type="video/mp4" />
-          </video>
-
-          {/* Dark overlay */}
-          <div className="absolute inset-0 bg-black/40"></div>
-        </div>
-
-        {/* HERO CONTENT */}
-        <div className="max-w-7xl mx-auto px-6 md:px-14 grid md:grid-cols-2 gap-12 items-center text-white">
+     {/* HERO SECTION */}
+      <section className="relative bg-white py-2 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-14 grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <span className="inline-block bg-white/20 backdrop-blur text-black px-4 py-1 rounded-full text-sm font-medium">
-              Top Notch Dental Services in Panvel
-            </span>
+            <span className="inline-block bg-sky-100 text-sky-600 px-5 py-2 rounded-full text-lg md:text-xl lg:text-2xl font-semibold">
+                 Top Notch Dental Services in Panvel
+             </span>
 
-           <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
-      <span className="text-pink-500">A smile is your best</span>{' '}
-      <span className="text-blue-400">
-        accessory—let’s make it shine!
-      </span>
-    </h1>
+            <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
+              <span className="text-pink-500">A smile is your best</span>{' '}
+              <span className="text-sky-500">
+                accessory—let’s make it shine!
+              </span>
+            </h1>
 
-            <p className="mt-6 text-gray-200 max-w-xl">
+            <p className="mt-6 text-gray-600 max-w-xl">
               At Dental Essential, we believe a healthy smile is the key to
               confidence and well-being. Our expert team provides gentle,
               personalized care using the latest technology.
@@ -59,15 +39,30 @@ export default function HomePage() {
             </Link>
 
             <div className="ml-4 mt-8 bg-white shadow rounded-lg px-8 py-3 inline-flex items-center gap-3 border border-gray-200">
-              <span className="text-yellow-500">🏆</span>
-              <span className="text-sm font-medium text-black">
+              <svg className="w-5 h-5 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 4V2H8v2H4v3a4 4 0 004 4h.09A6.002 6.002 0 0011 15.91V18H8v2h8v-2h-3v-2.09A6.002 6.002 0 0015.91 11H16a4 4 0 004-4V4h-4z" />
+              </svg>
+              <span className="text-sm font-medium">
                 Famdent Award Winner
               </span>
             </div>
           </div>
 
-          {/* Empty column for balance (optional visual spacing) */}
-          <div className="hidden md:block"></div>
+          {/* HERO IMAGE */}
+          <div className="relative flex justify-center items-center">
+            <div className="absolute w-[420px] h-[420px] bg-sky-400 rounded-full blur-2xl"></div>
+            <div className="absolute w-[460px] h-[460px] bg-sky-300 rounded-full"></div>
+
+            <div className="relative w-[500px] h-[600px] animate-float">
+              <Image
+                src="/images/home/babypic.png"
+                alt="Happy Child Brushing Teeth"
+                fill
+                className="object-contain drop-shadow-2xl"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -111,11 +106,11 @@ export default function HomePage() {
       {/* DOCTOR PROFILE */}
       <DoctorProfileCarousel />
 
-      {/* HOME SERVICES SECTION */}
+      {/* HOME TREATMENTS SECTION */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="text-center mb-10">
-            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Treatment</p>
+            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Treatments</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
               Comprehensive Dental Solutions for a Radiant Smile
             </h2>
@@ -151,7 +146,7 @@ export default function HomePage() {
               href="/services"
               className="inline-flex items-center gap-2 border-2 border-sky-500 text-sky-600 hover:bg-sky-50 px-6 py-3 rounded-lg font-medium transition"
             >
-              View All Services
+              View All Treatments
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
