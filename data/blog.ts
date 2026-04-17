@@ -408,6 +408,65 @@ Most patients return to routine activities soon after the procedure. Regular fol
 
 For a complete evaluation and treatment planning, consult your dentist.
     `
+  },
+  {
+    slug: "pediatric-dentistry-for-kids-parents-guide",
+    title: "Pediatric Dentistry for Kids: A Parent's Guide",
+    excerpt: "Learn when your child should first visit a dentist, common pediatric treatments, and easy habits that keep little smiles healthy.",
+    featuredImage: "/images/services/pedetric.jpeg",
+    author: {
+      name: "Dental Essential ",
+      avatar: "/doctors/dr-sameer.jpg",
+      role: "Dental Team"
+    },
+    publishDate: "2024-04-02",
+    readTime: "6 min read",
+    category: "Treatments",
+    content: `
+## Pediatric Dentistry for Kids: A Parent's Guide
+
+Children need a different dental approach than adults. Pediatric dentistry focuses on prevention, comfort, and building positive habits from an early age.
+
+### When should my child first visit a dentist?
+
+The first dental visit is recommended by the child's first birthday, or within 6 months of the first tooth appearing.
+
+### Why early visits matter
+
+- Detects cavities and enamel problems early
+- Helps children become comfortable with dental visits
+- Guides parents on feeding, brushing, and fluoride use
+- Reduces fear and improves long-term oral health habits
+
+### Common pediatric dental treatments
+
+1. **Routine Checkups**
+Regular exams to monitor growth and identify issues early.
+
+2. **Professional Cleaning**
+Gentle cleaning to remove plaque and keep gums healthy.
+
+3. **Fluoride Application**
+Strengthens enamel and lowers cavity risk.
+
+4. **Dental Sealants**
+Protective coating on molars to prevent decay.
+
+5. **Habit Counseling**
+Support for thumb-sucking, bottle use, and oral hygiene routines.
+
+### Simple tips for parents
+
+- Start brushing as soon as the first tooth erupts
+- Use a rice-sized toothpaste amount under age 3
+- Reduce sticky sugary snacks and bedtime bottles
+- Encourage water after meals
+- Schedule checkups every 6 months
+
+### Final note
+
+Positive early experiences create confident kids and healthier smiles for life. If your child has tooth pain, sensitivity, or visible spots, schedule a pediatric dental checkup soon.
+    `
   }
 ];
 

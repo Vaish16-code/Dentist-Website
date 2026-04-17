@@ -104,7 +104,7 @@ export default function DoctorProfileCarousel() {
               </h3>
 
               <p className="text-gray-600 mb-4">
-                Lead Dentist – Dental Essential Advanced Dental Clinic
+                Founder and chief at Dental Eseential advanced dental clinic
               </p>
 
               <div className="mb-6">
@@ -112,34 +112,38 @@ export default function DoctorProfileCarousel() {
               </div>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                Dr. Sameer Gharat is a compassionate and highly experienced dentist 
-                who believes in the power of empathy and delivering the best outcomes 
-                for his patients. He is known for providing safe and effective dental 
-                solutions tailored to individual needs.
+                Dr. Sameer Gharat is a founder and chief at Dental Eseential advanced 
+                dental clinic. He has a proven track record of bringing the best 
+                outcomes for his patients. With an incredible experience of 16+ years, 
+                Dr. Sameer has become a well-known dentist for providing the safest and 
+                the most appropriate dental solutions for his patients.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                He completed his BDS from Dr. D. Y. Patil School of Dentistry in 2010, 
-                followed by a Clinical Assistant program at Government Dental College 
-                and Hospital, Mumbai.
+                Dr. Sameer completed his BDS from the prestigeous D Y Patil School of 
+                Dentistry in 2010. Later he did Clinical Assistant programme at 
+                Government Dental College and hospital Mumbai and has been active 
+                since in the field of dentistry.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-4">
-                He later pursued his Master’s in Dental Surgery in Prosthetic Dentistry 
-                and Oral Implantology from Dr. D. Y. Patil School of Dentistry in 2014.
+                He has completed his Masters in dental Surgery in the field of 
+                Prosthetic dentistry and Oral Implantology from the D.Y. Patil School 
+                of dentistry in 2014. Dr sameer has extensive experience in Implant 
+                Dentistry, Complex Full mouth Rehabilitation Procedures and Cosmetic 
+                Dentistry. He is a certified Laser dentist as well as Invisalign 
+                provider.
               </p>
 
               <p className="text-gray-600 leading-relaxed mb-6">
-                Dr. Sameer has extensive expertise in dental implants, complex full 
-                mouth rehabilitation, clear aligners, and cosmetic dentistry. He is 
-                dedicated to enhancing the overall quality of life of his patients 
-                by creating confident and healthy smiles.
+                Dr. Sameer works with a strong belief in creating smiles that enhance 
+                the overall life quality of his patients.
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 border-t pt-8">
                 <div className="text-center">
-                  <p className="text-2xl md:text-3xl font-bold text-gray-800">200+</p>
+                  <p className="text-2xl md:text-3xl font-bold text-gray-800">5000+</p>
                   <p className="text-gray-500 text-sm">Patients Treated</p>
                 </div>
                 <div className="text-center">

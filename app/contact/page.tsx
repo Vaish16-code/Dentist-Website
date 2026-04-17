@@ -74,20 +74,31 @@ export default function ContactPage() {
     }
   };
 
-  const inputClass = "w-full px-4 py-3 border border-[#D8E6F5] rounded-xl focus:ring-2 focus:ring-[#1D96D3] focus:border-[#1D96D3] outline-none bg-white text-[#1E2B3A] placeholder:text-[#8096A7] text-sm transition-all duration-200";
+  const inputClass = "w-full px-4 py-3 border border-sky-100 rounded-xl focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none bg-white text-gray-800 placeholder:text-gray-400 text-sm transition-all duration-200";
 
   return (
-    <div className="bg-[#F0F8FF] min-h-screen">
+    <div className="bg-gray-50 min-h-screen">
 
       {/* ── PAGE HEADER ── */}
-      <div className="bg-[#1565A8] py-16 px-6 text-center">
-        <span className="section-label text-[#38BDF8] mb-3 block">Get In Touch</span>
-        <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
-          Book an Appointment
-        </h1>
-        <p className="text-slate-300 max-w-xl mx-auto text-sm">
-          Book your appointment and experience professional, gentle dental care at Dental Essential.
-        </p>
+      <div className="relative bg-gradient-to-br from-sky-500 to-sky-600 py-16 px-6 text-center overflow-hidden">
+        <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
+        <div className="relative">
+          <span className="inline-block bg-white/20 text-white px-4 py-1 rounded-full text-sm font-medium mb-4">Get In Touch</span>
+          <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+            Book an Appointment
+          </h1>
+          <p className="text-sky-100 max-w-xl mx-auto text-sm">
+            Book your appointment and experience professional, gentle dental care at{' '}
+            <span className="font-semibold text-pink-200">Dental</span>{' '}
+            <span className="font-semibold text-sky-100">Essential</span>.
+          </p>
+        </div>
+
+        <div className="absolute bottom-0 left-0 right-0">
+          <svg viewBox="0 0 1440 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 100V0C240 66.6667 480 100 720 100C960 100 1200 66.6667 1440 0V100H0Z" fill="#F9FAFB"/>
+          </svg>
+        </div>
       </div>
 
       {/* ── QUICK CONTACT CARDS ── */}
@@ -95,7 +106,7 @@ export default function ContactPage() {
         {[
           {
             icon: (
-              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
             ),
@@ -105,7 +116,7 @@ export default function ContactPage() {
           },
           {
             icon: (
-              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
@@ -116,7 +127,7 @@ export default function ContactPage() {
           },
           {
             icon: (
-              <svg className="w-5 h-5 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             ),
@@ -127,19 +138,19 @@ export default function ContactPage() {
         ].map((card) => (
           <div
             key={card.label}
-            className="bg-white rounded-2xl p-5 border border-[#E0F0FF] shadow-sm flex items-center gap-4"
+            className="bg-white rounded-2xl p-5 border border-sky-100 shadow-sm flex items-center gap-4"
           >
-            <div className="w-10 h-10 rounded-xl bg-[#E0F0FF] flex items-center justify-center flex-shrink-0">
+            <div className="w-10 h-10 rounded-xl bg-sky-100 flex items-center justify-center flex-shrink-0">
               {card.icon}
             </div>
             <div>
-              <p className="text-[#8096A7] text-xs font-medium uppercase tracking-wide">{card.label}</p>
+              <p className="text-gray-500 text-xs font-medium uppercase tracking-wide">{card.label}</p>
               {card.href ? (
-                <a href={card.href} className="text-[#1565A8] font-semibold text-sm hover:text-[#1D96D3] transition-colors">
+                <a href={card.href} className="text-sky-600 font-semibold text-sm hover:text-pink-500 transition-colors">
                   {card.value}
                 </a>
               ) : (
-                <p className="text-[#1565A8] font-semibold text-sm">{card.value}</p>
+                <p className="text-sky-600 font-semibold text-sm">{card.value}</p>
               )}
             </div>
           </div>
@@ -150,7 +161,7 @@ export default function ContactPage() {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 px-6 pb-20">
 
         {/* Map + Address */}
-        <div className="bg-white rounded-2xl shadow-sm border border-[#E0F0FF] overflow-hidden">
+        <div className="bg-white rounded-2xl shadow-sm border border-sky-100 overflow-hidden">
           <iframe
             src="https://www.google.com/maps?q=Dental%20Essential%20Advanced%20Dental%20Clinic&ll=18.980009,73.1144911&z=18&output=embed"
             height="320"
@@ -178,14 +189,14 @@ export default function ContactPage() {
               }
             ].map((item) => (
               <div key={item.title} className="flex items-start gap-3">
-                <div className="w-8 h-8 rounded-lg bg-[#E0F0FF] flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <svg className="w-4 h-4 text-[#1D96D3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-8 h-8 rounded-lg bg-sky-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <svg className="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     {item.icon}
                   </svg>
                 </div>
                 <div>
-                  <p className="font-semibold text-[#1565A8] text-sm mb-0.5">{item.title}</p>
-                  <p className="text-[#4A5E72] text-sm leading-relaxed whitespace-pre-line">{item.content}</p>
+                  <p className="font-semibold text-sky-600 text-sm mb-0.5">{item.title}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed whitespace-pre-line">{item.content}</p>
                 </div>
               </div>
             ))}
@@ -193,10 +204,11 @@ export default function ContactPage() {
         </div>
 
         {/* Appointment Form */}
-        <div className="bg-white p-8 rounded-2xl shadow-sm border border-[#E0F0FF]">
+        <div className="bg-white p-8 rounded-2xl shadow-sm border border-sky-100">
           <span className="section-label">Appointment</span>
-          <h2 className="text-2xl font-extrabold text-[#1565A8] mt-1 mb-7">
-            Book Your Visit
+          <h2 className="text-2xl font-extrabold mt-1 mb-7">
+            <span className="text-pink-500">Book Your</span>{' '}
+            <span className="text-sky-500">Visit</span>
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -272,7 +284,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#1565A8] hover:bg-[#1D96D3] text-white py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
+              className="w-full bg-sky-500 hover:bg-sky-600 text-white py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
             >
               {isSubmitting ? 'Sending...' : 'Book Appointment'}
             </button>

@@ -21,6 +21,7 @@ export default function Navbar() {
 
   useEffect(() => {
     setOpen(false);
+    setServicesOpen(false);
     setMobileServicesOpen(false);
   }, [pathname]);
 
@@ -48,7 +49,7 @@ export default function Navbar() {
   ];
 
   // Common palette for nav accents
-  const topBarBg = 'bg-[#c8d4e6] border-[#b7c6db]';
+  const topBarBg = 'bg-[#d3ddea] border-[#c3cfdd]';
   const accentText = 'text-slate-700';
   const hoverText = 'hover:text-slate-700';
   const underline = 'bg-slate-700';
@@ -62,12 +63,12 @@ export default function Navbar() {
       <div className={`${topBarBg} text-slate-700 border-b shadow-sm`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
 
-          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1.5 text-slate-700 text-xs border-b border-[#b7c6db]">
+          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1 text-slate-700 text-xs border-b border-[#c3cfdd]">
             <img src="/images/clock-icon.svg" className="w-3.5 h-3.5" alt="Clock" />
             <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
           </div>
 
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center justify-between py-1.5">
             <div className="hidden sm:flex items-center gap-2 text-slate-700 text-sm whitespace-nowrap">
               <img src="/images/clock-icon.svg" className="w-4 h-4" alt="Clock" />
               <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
@@ -75,7 +76,7 @@ export default function Navbar() {
 
             <div className="flex items-center gap-3 sm:gap-5 ml-auto whitespace-nowrap">
               <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0">
-                <img src="/images/practo-logo.png" className="h-5 sm:h-8 md:h-10" alt="Practo" />
+                <img src="/images/practo-logo.png" className="h-6 sm:h-9 md:h-11 w-auto" alt="Practo" />
               </a>
 
               <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
@@ -98,7 +99,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-2 flex items-center justify-between">
 
           <Link href="/">
-            <img src="/images/logo.png" className="h-11 md:h-12" />
+            <img src="/images/logo.png" className="h-12 md:h-14 w-auto" alt="Dental Essential Clinic" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -119,19 +120,24 @@ export default function Navbar() {
             ))}
 
             {/* TREATMENTS */}
-            <div
-              className="relative"
-              onMouseEnter={() => setServicesOpen(true)}
-              onMouseLeave={() => setServicesOpen(false)}
-            >
-              <button className={`relative text-sm ${pathname.startsWith('/services') ? accentText : hoverText}`}>
-                Treatments
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setServicesOpen((prev) => !prev)}
+                className={`relative flex items-center gap-1 text-sm ${
+                  pathname.startsWith('/services') ? accentText : `text-slate-700 ${hoverText}`
+                }`}
+                aria-expanded={servicesOpen}
+                aria-controls="desktop-treatments-menu"
+              >
+                <span>Treatments</span>
+                <span className="text-base leading-none">{servicesOpen ? '−' : '+'}</span>
                 <span className={`absolute left-0 -bottom-1 h-0.5 ${underline} ${
-                  pathname.startsWith('/services') ? 'w-full' : 'w-0'
+                  pathname.startsWith('/services') || servicesOpen ? 'w-full' : 'w-0'
                 }`} />
               </button>
 
-              <div className={`absolute top-full mt-3 w-64 bg-white border rounded-xl shadow-xl ${
+              <div id="desktop-treatments-menu" className={`absolute top-full mt-2 w-64 bg-white border rounded-xl shadow-xl z-20 ${
                 servicesOpen ? 'block' : 'hidden'
               }`}>
                 {serviceLinks.map((s) => (

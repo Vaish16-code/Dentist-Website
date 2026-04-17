@@ -63,7 +63,12 @@ export default function ServicesPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-pink-500 mb-4">Why Choose Us?</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              At Dental Essential, we combine expertise with compassion to deliver exceptional dental care.
+              At{' '}
+              <span className="font-semibold">
+                <span className="text-pink-500">Dental</span>{' '}
+                <span className="text-sky-500">Essential</span>
+              </span>
+              , we combine expertise with compassion to deliver exceptional dental care.
             </p>
           </div>
 

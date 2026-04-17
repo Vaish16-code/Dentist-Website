@@ -150,8 +150,8 @@ export const services: Service[] = [
     slug: "pediatric-dentistry",
     title: "Pediatric Dentistry",
     shortDescription: "Gentle, child-friendly dental care to keep your little one's smile healthy and bright.",
-    image: "/images/services/pedetric.jpg",
-    bannerImage: "/images/services/pedetric.jpg",
+    image: "/images/services/pedetric.jpeg",
+    bannerImage: "/images/services/pedetric.jpeg",
     description: "Our pediatric dental services are designed to make dental visits fun and stress-free for children. We create a welcoming environment and use gentle techniques to ensure your child develops positive associations with dental care from an early age.",
     benefits: [
       "Child-friendly environment",

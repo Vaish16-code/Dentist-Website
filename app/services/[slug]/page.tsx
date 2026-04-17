@@ -105,7 +105,12 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               <span className="text-sky-500">{service.title}</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Discover the advantages of choosing this treatment at Dental Essential.
+              Discover the advantages of choosing this treatment at{' '}
+              <span className="font-semibold">
+                <span className="text-pink-500">Dental</span>{' '}
+                <span className="text-sky-500">Essential</span>
+              </span>
+              .
             </p>
           </div>
 

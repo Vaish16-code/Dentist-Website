@@ -15,10 +15,10 @@ export default function AboutPage() {
           priority
         />
         {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1565A8]/75 via-[#1565A8]/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-sky-600/75 via-sky-500/40 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-8 md:px-14">
-            <span className="section-label text-[#38BDF8] mb-3 block">About Us</span>
+            <span className="inline-block text-black text-base md:text-lg font-bold uppercase tracking-widest mb-3">About Us</span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4 max-w-xl">
               Caring for Your Smile,<br />Every Step of the Way
             </h1>
@@ -27,7 +27,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-white text-[#1565A8] hover:bg-[#38BDF8] hover:text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-lg"
+              className="inline-flex items-center gap-2 bg-pink-500 text-white hover:bg-pink-600 px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-lg"
             >
               Book Appointment
             </Link>
@@ -38,50 +38,57 @@ export default function AboutPage() {
       {/* ── WELCOME SECTION ── */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <span className="section-label">Welcome To</span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#1565A8] mt-1 mb-6">
-            Dental Essential
+          <span className="section-label text-lg! md:text-xl!">Welcome To</span>
+          <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-6">
+            <span className="text-pink-500">Dental</span>{' '}
+            <span className="text-sky-500">Essential</span>
           </h2>
-          <p className="text-[#4A5E72] leading-relaxed mb-4">
-            At Dental Essential, we believe a healthy smile is the key to confidence and well-being. Our expert team provides gentle, personalized care using the latest technology to keep your teeth healthy and your visits stress-free.
+          <p className="text-gray-600 leading-relaxed mb-4">
+            At{' '}
+            <span className="font-semibold">
+              <span className="text-pink-500">Dental</span>{' '}
+              <span className="text-sky-500">Essential</span>
+            </span>
+            , we believe a healthy smile is the key to confidence and well-being. Our expert team provides gentle, personalized care using the latest technology to keep your teeth healthy and your visits stress-free.
           </p>
-          <p className="text-[#4A5E72] leading-relaxed">
+          <p className="text-gray-600 leading-relaxed">
             From routine check-ups to advanced cosmetic and restorative procedures, we are committed to delivering outstanding dental care tailored to every patient&apos;s unique needs.
           </p>
         </div>
       </section>
 
       {/* ── MISSION SECTION ── */}
-      <section className="py-20 bg-[#F0F8FF]">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 px-6 items-center">
           <div className="relative">
-            <div className="absolute -left-3 -top-3 w-14 h-14 bg-[#E0F0FF] rounded-xl hidden md:block" />
+            <div className="absolute -left-3 -top-3 w-14 h-14 bg-sky-100 rounded-xl hidden md:block" />
             <Image
               src="/images/about/mission.jpeg"
               alt="Our Mission"
               width={400}
               height={350}
-              className="rounded-2xl shadow-xl ml-20 relative border border-[#E0F0FF]"
+              className="rounded-2xl shadow-xl ml-20 relative border border-sky-100"
             />
           </div>
 
           <div>
-            <span className="section-label">Our Purpose</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1565A8] mt-1 mb-5">
-              Our Mission
+            <span className="section-label text-lg! md:text-xl!">Our Purpose</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-5 leading-tight">
+              <span className="text-pink-500">Our</span>{' '}
+              <span className="text-sky-500">Mission</span>
             </h2>
 
-            <p className="text-[#4A5E72] leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4">
               Our mission is to deliver exceptional dental care that goes beyond treating teeth — we care for people. We believe every patient deserves to feel heard, respected, and at ease.
             </p>
 
-            <p className="text-[#4A5E72] leading-relaxed mb-8">
+            <p className="text-gray-600 leading-relaxed mb-8">
               By blending advanced technology with a gentle, personalized approach, we strive to support not just your oral health, but your overall well-being.
             </p>
 
             <Link
               href="/contact"
-              className="inline-flex items-center gap-2 bg-[#1565A8] hover:bg-[#1D96D3] text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg"
+              className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Get in Touch
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,11 +103,12 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="section-label">Our Team</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1565A8] mt-1 mb-3">
-              Our Doctors &amp; Staff
+            <span className="section-label text-lg! md:text-xl!">Our Team</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-3 leading-tight">
+              <span className="text-pink-500">Our Doctors</span>{' '}
+              <span className="text-sky-500">&amp; Staff</span>
             </h2>
-            <p className="text-[#4A5E72] max-w-2xl mx-auto text-sm">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm">
               Meet our dedicated team of dental professionals committed to providing you with exceptional care and beautiful smiles.
             </p>
           </div>
@@ -170,24 +178,24 @@ export default function AboutPage() {
             ].map((member) => (
               <div
                 key={member.name}
-                className="bg-white rounded-2xl overflow-hidden border border-[#E0F0FF] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative h-64 bg-[#F0F8FF]">
+                <div className="relative h-64 bg-sky-50">
                   <Image
                     src={member.image}
                     alt={member.alt}
                     fill
                     className={`object-cover ${member.objectPos}`}
                   />
-                  <div className="absolute top-4 left-4 bg-[#1565A8] text-white px-3 py-1 rounded-full text-xs font-semibold">
+                  <div className="absolute top-4 left-4 bg-sky-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
                     {member.badge}
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-lg text-[#1565A8] mb-0.5">{member.name}</h3>
-                  <p className="text-[#1D96D3] text-sm font-semibold mb-1">{member.role}</p>
-                  <p className="text-[#8096A7] text-xs mb-3">{member.qual}</p>
-                  <p className="text-[#4A5E72] text-sm leading-relaxed">{member.desc}</p>
+                  <h3 className="font-bold text-lg text-gray-800 mb-0.5">{member.name}</h3>
+                  <p className="text-sky-500 text-sm font-semibold mb-1">{member.role}</p>
+                  <p className="text-gray-500 text-xs mb-3">{member.qual}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{member.desc}</p>
                 </div>
               </div>
             ))}
@@ -196,14 +204,15 @@ export default function AboutPage() {
       </section>
 
       {/* ── FACILITIES SECTION ── */}
-      <section className="py-20 bg-[#F0F8FF]">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="section-label">Our Clinic</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#1565A8] mt-1 mb-3">
-              State-of-the-Art Facilities
+            <span className="section-label text-lg! md:text-xl!">Our Clinic</span>
+            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-3 leading-tight">
+              <span className="text-pink-500">State-of-the-Art</span>{' '}
+              <span className="text-sky-500">Facilities</span>
             </h2>
-            <p className="text-[#4A5E72] max-w-2xl mx-auto text-sm">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm">
               Step inside our modern, welcoming clinic designed for your comfort and equipped with cutting-edge dental technology.
             </p>
           </div>
@@ -213,7 +222,7 @@ export default function AboutPage() {
               <img
                 src="/images/gallery/clinic-1.png"
                 alt="Modern Treatment Room"
-                className="w-full h-full min-h-[300px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.01] border border-[#E0F0FF]"
+                className="w-full h-full min-h-[300px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.01] border border-sky-100"
               />
             </div>
 
@@ -227,14 +236,14 @@ export default function AboutPage() {
                 <img
                   src={img.src}
                   alt={img.alt}
-                  className="w-full h-48 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all hover:scale-[1.01] border border-[#E0F0FF]"
+                  className="w-full h-48 object-cover rounded-2xl shadow-md hover:shadow-xl transition-all hover:scale-[1.01] border border-sky-100"
                 />
               </div>
             ))}
 
-            <div className="bg-[#1565A8] rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
+            <div className="bg-gradient-to-br from-pink-500 to-sky-500 rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
               <span className="text-4xl font-extrabold">16+</span>
-              <span className="text-[#38BDF8] text-sm mt-2 font-medium">Years of Excellence</span>
+              <span className="text-white/90 text-sm mt-2 font-medium">Years of Excellence</span>
             </div>
           </div>
         </div>
