@@ -39,7 +39,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="section-label text-lg! md:text-xl!">Welcome To</span>
-          <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-6">
             <span className="text-pink-500">Dental</span>{' '}
             <span className="text-sky-500">Essential</span>
           </h2>
@@ -73,7 +73,7 @@ export default function AboutPage() {
 
           <div>
             <span className="section-label text-lg! md:text-xl!">Our Purpose</span>
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-5 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-5 leading-tight">
               <span className="text-pink-500">Our</span>{' '}
               <span className="text-sky-500">Mission</span>
             </h2>
@@ -104,7 +104,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-lg! md:text-xl!">Our Team</span>
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-3 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-3 leading-tight">
               <span className="text-pink-500">Our Doctors</span>{' '}
               <span className="text-sky-500">&amp; Staff</span>
             </h2>
@@ -208,7 +208,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-lg! md:text-xl!">Our Clinic</span>
-            <h2 className="text-4xl md:text-5xl font-extrabold mt-1 mb-3 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-3 leading-tight">
               <span className="text-pink-500">State-of-the-Art</span>{' '}
               <span className="text-sky-500">Facilities</span>
             </h2>
