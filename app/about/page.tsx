@@ -1,10 +1,58 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react"; // Import useState hook
+
+const doctors = [
+{
+    name: "Dr. Ansil Pappachan",
+    title: "Consultant Braces Treatment Specialist (Orthodontist)",
+    image: "/images/doctors/ansil.jpeg", // Ensure you have this image in your public folder
+    description: [
+      "A Post graduate from the renowned College of Dental Sciences, Dharwad, Dr. Ansil brings over 12 years of specialized experience. He has become one of the most sought-after braces specialists in Mumbai.",
+      "A compassionate perfectionist, he has transformed the lives of thousands of patients. He is a member of the Indian Orthodontists Society and is specially trained in lingual braces and the Invisalign system.",
+    ],
+    specialties: [
+      "Lingual Braces Specialist",
+      "Invisalign System",
+      "Dentofacial Orthopedics",
+      "Self-Ligating Braces",
+    ],
+  },
+  {
+    name: "Dr. Sidharth Shah",
+    title: "Orthodontics and Dentofacial Orthopaedics",
+    image: "/images/doctors/sid.jpeg", // Ensure you have this image in your public folder
+    description: [
+      "Dr. Sidharth Shah holds a BDS and MDS in Orthodontics. With over 11 years of experience, he is recognized as a Top 1% Invisalign provider in India.",
+      "As a Diamond Invisalign Provider, he has treated over 800 patients with clear aligner therapy. His practice focuses on advanced, aesthetic solutions and personalized, state-of-the-art care.",
+    ],
+    specialties: [
+      "Diamond Invisalign Provider",
+      "Clear Aligner Therapy",
+      "Aesthetic Solutions",
+      "Dentofacial Orthopaedics",
+    ],
+  },
+];
 
 export default function AboutPage() {
+  // --- React Hooks must be called at the top level of the component ---
+  const [activeDoctor, setActiveDoctor] = useState(0);
+
+  const nextDoctor = () => {
+    setActiveDoctor((prev) => (prev + 1) % doctors.length);
+  };
+
+  const prevDoctor = () => {
+    setActiveDoctor((prev) => (prev - 1 + doctors.length) % doctors.length);
+  };
+
+  const doctor = doctors[activeDoctor];
+  // --- End of React Hooks and related declarations ---
+
   return (
     <div className="w-full">
-
       {/* ── HERO SECTION ── */}
       <div className="w-full h-[82vh]  relative overflow-hidden">
         <Image
@@ -18,12 +66,17 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-sky-600/75 via-sky-500/40 to-transparent" />
         <div className="absolute inset-0 flex items-center">
           <div className="max-w-7xl mx-auto px-8 md:px-14">
-            <span className="inline-block text-black text-base md:text-lg font-bold uppercase tracking-widest mb-3">About Us</span>
+            <span className="inline-block text-black text-base md:text-lg font-bold uppercase tracking-widest mb-3">
+              About Us
+            </span>
             <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight mb-4 max-w-xl">
-              Caring for Your Smile,<br />Every Step of the Way
+              Caring for Your Smile,
+              <br />
+              Every Step of the Way
             </h1>
             <p className="text-slate-200 max-w-md text-sm md:text-base leading-relaxed mb-6">
-              Advanced dental care in a warm, comfortable environment — led by Dr. Sameer Gharat and his dedicated team.
+              Advanced dental care in a warm, comfortable environment — led by Dr.
+              Sameer Gharat and his dedicated team.
             </p>
             <Link
               href="/contact"
@@ -40,19 +93,23 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <span className="section-label text-lg! md:text-xl!">Welcome To</span>
           <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-6">
-            <span className="text-pink-500">Dental</span>{' '}
+            <span className="text-pink-500">Dental</span>{" "}
             <span className="text-sky-500">Essential</span>
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            At{' '}
+            At{" "}
             <span className="font-semibold">
-              <span className="text-pink-500">Dental</span>{' '}
+              <span className="text-pink-500">Dental</span>{" "}
               <span className="text-sky-500">Essential</span>
             </span>
-            , we believe a healthy smile is the key to confidence and well-being. Our expert team provides gentle, personalized care using the latest technology to keep your teeth healthy and your visits stress-free.
+            , we believe a healthy smile is the key to confidence and well-being.
+            Our expert team provides gentle, personalized care using the latest
+            technology to keep your teeth healthy and your visits stress-free.
           </p>
           <p className="text-gray-600 leading-relaxed">
-            From routine check-ups to advanced cosmetic and restorative procedures, we are committed to delivering outstanding dental care tailored to every patient&apos;s unique needs.
+            From routine check-ups to advanced cosmetic and restorative
+            procedures, we are committed to delivering outstanding dental care
+            tailored to every patient&apos;s unique needs.
           </p>
         </div>
       </section>
@@ -74,16 +131,20 @@ export default function AboutPage() {
           <div>
             <span className="section-label text-lg! md:text-xl!">Our Purpose</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-5 leading-tight">
-              <span className="text-pink-500">Our</span>{' '}
+              <span className="text-pink-500">Our</span>{" "}
               <span className="text-sky-500">Mission</span>
             </h2>
 
             <p className="text-gray-600 leading-relaxed mb-4">
-              Our mission is to deliver exceptional dental care that goes beyond treating teeth — we care for people. We believe every patient deserves to feel heard, respected, and at ease.
+              Our mission is to deliver exceptional dental care that goes beyond
+              treating teeth — we care for people. We believe every patient
+              deserves to feel heard, respected, and at ease.
             </p>
 
             <p className="text-gray-600 leading-relaxed mb-8">
-              By blending advanced technology with a gentle, personalized approach, we strive to support not just your oral health, but your overall well-being.
+              By blending advanced technology with a gentle, personalized
+              approach, we strive to support not just your oral health, but your
+              overall well-being.
             </p>
 
             <Link
@@ -91,22 +152,32 @@ export default function AboutPage() {
               className="inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-semibold text-sm transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Get in Touch
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2.5}
+                  d="M9 5l7 7-7 7"
+                />
               </svg>
             </Link>
           </div>
         </div>
       </section>
 
+
       {/* ── DOCTORS & STAFF SECTION ── */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <span className="section-label text-lg! md:text-xl!">Our Team</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-3 leading-tight">
-              <span className="text-pink-500">Our Doctors</span>{' '}
-              <span className="text-sky-500">&amp; Staff</span>
+              <span className="text-pink-500">Our</span>{' '}
+              <span className="text-sky-500">Team</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm">
               Meet our dedicated team of dental professionals committed to providing you with exceptional care and beautiful smiles.
@@ -125,16 +196,18 @@ export default function AboutPage() {
                 desc: "With 16+ years of experience, Dr. Sameer specialises in dental implants, crowns, bridges, and complete smile makeovers. He is a member of IDA & Indian Prosthodontic Society.",
                 objectPos: "object-top"
               },
-              {
-                image: "/images/about/orthodontist.png",
-                alt: "Visiting Orthodontist",
-                badge: "Visiting Specialist",
-                name: "Visiting Orthodontist",
-                role: "Braces & Aligners Specialist",
-                qual: "BDS, MDS – Orthodontics",
-                desc: "Expert in traditional braces, clear aligners, and jaw correction treatments. Available on scheduled days for consultations and follow-ups.",
-                objectPos: "object-top"
-              },
+            {
+  image: "/images/doctors/ansil.jpeg",
+  alt: "Visiting Orthodontist",
+  badge: "Visiting Specialist",
+  name: "Visiting Orthodontist",
+  role: "Braces & Aligners Specialist",
+  qual: "BDS, MDS – Orthodontics",
+  desc: "Expert in traditional braces, clear aligners, and jaw correction treatments. Available on scheduled days for consultations and follow-ups.",
+  objectPos: "object-cen  ter",
+  imageHeight: "h-4",
+  imageWidth: "w-[85%]",
+},
               {
                 image: "/images/about/dental.jpg",
                 alt: "Clinical Staff",
@@ -146,7 +219,7 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/about/reception.jpg",
+                image: "/images/about/reception.jpeg",
                 alt: "Front Desk Staff",
                 badge: "Front Desk",
                 name: "Reception Team",
@@ -156,7 +229,7 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/about/pediatric.jpg",
+                image: "/images/doctors/sid.jpeg",
                 alt: "Pediatric Dentist",
                 badge: "Visiting Specialist",
                 name: "Visiting Pediatric Dentist",
@@ -166,7 +239,7 @@ export default function AboutPage() {
                 objectPos: "object-top"
               },
               {
-                image: "/images/about/steralization.jpg",
+                image: "/images/about/ster.jpeg",
                 alt: "Sterilization Staff",
                 badge: "Hygiene Team",
                 name: "Sterilisation Team",
@@ -203,17 +276,156 @@ export default function AboutPage() {
         </div>
       </section>
 
+
+      {/* ── DOCTORS SLIDER SECTION ── */}
+      <section className="py-16 bg-[#f5f5f5] overflow-hidden">
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-sky-500 font-bold text-sm  text-2xl md:text-4xl ">
+                <span className="text-pink-500">Our</span>{" "}
+              <span className="text-sky-500">Doctors</span>
+            </span>
+
+            <h2 className="mt-2 text-2xl md:text-4xl font-bold text-gray-900 leading-tight max-w-3xl mx-auto">
+              Our Specialist Doctors Committed to
+              <br />
+              Your Dental Well-being
+            </h2>
+          </div>
+
+          <div className="relative grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
+            {/* Left Side */}
+            <div className="relative flex justify-center lg:justify-start">
+              <div className="absolute left-2 top-1/2 -translate-y-1/2 w-[85%] h-[72%] rounded-[28px] bg-sky-100" />
+
+              <button
+                onClick={prevDoctor}
+                className="absolute left-0 lg:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <div className="relative ml-25 z-10 w-[270px] md:w-[320px] h-[360px] md:h-[400px] overflow-hidden  shadow-lg">
+                <Image
+                  src={doctor.image}
+                  alt={doctor.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            </div>
+
+            {/* Right Side */}
+            <div className="relative">
+              <button
+                onClick={nextDoctor}
+                className="hidden lg:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white items-center justify-center shadow-md hover:bg-sky-600 transition"
+              >
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
+                {doctor.name}
+              </h3>
+
+              <p className="text-sky-500 font-semibold text-xs md:text-sm mb-5">
+                {doctor.title}
+              </p>
+
+              <div className="space-y-3 text-gray-600 text-xs md:text-sm leading-6 md:leading-7">
+                {doctor.description.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-x-6 gap-y-3 mt-7 mb-7">
+                {doctor.specialties.map((item) => (
+                  <div
+                    key={item}
+                    className="flex items-center gap-2 text-gray-700 text-xs md:text-sm font-medium"
+                  >
+                    <div className="w-5 h-5 rounded-full border-2 border-green-500 flex items-center justify-center text-green-500 shrink-0">
+                      <svg
+                        className="w-3 h-3"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={3}
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    </div>
+                    <span>{item}</span>
+                  </div>
+                ))}
+              </div>
+
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-lg bg-sky-500 px-6 py-2.5 text-xs md:text-sm font-semibold text-white shadow-md transition hover:bg-sky-600"
+              >
+                Book an appointment
+              </Link>
+
+              {/* Slider Dots */}
+              <div className="mt-7 flex items-center gap-2.5">
+                {doctors.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveDoctor(index)}
+                    className={`h-2.5 w-2.5 rounded-full transition-all ${
+                      activeDoctor === index
+                        ? "bg-sky-500 scale-110"
+                        : "border border-gray-400 bg-transparent"
+                    }`}
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── FACILITIES SECTION ── */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <span className="section-label text-lg! md:text-xl!">Our Clinic</span>
             <h2 className="text-3xl md:text-4xl font-bold mt-1 mb-3 leading-tight">
-              <span className="text-pink-500">State-of-the-Art</span>{' '}
+              <span className="text-pink-500">State-of-the-Art</span>{" "}
               <span className="text-sky-500">Facilities</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm">
-              Step inside our modern, welcoming clinic designed for your comfort and equipped with cutting-edge dental technology.
+              Step inside our modern, welcoming clinic designed for your comfort
+              and equipped with cutting-edge dental technology.
             </p>
           </div>
 
@@ -243,12 +455,13 @@ export default function AboutPage() {
 
             <div className="bg-gradient-to-br from-pink-500 to-sky-500 rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
               <span className="text-4xl font-extrabold">16+</span>
-              <span className="text-white/90 text-sm mt-2 font-medium">Years of Excellence</span>
+              <span className="text-white/90 text-sm mt-2 font-medium">
+                Years of Excellence
+              </span>
             </div>
           </div>
         </div>
       </section>
-
     </div>
   );
 }
