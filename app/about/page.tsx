@@ -197,16 +197,16 @@ export default function AboutPage() {
                 objectPos: "object-top"
               },
 {
-  image: "/images/about/ansil.jpeg",
-  alt: "Visiting Orthodontist",
-  badge: "Visiting Specialist",
-  name: "Visiting Orthodontist",
-  role: "Braces & Aligners Specialist",
-  qual: "BDS, MDS – Orthodontics",
-  desc: "Expert in traditional braces, clear aligners, and jaw correction treatments. Available on scheduled days for consultations and follow-ups.",
+  image: "/images/doctors/Nikita.jpeg",
+  alt: "Dr. Nikita Mohokar",
+  badge: "Associate Dentist",
+  name: "Dr. Nikita Mohokar",
+  role: "Associate Dentist",
+  qual: "BDS",
+  desc: "Dr. Nikita Mohokar provides patient-focused dental care with a gentle approach and attention to comfort at every visit.",
   
-  objectPos: "object-top",  
-  imageHeight: "h-68",       
+  objectPos: "object-center",  
+  cardImageHeight: "h-80",       
   imageWidth: "w-full",
 },
               {
@@ -230,14 +230,14 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/about/sidharth.jpeg",
-                alt: "Pediatric Dentist",
+                image: "/images/doctors/somya.jpeg",
+                alt: "Dr. Somya Goel",
                 badge: "Visiting Specialist",
-                name: "Visiting Pediatric Dentist",
+                name: "Dr. Somya Goel",
                 role: "Children's Dental Specialist",
                 qual: "BDS, MDS – Pedodontics",
-                desc: "Specialised in treating children with gentle care, making dental visits fun and fear-free for your little ones.",
-                objectPos: "object-top",
+                desc: "Specialised in treating children with gentle care, making dental visits fun and fear-free for your little ones. Dr. Somya Goel",
+                objectPos: "object-center",
                  imageHeight: "h-68",       
                  imageWidth: "w-full",
               },
@@ -258,7 +258,7 @@ export default function AboutPage() {
                 key={member.name}
                 className="bg-white rounded-2xl overflow-hidden border border-sky-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className="relative h-64 bg-sky-50">
+                <div className={`relative ${member.cardImageHeight ?? "h-64"} bg-sky-50`}>
                   <Image
                     src={member.image}
                     alt={member.alt}
@@ -457,7 +457,7 @@ export default function AboutPage() {
               </div>
             ))}
 
-            <div className="bg-gradient-to-br from-pink-500 to-sky-500 rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
+            <div className="bg-gradient-to-br from-sky-500 via-sky-600 to-blue-600 rounded-2xl p-6 flex flex-col justify-center items-center text-white shadow-lg">
               <span className="text-4xl font-extrabold">16+</span>
               <span className="text-white/90 text-sm mt-2 font-medium">
                 Years of Excellence
