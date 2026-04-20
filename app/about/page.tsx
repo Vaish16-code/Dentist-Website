@@ -188,7 +188,7 @@ export default function AboutPage() {
             {[
               {
                 image: "/images/doctor.jpeg",
-                alt: "Dr. Sameer Ramchandra Gharat",
+                alt: "Dr. Sameer R. Gharat",
                 badge: "Chief Dentist",
                 name: "Dr. Sameer Ramchandra Gharat",
                 role: "Prosthodontist & Implantologist",
@@ -196,17 +196,18 @@ export default function AboutPage() {
                 desc: "With 16+ years of experience, Dr. Sameer specialises in dental implants, crowns, bridges, and complete smile makeovers. He is a member of IDA & Indian Prosthodontic Society.",
                 objectPos: "object-top"
               },
-            {
-  image: "/images/doctors/ansil.jpeg",
+{
+  image: "/images/about/ansil.jpeg",
   alt: "Visiting Orthodontist",
   badge: "Visiting Specialist",
   name: "Visiting Orthodontist",
   role: "Braces & Aligners Specialist",
   qual: "BDS, MDS – Orthodontics",
   desc: "Expert in traditional braces, clear aligners, and jaw correction treatments. Available on scheduled days for consultations and follow-ups.",
-  objectPos: "object-cen  ter",
-  imageHeight: "h-4",
-  imageWidth: "w-[85%]",
+  
+  objectPos: "object-top",  
+  imageHeight: "h-68",       
+  imageWidth: "w-full",
 },
               {
                 image: "/images/about/dental.jpg",
@@ -229,24 +230,28 @@ export default function AboutPage() {
                 objectPos: "object-center"
               },
               {
-                image: "/images/doctors/sid.jpeg",
+                image: "/images/about/sidharth.jpeg",
                 alt: "Pediatric Dentist",
                 badge: "Visiting Specialist",
                 name: "Visiting Pediatric Dentist",
                 role: "Children's Dental Specialist",
                 qual: "BDS, MDS – Pedodontics",
                 desc: "Specialised in treating children with gentle care, making dental visits fun and fear-free for your little ones.",
-                objectPos: "object-top"
+                objectPos: "object-top",
+                 imageHeight: "h-68",       
+                 imageWidth: "w-full",
               },
               {
-                image: "/images/about/ster.jpeg",
+                image: "/images/about/sterlization.jpeg",
                 alt: "Sterilization Staff",
                 badge: "Hygiene Team",
                 name: "Sterilisation Team",
                 role: "Infection Control Specialists",
                 qual: "Certified in Sterilisation Protocols",
                 desc: "Ensuring the highest standards of hygiene and sterilisation for all instruments and equipment used in treatments.",
-                objectPos: "object-center"
+                objectPos: "object-top",
+                imageHeight: "h-68",       
+                imageWidth: "w-full",
               },
             ].map((member) => (
               <div
@@ -296,7 +301,6 @@ export default function AboutPage() {
           <div className="relative grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
             {/* Left Side */}
             <div className="relative flex justify-center lg:justify-start">
-              <div className="absolute left-2 top-1/2 -translate-y-1/2 w-[85%] h-[72%] rounded-[28px] bg-sky-100" />
 
               <button
                 onClick={prevDoctor}
