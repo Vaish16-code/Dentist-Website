@@ -11,8 +11,21 @@ export default function HomePage() {
   return (
     <main>
      {/* HERO SECTION */}
-      <section className="relative bg-white py-2 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+      <section className="relative py-2 overflow-hidden">
+        <div className="absolute inset-0" aria-hidden="true">
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+          >
+            <source src="/videos/home%20video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div>
             <span className="inline-block bg-sky-100 text-sky-600 px-4 py-1.5 rounded-full text-base md:text-lg lg:text-xl font-semibold">
                  Top Notch Dental Services in Panvel
@@ -25,7 +38,7 @@ export default function HomePage() {
               </span>
             </h1>
 
-            <p className="mt-6 text-gray-600 max-w-xl">
+            <p className="mt-6 text-gray-800 max-w-xl">
               At{' '}
               <span className="font-semibold">
                 <span className="text-pink-500">Dental</span>{' '}
@@ -57,17 +70,7 @@ export default function HomePage() {
 
           {/* HERO IMAGE */}
           <div className="relative flex justify-center items-center mt-8 md:mt-0">
-            <div className="absolute w-72 h-72 sm:w-80 sm:h-80 md:w-105 md:h-105 bg-sky-400 rounded-full blur-2xl"></div>
-            <div className="absolute w-80 h-80 sm:w-96 sm:h-96 md:w-115 md:h-115 bg-sky-300 rounded-full"></div>
-
             <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-125 md:h-150 max-w-full animate-float">
-              <Image
-                src="/images/home/babypic.png"
-                alt="Happy Child Brushing Teeth"
-                fill
-                className="object-contain drop-shadow-2xl"
-                priority
-              />
             </div>
           </div>
         </div>
