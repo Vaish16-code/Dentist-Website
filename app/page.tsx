@@ -80,7 +80,7 @@ export default function HomePage() {
             <div className="absolute -left-4 -top-4 w-20 h-20 bg-sky-100 rounded-md hidden md:block" />
             <div className="relative rounded-3xl overflow-hidden border-4 border-sky-100 shadow-lg">
               <Image
-                src="/images/about/reception.jpg"
+                src="/images/home/receptionteam.jpeg"
                 alt="Dental Essential reception"
                 width={700}
                 height={500}
