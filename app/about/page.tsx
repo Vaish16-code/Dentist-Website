@@ -287,7 +287,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-sky-500 font-bold text-sm  text-2xl md:text-4xl ">
-                <span className="text-pink-500">Specialists</span>{" "}
+                <span className="text-pink-500">Visiting Specialists</span>{" "}
               <span className="text-sky-500">on Panel.</span>
             </span>
 

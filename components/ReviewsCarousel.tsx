@@ -3,41 +3,41 @@
 import { useState } from 'react';
 
 const reviews = [
-  { 
-    name: "Sakshi Kolse", 
-    initial: "S", 
-    date: "Google Review", 
-    review: "It was a great experience with Dr. Gharat. The treatment was extremely smooth, painless, and well-managed. There was almost no waiting time, and the staff was very supportive throughout. I previously had a trauma related to a root canal treatment, but this time the entire procedure was completely pain-free. The clinic is very hygienic as well." 
+  {
+    name: "manali karande",
+    initial: "M",
+    date: "Google Review",
+    review: "As a self aware difficult patient, it's very hard for me to trust and be calm during treatments. But my whole treatment with Dr Sameer has been so tension free and comfortable, I needed A LOT of things fixed from cavities to aesthetic and my decision to get everything done from Dr Sameer was absolutely correct! He understood what exactly I needed and has done such a fantastic job on my teeth and my families teeth as well. He gave me the confidence to smile on cameras :) Now if I ask anyone to guess which of my front teeth are fake, people ALWAYS choose the real one! being an EXTREMELY anxious person when it comes to health, it was a 1000/100 experience, even during Covid. He even educated us on how a healthy dental care routine should be, we have been following that and my pearly whites are still flawless! Here I am after almost 8 months since my very long treatment got done, waiting for my routine checkup (which we never bothered to do before), happily waiting for the doc :) You can put your faith on Dr Sameer & team"
   },
-  { 
-    name: "Ved G", 
-    initial: "V", 
-    date: "Google Review", 
-    review: "The dentists were very professional. I had a very professional experience at this dental clinic. The dentists explained every procedure clearly and the staff was also very cooperative and welcoming." 
+  {
+    name: "Dev Wable",
+    initial: "D",
+    date: "Google Review",
+    review: "I can't say enough good things about Dr. Sameer Gharat! I came in with 7 deep cavities and was honestly pretty nervous, but he made the entire process feel effortless. He was incredibly caring, patient, and made sure I felt comfortable every step of the way. Each visit was smooth, and he took the time to explain everything clearly without ever rushing. You can tell he truly cares about his patients and takes pride in his work. I'm so grateful to have found such a skilled and compassionate dentist - highly recommend!"
   },
-  { 
-    name: "Dev Wable", 
-    initial: "D", 
-    date: "Google Review", 
-    review: "I can't say enough good things about Dr. Sameer Gharat! I came in with 7 deep cavities and was honestly pretty nervous, but he made the entire process feel effortless. He was incredibly caring, patient, and made sure I felt comfortable every step of the way. Each visit was smooth, and he took the time to explain everything clearly without ever rushing. You can tell he truly cares about his patients and takes pride in his work. I'm so grateful to have found such a skilled and compassionate dentist — highly recommend!" 
+  {
+    name: "Indira N Menon Narayana kutty Menon",
+    initial: "I",
+    date: "Google Review",
+    review: "I came to see Dr Sameer Gharat for removal of my teeth in the front jaw. He advised me not to remove the natural teeth and he did root canal and saved my teeth. So I was able to put partial denture on the existing teeth. The entire procedure was painless. I appreciate the Doctor for his prompt and sincere treatment. I recommend everyone to consult Sameer Gharat for dental problems and wish him all success in future."
   },
-  { 
-    name: "Sfurti Sinha", 
-    initial: "S", 
-    date: "Google Review", 
-    review: "Superb experience. I have been receiving treatment from Dr. Sameer since last one year. My entire dental situation was explained beautifully before the treatment started. The entire process went smoothly. Utmost care was taken by everyone including Shruti, Dr. Nikita, and of course Dr. Sameer so that I received the best care. Care with personal touch. Highly recommended." 
+  {
+    name: "Jaydas Sakhare",
+    initial: "J",
+    date: "Google Review",
+    review: "I grew up having a horrible, sadistic dentist, I still have a lot of anxiety going to the dentist. Dr. Sameer is a great dentist with latest equipped operatory with a very soft hand helped repair the tooth's over the root canal tooth and composite fillings. Dr. Sameer and his staff have consistently taken great care of me. If I'm nervous, he'll take the time to talk me through my anxiety. He really cares about his patients and is great at getting you in quick if you are in an emergency. I recommend him to all my friends and neighbors. I highly recommend Dr. Sameer if you are nervous at the dentist because he and his staff's warm personality is greatly helping me overcome my fear of the dentist! Thanks Dr. Sameer"
   },
-  { 
-    name: "Pratiksha Kharat", 
-    initial: "P", 
-    date: "Google Review", 
-    review: "It was a good experience. The doctors and staff are so polite and co-operative. They make sure you are comfortable during the whole treatment. Staff member Shruti is very friendly and sweet. I would definitely recommend this clinic." 
+  {
+    name: "hareendran kn",
+    initial: "H",
+    date: "Google Review",
+    review: "I have undergone dental restoration treatment at Dental Essentials Clinic, Panvel. The procedure involved placing 7 implants and saving few decayed teeth. I had approached Dr. Sameer Gharat with a bit of skepticism as I was earlier diagnosed with very low bone density. However Dr. Sameer explained to me the latest breakthroughs in dental implantology and gave me the confidence to go for the treatment. He is highly skilled and practices the latest procedures in an ultra clean modern clinic. I have no hesitation to recommend him to patients requiring advanced treatment. Thank you Dr. Sameer and his staff"
   },
-  { 
-    name: "Jyotsna Kamble", 
-    initial: "J", 
-    date: "Google Review", 
-    review: "Coming to Dental Essential was very good. It was a different experience compared to other clinics. Dental equipment is advanced. Dr. Sameer has good experience, provides painless treatment, and the staff treated me very well." 
+  {
+    name: "kirti shah",
+    initial: "K",
+    date: "Google Review",
+    review: "We live in USA. I came to Panvel and I heard about this clinic. My wife had dental implants. Dr. Sameer is very professional and perfectionist. We are very satisfied with his treatment. He did very good job. I will highly recommend him for any dental treatment. We are fortunate to have him as a dentist."
   },
 ];
 

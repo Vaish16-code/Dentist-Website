@@ -349,9 +349,9 @@ Every patient at Dental Essential receives personalized attention. We take time 
 
 ### What Our Patients Say
 
-★★★★★ *"The treatment was extremely smooth, painless, and well-managed. I previously had trauma related to root canal, but this time the entire procedure was completely pain-free."* — Sakshi Kolse
+★★★★★ *"As a self aware difficult patient, it's very hard for me to trust and be calm during treatments. But my whole treatment with Dr Sameer has been so tension free and comfortable. He gave me the confidence to smile on cameras."* — manali karande
 
-★★★★★ *"Dr. Sameer Gharat is incredibly caring and patient. Each visit was smooth and he truly cares about his patients."* — Dev Wable
+★★★★★ *"I came in with 7 deep cavities and was honestly pretty nervous, but Dr. Sameer made the entire process feel effortless. He was incredibly caring, patient, and made sure I felt comfortable every step of the way."* — Dev Wable
 
 ### Convenient Location & Hours
 

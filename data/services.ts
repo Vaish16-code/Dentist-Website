@@ -106,8 +106,8 @@ export const services: Service[] = [
     slug: "smile-designing",
     title: "Smile Designing and Correction",
     shortDescription: "Transform your smile with our comprehensive cosmetic dentistry solutions.",
-    image: "/images/services/smile-correction.jpg",
-    bannerImage: "/images/services/smile-correction.jpg",
+    image: "/images/services/smile-correction.jpeg",
+    bannerImage: "/images/services/smile-correction.jpeg",
     description: "Smile designing is a comprehensive approach to enhancing your smile using various cosmetic dental procedures. We analyze your facial features, tooth shape, and personal preferences to create a customized treatment plan that gives you the smile of your dreams.",
     benefits: [
       "Customized to your facial features",
