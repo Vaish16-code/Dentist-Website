@@ -4,10 +4,10 @@ import Link from "next/link";
 import { useState } from "react"; // Import useState hook
 
 const doctors = [
-{
+  {
     name: "Dr. Ansil Pappachan",
     title: "Consultant Braces Treatment Specialist (Orthodontist)",
-    image: "/images/doctors/ansil.jpeg", // Ensure you have this image in your public folder
+    image: "/images/doctors/ansil.jpeg",
     description: [
       "A Post graduate from the renowned College of Dental Sciences, Dharwad, Dr. Ansil brings over 12 years of specialized experience. He has become one of the most sought-after braces specialists in Mumbai.",
       "A compassionate perfectionist, he has transformed the lives of thousands of patients. He is a member of the Indian Orthodontists Society and is specially trained in lingual braces and the Invisalign system.",
@@ -19,10 +19,11 @@ const doctors = [
       "Self-Ligating Braces",
     ],
   },
+
   {
     name: "Dr. Sidharth Shah",
     title: "Orthodontics and Dentofacial Orthopaedics",
-    image: "/images/doctors/sid.jpeg", // Ensure you have this image in your public folder
+    image: "/images/doctors/sid.jpeg",
     description: [
       "Dr. Sidharth Shah holds a BDS and MDS in Orthodontics. With over 11 years of experience, he is recognized as a Top 1% Invisalign provider in India.",
       "As a Diamond Invisalign Provider, he has treated over 800 patients with clear aligner therapy. His practice focuses on advanced, aesthetic solutions and personalized, state-of-the-art care.",
@@ -32,6 +33,83 @@ const doctors = [
       "Clear Aligner Therapy",
       "Aesthetic Solutions",
       "Dentofacial Orthopaedics",
+    ],
+  },
+
+  // ✅ Dr Soumya Goel (UPDATED FULL DATA)
+  {
+    name: "Dr. Soumya Goel",
+    title: "MDS (Paediatric Dentistry)",
+    image: "/images/doctors/somya.jpeg",
+    description: [
+      "Dr Soumya Goel is a Paediatric Dentist. She has completed her Master from Bharati Vidyapeeth Dental College and Hospital, Navi Mumbai.",
+      "Dr Soumya has expertise in preventive and paediatric dental procedures like Pulpectomy, Fluoride application, space maintenance, as well as behaviour management in children.",
+    ],
+    specialties: [
+      "Pulpectomy",
+      "Fluoride Application",
+      "Space Maintenance",
+      "Paediatric Dentistry",
+      "Behaviour Management in Children",
+    ],
+  },
+
+  // ✅ Dr Amit Bhirani (FULL DATA)
+  {
+    name: "Dr. Amit Bhirani",
+    title: "MDS Periodontics",
+    image: "/images/doctors/amit.jpeg",
+    description: [
+      "Dr. Amit Bhirani studied BDS and MDS in Periodontics and Oral Implantology at the reputed DY Patil Dental College and Hospital.",
+      "Dr. Bhirani’s expertise has garnered him recognition, including the prestigious Best Implantologist of the Year award presented by Famdent Excellence in Dentistry awards.",
+      "His specialization encompasses a range of dental procedures, including Dental Implants, Painless Single-Sitting Root Canal Treatments, Laser Dentistry, Gum Surgeries, and Smile Makeovers.",
+      "Dr. Bhirani, alongside his dedicated team, consistently endeavors to deliver top-notch care and service to their patients.",
+    ],
+    specialties: [
+      "Dental Implants",
+      "Laser Dentistry",
+      "Gum Surgeries",
+      "Smile Makeovers",
+      "Single Sitting RCT",
+    ],
+  },
+
+  // ✅ Dr Aditya Shinde (FULL DATA)
+  {
+    name: "Dr. Aditya Shinde",
+    title: "MDS (Endodontics) – Root Canal Specialist",
+    image: "/images/doctors/aditya.jpeg",
+    description: [
+      "Dr. Aditya has completed his Masters in Endodontics from DY Patil Dental College and Hospital, Nerul.",
+      "He is specialised in complex root canal treatments, root canals of 3rd molars, tilted roots and Re-RCT cases.",
+      "He is currently serving as an Associate Professor in the Department of Endodontics at MGM Dental College and Hospital, Kamothe.",
+    ],
+    specialties: [
+      "Complex Root Canals",
+      "Re-RCT Cases",
+      "3rd Molar RCT",
+      "Tilted Roots",
+      "Endodontics Specialist",
+    ],
+  },
+
+  // ✅ Dr Niranjan Patil (FULL DATA)
+  {
+    name: "Dr. Niranjan Patil",
+    title: "MDS (Oral & Maxillofacial Surgery)",
+    image: "/images/doctors/niranjan.jpeg",
+    description: [
+      "Dr. Niranjan S. Patil holds a Master’s degree in Oral and Maxillofacial Surgery and a Fellowship in Implantology from a prestigious institution affiliated with Rajiv Gandhi University of Health Sciences, Bangalore.",
+      "Additionally, he has earned an AO certification in Trauma.",
+      "Dr. Patil has worked with renowned healthcare establishments such as Bombay Hospital, Apollo Clinics in Mumbai, and Reliance Hospitals as a skilled operating surgeon.",
+      "His area of specialization includes a wide spectrum of oral and facial procedures, from routine tooth extractions to complex trauma and lesion cases.",
+    ],
+    specialties: [
+      "Oral Surgery",
+      "Facial Trauma",
+      "Tooth Extraction",
+      "Implantology",
+      "Oral Lesions Treatment",
     ],
   },
 ];
@@ -229,18 +307,7 @@ export default function AboutPage() {
                 desc: "Our friendly reception team handles appointments, insurance queries, and ensures you feel welcomed from the moment you walk in.",
                 objectPos: "object-center"
               },
-              {
-                image: "/images/doctors/somya.jpeg",
-                alt: "Dr. Somya Goel",
-                badge: "Visiting Specialist",
-                name: "Dr. Somya Goel",
-                role: "Children's Dental Specialist",
-                qual: "BDS, MDS – Pedodontics",
-                desc: "Specialised in treating children with gentle care, making dental visits fun and fear-free for your little ones. Dr. Somya Goel",
-                objectPos: "object-center",
-                 imageHeight: "h-68",       
-                 imageWidth: "w-full",
-              },
+
               {
                 image: "/images/about/sterlization.jpeg",
                 alt: "Sterilization Staff",

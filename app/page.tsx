@@ -4,11 +4,16 @@ import Image from 'next/image';
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import DoctorProfileCarousel from "@/components/DoctorProfileCarousel";
 import { services } from '@/data/services';
+import AppointmentPopup from "@/components/AppointmentPopup";
+
 
 export default function HomePage() {
   const featuredServices = services.slice(0, 5);
 
   return (
+    <>
+    <AppointmentPopup />
+
     <main>
      {/* HERO SECTION */}
       <section className="relative py-2 overflow-hidden">
@@ -174,5 +179,6 @@ export default function HomePage() {
       {/* GOOGLE REVIEWS SECTION */}
       <ReviewsCarousel />
     </main>
+     </>
   );
 }

@@ -49,8 +49,7 @@ export default function Navbar() {
   ];
 
   // Common palette for nav accents
-  const topBarBg = 'bg-[#d3ddea] border-[#c3cfdd]';
-  const accentText = 'text-slate-700';
+const topBarBg = 'bg-[#00AFCB] border-[#009BB3]';  const accentText = 'text-slate-700';
   const hoverText = 'hover:text-slate-700';
   const underline = 'bg-slate-700';
   const dropdownHover = 'hover:bg-slate-50 hover:text-slate-700';
@@ -60,7 +59,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50">
 
       {/* TOP BAR */}
-      <div className={`${topBarBg} text-slate-700 border-b shadow-sm`}>
+      <div className={`${topBarBg} text-slate-700 border-b shadow-sm py-1`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
 
           <div className="flex sm:hidden items-center justify-center gap-1.5 py-1 text-slate-700 text-xs border-b border-[#c3cfdd]">
@@ -69,14 +68,14 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center justify-between py-1.5">
-            <div className="hidden sm:flex items-center gap-2 text-slate-700 text-sm whitespace-nowrap">
+            <div className="hidden sm:flex items-center gap-2 text-white text-base md:text-sm whitespace-nowrap">
               <img src="/images/clock-icon.svg" className="w-4 h-4" alt="Clock" />
               <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
             </div>
 
             <div className="flex items-center gap-3 sm:gap-5 ml-auto whitespace-nowrap">
               <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0">
-                <img src="/images/practo-logo.png" className="h-6 sm:h-9 md:h-11 w-auto" alt="Practo" />
+                <img src="/images/practo-logo.png" className="h-6 md:h-8 lg:h-10 w-auto" alt="Practo" />
               </a>
 
               <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
