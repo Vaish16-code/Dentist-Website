@@ -22,16 +22,16 @@ const reviews = [
     review: "I came to see Dr Sameer Gharat for removal of my teeth in the front jaw. He advised me not to remove the natural teeth and he did root canal and saved my teeth. So I was able to put partial denture on the existing teeth. The entire procedure was painless. I appreciate the Doctor for his prompt and sincere treatment. I recommend everyone to consult Sameer Gharat for dental problems and wish him all success in future."
   },
   {
-    name: "Jaydas Sakhare",
-    initial: "J",
+    name: "Pooja Singh",
+    initial: "P",
     date: "Google Review",
-    review: "I grew up having a horrible, sadistic dentist, I still have a lot of anxiety going to the dentist. Dr. Sameer is a great dentist with latest equipped operatory with a very soft hand helped repair the tooth's over the root canal tooth and composite fillings. Dr. Sameer and his staff have consistently taken great care of me. If I'm nervous, he'll take the time to talk me through my anxiety. He really cares about his patients and is great at getting you in quick if you are in an emergency. I recommend him to all my friends and neighbors. I highly recommend Dr. Sameer if you are nervous at the dentist because he and his staff's warm personality is greatly helping me overcome my fear of the dentist! Thanks Dr. Sameer"
+    review: "It was a great experience being treated by Dr. Sameer Sir. He follows a modern approach and explains every aspect of the treatment with great patience, which made me feel comfortable and well-informed throughout the process. The treatment was smooth and well-managed. The clinic is equipped with the latest technology and maintains a high standard of hygiene. The entire team is courteous, friendly, and supportive. Overall, it was an excellent experience, and I would highly recommend their services. 👍☺️"
   },
   {
-    name: "hareendran kn",
+    name: "sfurti sinha",
     initial: "H",
     date: "Google Review",
-    review: "I have undergone dental restoration treatment at Dental Essentials Clinic, Panvel. The procedure involved placing 7 implants and saving few decayed teeth. I had approached Dr. Sameer Gharat with a bit of skepticism as I was earlier diagnosed with very low bone density. However Dr. Sameer explained to me the latest breakthroughs in dental implantology and gave me the confidence to go for the treatment. He is highly skilled and practices the latest procedures in an ultra clean modern clinic. I have no hesitation to recommend him to patients requiring advanced treatment. Thank you Dr. Sameer and his staff"
+    review: "Superb experience. I have been receiving the treatment from Dr. Sameer since last one year. My entire dental situation was explained beautifully before the treatment started. The entire process went smoothly. Utmost care was taken by everyone including Shruti, Dr. Nikita and of course Dr. Sameer that i receive the best of the deals. Care with personal touch. Highly recommended."
   },
   {
     name: "kirti shah",
