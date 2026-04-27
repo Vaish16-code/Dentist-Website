@@ -202,7 +202,7 @@ export default function AboutPage() {
               alt="Our Mission"
               width={400}
               height={350}
-              className="rounded-2xl shadow-xl ml-20 relative border border-sky-100"
+              className="relative mx-auto w-full max-w-sm rounded-2xl border border-sky-100 shadow-xl md:ml-8 lg:ml-16"
             />
           </div>
 
@@ -353,7 +353,7 @@ export default function AboutPage() {
       <section className="py-16 bg-[#f5f5f5] overflow-hidden">
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-sky-500 font-bold text-sm  text-2xl md:text-4xl ">
+            <span className="text-sky-500 font-bold text-2xl md:text-4xl">
                 <span className="text-pink-500">Visiting Specialists</span>{" "}
               <span className="text-sky-500">on Panel.</span>
             </span>
@@ -371,7 +371,7 @@ export default function AboutPage() {
 
               <button
                 onClick={prevDoctor}
-                className="absolute left-0 lg:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
+                className="absolute left-2 sm:left-0 lg:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
               >
                 <svg
                   className="w-4 h-4"
@@ -388,7 +388,7 @@ export default function AboutPage() {
                 </svg>
               </button>
 
-              <div className="relative ml-25 z-10 w-[270px] md:w-[320px] h-[360px] md:h-[400px] overflow-hidden  shadow-lg">
+              <div className="relative z-10 mx-auto w-[260px] sm:w-[320px] h-[340px] sm:h-[420px] lg:h-[400px] overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src={doctor.image}
                   alt={doctor.name}
@@ -505,7 +505,7 @@ export default function AboutPage() {
               <img
                 src="/images/gallery/clinic-1.png"
                 alt="Modern Treatment Room"
-                className="w-full h-full min-h-[300px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.01] border border-sky-100"
+                className="w-full h-full min-h-[240px] sm:min-h-[300px] object-cover rounded-2xl shadow-lg hover:shadow-xl transition-all hover:scale-[1.01] border border-sky-100"
               />
             </div>
 

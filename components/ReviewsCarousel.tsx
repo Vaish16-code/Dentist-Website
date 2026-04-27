@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const reviews = [
   {
@@ -42,9 +42,26 @@ const reviews = [
 ];
 
 export default function ReviewsCarousel() {
+  const [cardsToShow, setCardsToShow] = useState(1);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsToShow = 2;
-  const maxIndex = Math.ceil(reviews.length / cardsToShow) - 1;
+  const maxIndex = Math.max(0, Math.ceil(reviews.length / cardsToShow) - 1);
+
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      setCardsToShow(window.innerWidth >= 768 ? 2 : 1);
+    };
+
+    updateCardsToShow();
+    window.addEventListener('resize', updateCardsToShow);
+
+    return () => window.removeEventListener('resize', updateCardsToShow);
+  }, []);
+
+  useEffect(() => {
+    if (currentIndex > maxIndex) {
+      setCurrentIndex(maxIndex);
+    }
+  }, [currentIndex, maxIndex]);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev >= maxIndex ? 0 : prev + 1));
@@ -107,6 +124,7 @@ export default function ReviewsCarousel() {
         <div className="flex justify-center gap-3">
           <button
             onClick={prevSlide}
+            type="button"
             className="w-12 h-12 rounded-lg border-2 border-sky-200 flex items-center justify-center hover:border-sky-500 hover:bg-sky-50 transition-all duration-200"
           >
             <svg className="w-5 h-5 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -115,6 +133,7 @@ export default function ReviewsCarousel() {
           </button>
           <button
             onClick={nextSlide}
+            type="button"
             className="w-12 h-12 rounded-lg border-2 border-sky-500 bg-sky-50 flex items-center justify-center hover:bg-sky-100 transition-all duration-200"
           >
             <svg className="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

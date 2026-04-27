@@ -45,7 +45,7 @@ export default function DoctorProfileCarousel() {
           <div className="grid md:grid-cols-2 gap-0">
 
             {/* Image Carousel */}
-              <div className="relative h-[550px] md:h-[650px] bg-gradient-to-br from-amber-50 to-white">              
+              <div className="relative h-[360px] sm:h-[500px] md:h-[650px] bg-gradient-to-br from-amber-50 to-white">              
               {/* Decorative dots */}
               <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block z-10">
                 <div className="grid grid-cols-6 gap-2 p-4">
@@ -56,11 +56,11 @@ export default function DoctorProfileCarousel() {
               </div>
 
               {/* Images */}
-              <div className="relative h-full w-full p-2">
+              <div className="relative h-full w-full p-2 sm:p-3">
                 {slides.map((slide, index) => (
                   <div
                     key={index}
-                    className={`absolute inset-8 transition-opacity duration-500 ${
+                    className={`absolute inset-4 sm:inset-8 transition-opacity duration-500 ${
                       currentSlide === index
                         ? 'opacity-100'
                         : 'opacity-0 pointer-events-none'
@@ -85,6 +85,7 @@ export default function DoctorProfileCarousel() {
                 {slides.map((_, index) => (
                   <button
                     key={index}
+                    type="button"
                     onClick={() => setCurrentSlide(index)}
                     className={`w-2 h-2 rounded-full transition-all ${
                       currentSlide === index
@@ -163,6 +164,7 @@ export default function DoctorProfileCarousel() {
           <div className="flex justify-center gap-4 pb-8">
             <button
               onClick={prevSlide}
+              type="button"
               className="w-10 h-10 rounded-full border-2 border-gray-800 flex items-center justify-center hover:bg-gray-800 hover:text-white transition"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -172,6 +174,7 @@ export default function DoctorProfileCarousel() {
 
             <button
               onClick={nextSlide}
+              type="button"
               className="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-700 transition"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
