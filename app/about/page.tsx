@@ -61,16 +61,13 @@ const doctors = [
     image: "/images/doctors/amit.jpeg",
     description: [
       "Dr. Amit Bhirani studied BDS and MDS in Periodontics and Oral Implantology at the reputed DY Patil Dental College and Hospital.",
-      "Dr. Bhirani’s expertise has garnered him recognition, including the prestigious Best Implantologist of the Year award presented by Famdent Excellence in Dentistry awards.",
-      "His specialization encompasses a range of dental procedures, including Dental Implants, Painless Single-Sitting Root Canal Treatments, Laser Dentistry, Gum Surgeries, and Smile Makeovers.",
+      "His specialization encompasses various gum surgeries, bone grafting,sinus lifts etc.",
       "Dr. Bhirani, alongside his dedicated team, consistently endeavors to deliver top-notch care and service to their patients.",
     ],
     specialties: [
-      "Dental Implants",
-      "Laser Dentistry",
+      "Bone Grafting",
+      "Sinus Lifts",
       "Gum Surgeries",
-      "Smile Makeovers",
-      "Single Sitting RCT",
     ],
   },
 
@@ -294,7 +291,7 @@ export default function AboutPage() {
                 name: "Clinical Support Staff",
                 role: "Dental Assistants & Hygienists",
                 qual: "Trained & Certified Professionals",
-                desc: "Our skilled assistants ensure smooth procedures, maintain sterilisation protocols, and provide chairside support for all treatments.",
+                desc: "Our skilled assistants ensure smooth procedures, maintain sterilization protocols, and provide chairside support for all treatments.",
                 objectPos: "object-center"
               },
               {
@@ -312,10 +309,10 @@ export default function AboutPage() {
                 image: "/images/about/sterlization.jpeg",
                 alt: "Sterilization Staff",
                 badge: "Hygiene Team",
-                name: "Sterilisation Team",
+                name: "Sterilization Team",
                 role: "Infection Control Specialists",
-                qual: "Certified in Sterilisation Protocols",
-                desc: "Ensuring the highest standards of hygiene and sterilisation for all instruments and equipment used in treatments.",
+                qual: "Certified in Sterilization Protocols",
+                desc: "Ensuring the highest standards of hygiene and sterilization for all instruments and equipment used in treatments.",
                 objectPos: "object-top",
                 imageHeight: "h-68",       
                 imageWidth: "w-full",

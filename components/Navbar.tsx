@@ -75,7 +75,13 @@ const topBarBg = 'bg-[#00AFCB] border-[#009BB3]';  const accentText = 'text-slat
 
             <div className="flex items-center gap-3 sm:gap-5 ml-auto whitespace-nowrap">
               <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0">
-                <img src="/images/practo-logo.png" className="h-6 md:h-8 lg:h-10 w-auto" alt="Practo" />
+                <img src="/images/practo-logo.png" className="h-8 md:h-10 lg:h-12 w-auto" alt="Practo" />
+              </a>
+              <a href="https://www.instagram.com/dentalessential_drsameergharat?igsh=MXZiNmVpZmlkMHplcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="shrink-0">
+                <img src="/images/instagram-icon.png" className="h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 hover:opacity-80 transition-opacity" alt="Instagram" />
+              </a>
+              <a href="https://wa.me/918779646573" target="_blank" rel="noopener noreferrer" className="shrink-0">
+                <img src="/images/whatsapp-icon.png" className="h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 hover:opacity-80 transition-opacity" alt="WhatsApp" />
               </a>
 
               <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
