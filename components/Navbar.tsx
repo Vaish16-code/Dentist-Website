@@ -59,23 +59,23 @@ const topBarBg = 'bg-[#00AFCB] border-[#009BB3]';  const accentText = 'text-slat
     <header className="sticky top-0 z-50">
 
       {/* TOP BAR */}
-      <div className={`${topBarBg} text-slate-700 border-b shadow-sm py-1`}>
+      <div className={`${topBarBg} text-slate-700 border-b shadow-sm py-0.5`}>
         <div className="max-w-7xl mx-auto px-4 md:px-6">
 
-          <div className="flex sm:hidden items-center justify-center gap-1.5 py-1 text-slate-700 text-xs border-b border-[#c3cfdd]">
-            <img src="/images/clock-icon.svg" className="w-3.5 h-3.5" alt="Clock" />
+          <div className="flex sm:hidden items-center justify-center gap-1.5 py-0.5 text-slate-700 text-xs border-b border-[#c3cfdd]">
+            <img src="/images/clock.png" className="w-3.5 h-3.5" alt="Clock" />
             <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
           </div>
 
-          <div className="flex items-center justify-between py-1.5">
+          <div className="flex items-center justify-between py-1">
             <div className="hidden sm:flex items-center gap-2 text-white text-base md:text-sm whitespace-nowrap">
-              <img src="/images/clock-icon.svg" className="w-4 h-4" alt="Clock" />
+              <img src="/images/clock.png" className="w-4 h-4" alt="Clock" />
               <span>Open: 10 AM – 2 PM & 5 PM – 9 PM</span>
             </div>
 
             <div className="flex items-center gap-3 sm:gap-5 ml-auto whitespace-nowrap">
-              <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0">
-                <img src="/images/practo-logo.png" className="h-8 md:h-10 lg:h-12 w-auto" alt="Practo" />
+              <a href={practoUrl} target="_blank" rel="noopener noreferrer" className="shrink-0 flex items-center">
+                <img src="/images/Practo.png" className="h-4 md:h-5 lg:h-6 w-auto" alt="Practo" />
               </a>
               <a href="https://www.instagram.com/dentalessential_drsameergharat?igsh=MXZiNmVpZmlkMHplcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="shrink-0">
                 <img src="/images/instagram-icon.png" className="h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 hover:opacity-80 transition-opacity" alt="Instagram" />
@@ -85,7 +85,7 @@ const topBarBg = 'bg-[#00AFCB] border-[#009BB3]';  const accentText = 'text-slat
               </a>
 
               <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
-                <img src="/images/contact-icon.svg" className="w-4 h-4 md:w-5 md:h-5" alt="Phone" />
+                <img src="/images/phone.png" className="w-4 h-4 md:w-5 md:h-5" alt="Phone" />
                 <span className="font-semibold text-xs sm:text-sm md:text-base leading-none">
                   +91 877-9648573
                 </span>

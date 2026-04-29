@@ -16,8 +16,8 @@ export default function HomePage() {
 
     <main>
      {/* HERO SECTION */}
-      <section className="relative py-2 overflow-hidden">
-        <div className="absolute inset-0" aria-hidden="true">
+      <section className="bg-white overflow-hidden">
+        <div className="w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[600px]" aria-hidden="true">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -30,8 +30,8 @@ export default function HomePage() {
           </video>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-          <div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14 py-6 md:py-8">
+          <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
             <span className="inline-block bg-sky-100 text-sky-600 px-4 py-1.5 rounded-full text-base md:text-lg lg:text-xl font-semibold">
                  Top Notch Dental Services in Panvel
              </span>
@@ -54,7 +54,7 @@ export default function HomePage() {
               using the latest technology.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3">
               <Link
                 href="/contact"
                 className="inline-block bg-sky-500 hover:bg-sky-600 transition text-white px-8 py-3 rounded-md shadow-lg"
@@ -70,12 +70,6 @@ export default function HomePage() {
                   Famdent Award Winner
                 </span>
               </div>
-            </div>
-          </div>
-
-          {/* HERO IMAGE */}
-          <div className="relative flex justify-center items-center mt-8 md:mt-0">
-            <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-125 md:h-150 max-w-full animate-float">
             </div>
           </div>
         </div>

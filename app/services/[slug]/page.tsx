@@ -34,6 +34,8 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
     notFound();
   }
 
+  const isFullMouthRehabilitation = service.slug === 'full-mouth-rehabilitation';
+
   return (
     <main className="min-h-screen">
       {/* Banner Section */}
@@ -71,11 +73,19 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Treatment Image */}
-            <div className="relative h-80 lg:h-96 bg-gradient-to-br from-sky-100 to-sky-200 rounded-2xl overflow-hidden shadow-lg">
+            <div className={`relative h-80 lg:h-96 rounded-2xl overflow-hidden shadow-lg ${
+              isFullMouthRehabilitation
+                ? 'bg-white'
+                : 'bg-gradient-to-br from-sky-100 to-sky-200'
+            }`}>
               <img 
                 src={service.bannerImage} 
                 alt={service.title}
-                className="w-full h-full object-cover"
+                className={`w-full h-full ${
+                  isFullMouthRehabilitation
+                    ? 'object-contain sm:object-cover'
+                    : 'object-cover'
+                }`}
               />
             </div>
 
