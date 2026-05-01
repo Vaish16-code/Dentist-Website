@@ -12,6 +12,9 @@ export interface BlogPost {
   readTime: string;
   category: string;
   content: string;
+  metaTitle: string;
+  metaDescription: string;
+  relatedServiceSlugs: string[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -92,7 +95,10 @@ Teeth whitening is typically not covered by dental insurance since it is regarde
 By getting referrals from friends and relatives, reading internet reviews, and making appointments to go over your options, you can locate a trustworthy dentist in Mumbai for teeth whitening.
 
 **If you are planning treatment, always consult a qualified dentist for personalized advice.**
-    `
+    `,
+    metaTitle: "Teeth Whitening Cost in Mumbai 2026 | Professional Smile Brightening",
+    metaDescription: "Want a brighter, more confident smile? Learn about teeth whitening costs in Mumbai, treatment types, and what to expect. Get expert advice from Dental Essential.",
+    relatedServiceSlugs: ["smile-designing", "crowns-and-bridges"]
   },
   {
     slug: "clear-aligners-vs-braces-complete-guide",
@@ -162,7 +168,10 @@ The cost varies based on the severity of the case, the dentist's expertise, and 
 Both options can give you a beautiful, straight smile. The best choice depends on your specific dental needs, lifestyle, and budget. Schedule a consultation with our orthodontist at Dental Essential to get a personalized treatment plan.
 
 **Always consult a qualified dentist before starting any orthodontic treatment.**
-    `
+    `,
+    metaTitle: "Clear Aligners vs Braces 2026 | Which Is Better for Crooked Teeth?",
+    metaDescription: "Crooked or spaced teeth? Compare clear aligners vs braces — cost, duration, comfort & results. Expert orthodontic guide from Dental Essential, Panvel.",
+    relatedServiceSlugs: ["clear-aligners", "braces", "smile-designing"]
   },
   {
     slug: "root-canal-treatment-myths-and-facts",
@@ -224,7 +233,10 @@ Root canal treatment typically costs between INR 3,000 to INR 8,000 per tooth, d
 At Dental Essential, we offer painless root canal treatment using advanced rotary endodontic equipment for faster, more precise results.
 
 **If you're experiencing tooth pain, don't wait. Contact us today for a consultation.**
-    `
+    `,
+    metaTitle: "Root Canal Treatment: Is It Painful? Myths, Facts & Cost in Panvel",
+    metaDescription: "Severe tooth pain or sensitivity? Learn the truth about root canal treatment — it's painless! Myths busted, procedure explained, costs in Panvel. Dental Essential.",
+    relatedServiceSlugs: ["painless-root-canal", "crowns-and-bridges"]
   },
   {
     slug: "wisdom-tooth-extraction-what-you-need-to-know",
@@ -290,7 +302,10 @@ Surgical extraction (impacted): INR 4,000 – INR 12,000 per tooth
 At Dental Essential, we ensure a smooth, comfortable extraction experience using the latest surgical techniques.
 
 **Don't ignore wisdom tooth pain — early intervention prevents complications.**
-    `
+    `,
+    metaTitle: "Wisdom Tooth Extraction: Jaw Pain, Swelling & Recovery Guide",
+    metaDescription: "Jaw pain or swelling at the back of your mouth? Learn about wisdom tooth extraction — when you need it, the procedure, recovery tips & cost in Panvel.",
+    relatedServiceSlugs: ["wisdom-tooth-extraction", "painless-root-canal"]
   },
   {
     slug: "best-dentist-in-navi-mumbai-panvel",
@@ -364,7 +379,10 @@ Every patient at Dental Essential receives personalized attention. We take time 
 Don't settle for less when it comes to your smile. Book an appointment with Dental Essential today and experience dental care that combines expertise, technology, and genuine compassion.
 
 **Call us at +91 877-9648573 or book online on Practo.**
-    `
+    `,
+    metaTitle: "Best Dental Clinic in Old Panvel | Why Choose Dental Essential",
+    metaDescription: "Looking for the best dentist in Old Panvel? Award-winning Dr. Sameer Gharat, advanced technology, and compassionate care. Dental Essential — your trusted dental clinic.",
+    relatedServiceSlugs: ["painless-root-canal", "dental-implants", "smile-designing"]
   },
   {
     slug: "myths-and-facts-about-dental-implants",
@@ -407,7 +425,10 @@ Fact: Initial recovery is often quick, though full integration takes a few month
 Most patients return to routine activities soon after the procedure. Regular follow-ups and good oral hygiene are important for successful long-term outcomes.
 
 For a complete evaluation and treatment planning, consult your dentist.
-    `
+    `,
+    metaTitle: "Dental Implants: Myths, Facts & Missing Teeth Replacement Guide",
+    metaDescription: "Missing teeth or can't chew properly? Learn the truth about dental implants — are they painful? How long do they last? Myths busted. Dental Essential, Panvel.",
+    relatedServiceSlugs: ["dental-implants", "dentures", "full-mouth-rehabilitation"]
   },
   {
     slug: "pediatric-dentistry-for-kids-parents-guide",
@@ -466,7 +487,10 @@ Support for thumb-sucking, bottle use, and oral hygiene routines.
 ### Final note
 
 Positive early experiences create confident kids and healthier smiles for life. If your child has tooth pain, sensitivity, or visible spots, schedule a pediatric dental checkup soon.
-    `
+    `,
+    metaTitle: "Pediatric Dentistry: When Should Your Child First Visit a Dentist?",
+    metaDescription: "Worried about your child's teeth? Learn about pediatric dentistry — first dental visit, cavity prevention, fluoride treatment & parent tips. Dental Essential, Panvel.",
+    relatedServiceSlugs: ["pediatric-dentistry"]
   }
 ];
 

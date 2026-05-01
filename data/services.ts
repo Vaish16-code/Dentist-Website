@@ -11,6 +11,11 @@ export interface Service {
     title: string;
     description: string;
   }[];
+  metaTitle: string;
+  metaDescription: string;
+  patientProblems: string[];
+  faqs: { question: string; answer: string }[];
+  relatedSlugs: string[];
 }
 
 export const services: Service[] = [
@@ -34,7 +39,17 @@ export const services: Service[] = [
       { step: 3, title: "Cleaning the Canal", description: "The infected pulp is carefully removed and the canal is thoroughly cleaned." },
       { step: 4, title: "Filling & Sealing", description: "The canal is filled with biocompatible material and sealed to prevent reinfection." },
       { step: 5, title: "Crown Placement", description: "A dental crown is placed to protect and restore the tooth's function." }
-    ]
+    ],
+    metaTitle: "Painless Root Canal Treatment in Panvel | Tooth Pain Relief",
+    metaDescription: "Suffering from severe tooth pain or sensitivity? Get painless root canal treatment at Dental Essential, Old Panvel. Save your natural tooth with advanced laser technology.",
+    patientProblems: ["Severe toothache", "Pain in upper teeth", "Pain in lower teeth", "Sensitivity to hot or cold food", "Deep cavity", "Swollen gums near a tooth", "Tooth pain while chewing"],
+    faqs: [
+      { question: "Is root canal treatment painful?", answer: "No. At Dental Essential, we use modern anesthesia and advanced rotary instruments to make the procedure virtually painless. Most patients feel relief immediately after treatment." },
+      { question: "How do I know if I need a root canal?", answer: "Common signs include severe toothache, prolonged sensitivity to hot or cold, darkening of the tooth, swelling in nearby gums, or pain when chewing. Visit us for a diagnosis." },
+      { question: "How long does a root canal take?", answer: "A single-sitting root canal typically takes 45–90 minutes. Complex cases may require two visits." },
+      { question: "What is the cost of root canal treatment in Panvel?", answer: "Root canal treatment at Dental Essential costs between ₹3,000 and ₹8,000 per tooth depending on complexity. Crown costs are additional." }
+    ],
+    relatedSlugs: ["crowns-and-bridges", "wisdom-tooth-extraction", "full-mouth-rehabilitation"]
   },
   {
     slug: "dental-implants",
@@ -56,7 +71,17 @@ export const services: Service[] = [
       { step: 3, title: "Healing Period", description: "3-6 months for the implant to fuse with your jawbone (osseointegration)." },
       { step: 4, title: "Abutment Placement", description: "A connector piece is attached to the implant to hold the crown." },
       { step: 5, title: "Crown Fitting", description: "A custom-made crown is attached, completing your new tooth." }
-    ]
+    ],
+    metaTitle: "Dental Implants in Panvel | Missing Teeth Replacement",
+    metaDescription: "Missing teeth or struggling to chew? Get permanent dental implants at Dental Essential, Old Panvel. Natural-looking, long-lasting tooth replacement by expert implantologists.",
+    patientProblems: ["Missing teeth", "Cannot chew food properly", "Loose dentures", "Broken tooth", "Gap in teeth after extraction", "Denture replacement"],
+    faqs: [
+      { question: "Are dental implants permanent?", answer: "Yes. With proper care and oral hygiene, dental implants can last a lifetime. The titanium post fuses with your jawbone for a permanent, stable foundation." },
+      { question: "Can dental implants replace dentures?", answer: "Absolutely. Many patients switch from loose dentures to implants for better comfort, stability, and chewing ability. We offer implant-supported dentures too." },
+      { question: "Is the dental implant procedure painful?", answer: "The procedure is done under local anesthesia and is virtually painless. Post-operative discomfort is mild and manageable with prescribed medication." },
+      { question: "What is the cost of dental implants in Panvel?", answer: "Dental implant costs at Dental Essential start from ₹20,000 per implant depending on the type and complexity. A detailed cost estimate is provided after consultation." }
+    ],
+    relatedSlugs: ["crowns-and-bridges", "dentures", "full-mouth-rehabilitation"]
   },
   {
     slug: "braces",
@@ -78,7 +103,17 @@ export const services: Service[] = [
       { step: 3, title: "Bracket Placement", description: "Braces are carefully bonded to your teeth." },
       { step: 4, title: "Regular Adjustments", description: "Monthly visits for wire adjustments and progress monitoring." },
       { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
-    ]
+    ],
+    metaTitle: "Dental Braces in Panvel | Crooked Teeth & Spacing Correction",
+    metaDescription: "Have crooked teeth or spacing issues? Get metal or ceramic braces at Dental Essential, Old Panvel. Effective teeth straightening for all ages by expert orthodontists.",
+    patientProblems: ["Crooked teeth", "Spacing in front teeth", "Overlapping teeth", "Bite problems", "Teeth not aligned properly", "Gap between teeth"],
+    faqs: [
+      { question: "At what age can braces be started?", answer: "Braces can be started from age 12 onwards. Adults can also get braces — there is no upper age limit for orthodontic treatment." },
+      { question: "How long does braces treatment take?", answer: "Treatment typically takes 12–24 months depending on the severity of misalignment. Regular monthly adjustments are needed." },
+      { question: "Do braces hurt?", answer: "You may feel mild discomfort for 2–3 days after each adjustment, but it's easily manageable. Modern braces are much more comfortable than older versions." },
+      { question: "What is the cost of braces in Panvel?", answer: "Braces treatment at Dental Essential starts from ₹20,000 for metal braces and ₹30,000 for ceramic braces, depending on case complexity." }
+    ],
+    relatedSlugs: ["clear-aligners", "smile-designing", "crowns-and-bridges"]
   },
   {
     slug: "clear-aligners",
@@ -100,7 +135,17 @@ export const services: Service[] = [
       { step: 3, title: "Aligner Delivery", description: "Receive your custom-made clear aligners." },
       { step: 4, title: "Progress Check-ups", description: "Periodic visits to monitor your progress." },
       { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
-    ]
+    ],
+    metaTitle: "Clear Aligners in Panvel | Straight Teeth Without Braces",
+    metaDescription: "Want straight teeth without metal braces? Get invisible clear aligners at Dental Essential, Old Panvel. Removable, comfortable, and discreet teeth straightening.",
+    patientProblems: ["Straight teeth without braces", "Spacing in front teeth", "Crooked teeth", "Mild bite issues", "Teeth alignment for wedding", "Discreet orthodontic treatment"],
+    faqs: [
+      { question: "Can clear aligners fix crooked teeth?", answer: "Yes. Clear aligners effectively treat mild to moderate crowding, spacing, and bite issues. A consultation will determine if you are a good candidate." },
+      { question: "How long do I need to wear clear aligners daily?", answer: "You need to wear them 20–22 hours per day, removing them only for eating, brushing, and flossing." },
+      { question: "Are clear aligners better than braces?", answer: "Both are effective. Clear aligners are preferred for aesthetics and convenience, while braces handle complex cases better. Our orthodontist will recommend the best option for you." },
+      { question: "What is the cost of clear aligners in Panvel?", answer: "Clear aligner treatment at Dental Essential ranges from ₹80,000 to ₹3,00,000 depending on brand and case complexity." }
+    ],
+    relatedSlugs: ["braces", "smile-designing", "crowns-and-bridges"]
   },
   {
     slug: "smile-designing",
@@ -122,7 +167,17 @@ export const services: Service[] = [
       { step: 3, title: "Mock-Up Preview", description: "See a preview of your new smile before treatment begins." },
       { step: 4, title: "Treatment Execution", description: "Step-by-step implementation of the smile design plan." },
       { step: 5, title: "Final Reveal", description: "Your transformed smile is revealed with care instructions." }
-    ]
+    ],
+    metaTitle: "Smile Designing in Panvel | Smile Makeover & Cosmetic Dentistry",
+    metaDescription: "Boost your confidence with a complete smile makeover at Dental Essential, Old Panvel. Veneers, whitening, and contouring for the perfect wedding smile or everyday confidence.",
+    patientProblems: ["Smile makeover for wedding", "Uneven teeth", "Discoloured teeth", "Want a confident smile", "Chipped or broken front teeth", "Smile improvement"],
+    faqs: [
+      { question: "What is smile designing?", answer: "Smile designing is a combination of cosmetic treatments like veneers, teeth whitening, bonding, and contouring customized to enhance your facial aesthetics and smile." },
+      { question: "How long does a smile makeover take?", answer: "Depending on the treatments involved, a smile makeover can take 1–4 weeks. Simple cases with veneers can be done in 2 visits." },
+      { question: "Is smile designing permanent?", answer: "Veneers and crowns used in smile designing are long-lasting (10–15 years). Teeth whitening may need periodic touch-ups." },
+      { question: "What is the cost of smile designing in Panvel?", answer: "Cost varies based on the combination of treatments. A personalized quote is provided after your smile analysis consultation." }
+    ],
+    relatedSlugs: ["clear-aligners", "braces", "crowns-and-bridges"]
   },
   {
     slug: "crowns-and-bridges",
@@ -144,7 +199,17 @@ export const services: Service[] = [
       { step: 3, title: "Impressions", description: "Digital or physical impressions are taken for precise fitting." },
       { step: 4, title: "Temporary Restoration", description: "A temporary crown/bridge is placed while the permanent one is made." },
       { step: 5, title: "Final Placement", description: "The custom crown or bridge is cemented in place." }
-    ]
+    ],
+    metaTitle: "Crowns & Bridges in Panvel | Broken or Damaged Tooth Repair",
+    metaDescription: "Broken, cracked, or missing tooth? Restore your smile with durable crowns and bridges at Dental Essential, Old Panvel. Natural-looking, long-lasting dental restorations.",
+    patientProblems: ["Broken tooth", "Cracked tooth", "Damaged tooth after injury", "Missing tooth support", "Weak tooth after root canal", "Gap between teeth"],
+    faqs: [
+      { question: "What is the difference between a crown and a bridge?", answer: "A crown covers and protects a single damaged tooth. A bridge replaces one or more missing teeth by anchoring to adjacent teeth." },
+      { question: "How long do dental crowns last?", answer: "With good oral hygiene, dental crowns typically last 10–15 years or longer." },
+      { question: "Is getting a crown painful?", answer: "No. The procedure is done under local anesthesia and is completely painless. You may feel mild sensitivity for a day or two afterward." },
+      { question: "What is the cost of crowns and bridges in Panvel?", answer: "Dental crown costs range from ₹3,000 to ₹15,000 per tooth depending on the material chosen (metal, ceramic, or zirconia)." }
+    ],
+    relatedSlugs: ["painless-root-canal", "dental-implants", "smile-designing"]
   },
   {
     slug: "pediatric-dentistry",
@@ -166,7 +231,17 @@ export const services: Service[] = [
       { step: 3, title: "Cleaning", description: "Professional cleaning with child-friendly techniques." },
       { step: 4, title: "Treatment (if needed)", description: "Any necessary treatment performed with extra care." },
       { step: 5, title: "Education & Rewards", description: "Oral hygiene tips and a fun reward for being brave!" }
-    ]
+    ],
+    metaTitle: "Pediatric Dentist in Panvel | Child Dental Care & Cavity Prevention",
+    metaDescription: "Looking for a kids' dentist in Panvel? Gentle, child-friendly dental care at Dental Essential. Cavity prevention, fluoride treatment, and painless procedures for children.",
+    patientProblems: ["Child tooth pain", "Cavity in child's teeth", "Baby teeth problems", "First dental visit for child", "Child afraid of dentist", "Thumb sucking habit"],
+    faqs: [
+      { question: "When should my child first visit a dentist?", answer: "We recommend a first dental visit by the child's first birthday or within 6 months of the first tooth appearing." },
+      { question: "Are dental treatments safe for children?", answer: "Absolutely. We use child-safe materials and gentle techniques. Our pediatric dentist is specially trained to handle children with care and patience." },
+      { question: "How can I prevent cavities in my child's teeth?", answer: "Start brushing as soon as the first tooth appears, limit sugary snacks, apply fluoride as recommended, and schedule dental checkups every 6 months." },
+      { question: "What if my child is scared of the dentist?", answer: "Our clinic is designed to be child-friendly. We use gentle approaches and positive reinforcement to make dental visits fun and stress-free." }
+    ],
+    relatedSlugs: ["painless-root-canal", "crowns-and-bridges", "smile-designing"]
   },
   {
     slug: "dentures",
@@ -188,7 +263,17 @@ export const services: Service[] = [
       { step: 3, title: "Try-In", description: "Wax model fitting to check appearance and fit." },
       { step: 4, title: "Final Denture", description: "Custom dentures are crafted and fitted." },
       { step: 5, title: "Adjustments", description: "Follow-up visits to ensure perfect fit and comfort." }
-    ]
+    ],
+    metaTitle: "Dentures in Panvel | Comfortable Dentures for Missing Teeth",
+    metaDescription: "Struggling with loose dentures or missing teeth? Get custom-fitted, comfortable dentures at Dental Essential, Old Panvel. Restore your chewing ability and smile.",
+    patientProblems: ["Loose dentures", "Multiple missing teeth", "Cannot chew food properly", "Old dentures not fitting", "Affordable tooth replacement", "Full set of teeth missing"],
+    faqs: [
+      { question: "What types of dentures are available?", answer: "We offer complete dentures (for all teeth), partial dentures (for some missing teeth), and implant-supported dentures for maximum stability." },
+      { question: "How long does it take to get dentures?", answer: "The entire process from consultation to final fitting typically takes 3–5 weeks, including impressions and try-in appointments." },
+      { question: "Can I eat normally with dentures?", answer: "Yes. After an initial adjustment period of 1–2 weeks, most patients can eat a wide variety of foods comfortably with well-fitted dentures." },
+      { question: "What is the cost of dentures in Panvel?", answer: "Denture costs range from ₹5,000 to ₹30,000 depending on the type (partial, complete, or implant-supported)." }
+    ],
+    relatedSlugs: ["dental-implants", "full-mouth-rehabilitation", "crowns-and-bridges"]
   },
   {
     slug: "wisdom-tooth-extraction",
@@ -210,7 +295,17 @@ export const services: Service[] = [
       { step: 3, title: "Extraction", description: "Careful removal of the wisdom tooth using specialized techniques." },
       { step: 4, title: "Closure", description: "Stitches placed if necessary to promote healing." },
       { step: 5, title: "Aftercare", description: "Instructions provided for quick and comfortable recovery." }
-    ]
+    ],
+    metaTitle: "Wisdom Tooth Extraction in Panvel | Jaw Pain & Impacted Tooth",
+    metaDescription: "Jaw pain, swelling, or impacted wisdom tooth? Safe and comfortable wisdom tooth extraction at Dental Essential, Old Panvel. Quick recovery with experienced oral surgeons.",
+    patientProblems: ["Right jaw pain", "Left jaw pain", "Swelling at back of mouth", "Impacted wisdom tooth", "Pain while opening mouth", "Difficulty chewing at the back"],
+    faqs: [
+      { question: "How do I know if my wisdom tooth needs extraction?", answer: "Common signs include pain at the back of the jaw, swelling, difficulty opening your mouth, or crowding of other teeth. An X-ray will confirm if extraction is needed." },
+      { question: "Is wisdom tooth extraction painful?", answer: "The procedure is done under local anesthesia and is painless during the process. Post-operative discomfort is managed with prescribed medication." },
+      { question: "How long is recovery after wisdom tooth removal?", answer: "Simple extractions heal in 3–5 days. Surgical extractions of impacted teeth may take 1–2 weeks for full recovery." },
+      { question: "What is the cost of wisdom tooth extraction in Panvel?", answer: "Simple extraction costs ₹1,500–₹3,000 per tooth. Surgical extraction of impacted teeth costs ₹4,000–₹12,000 per tooth." }
+    ],
+    relatedSlugs: ["painless-root-canal", "dental-implants", "full-mouth-rehabilitation"]
   },
   {
     slug: "full-mouth-rehabilitation",
@@ -232,7 +327,17 @@ export const services: Service[] = [
       { step: 3, title: "Phased Treatment", description: "Procedures performed in logical sequence for best results." },
       { step: 4, title: "Progress Monitoring", description: "Regular check-ups to ensure treatment is progressing well." },
       { step: 5, title: "Maintenance Plan", description: "Long-term care plan to maintain your restored smile." }
-    ]
+    ],
+    metaTitle: "Full Mouth Rehabilitation in Panvel | Complete Dental Restoration",
+    metaDescription: "Multiple missing teeth, bite issues, or difficulty chewing? Get comprehensive full mouth rehabilitation at Dental Essential, Old Panvel. Restore your complete smile.",
+    patientProblems: ["Multiple missing teeth", "Bite issues", "Cannot chew food properly", "Worn down teeth", "Full mouth restoration needed", "Severely damaged teeth"],
+    faqs: [
+      { question: "What is full mouth rehabilitation?", answer: "It is a comprehensive treatment combining multiple procedures like crowns, bridges, implants, and veneers to restore the function and aesthetics of your entire mouth." },
+      { question: "Who needs full mouth rehabilitation?", answer: "Patients with multiple missing teeth, severe wear, bite problems, or those who need extensive dental work across the entire mouth benefit from this approach." },
+      { question: "How long does full mouth rehabilitation take?", answer: "Treatment duration varies from a few weeks to several months depending on the complexity and number of procedures involved." },
+      { question: "What is the cost of full mouth rehabilitation in Panvel?", answer: "Cost depends on the treatments included. A detailed treatment plan with costs is provided after a comprehensive evaluation. EMI options are available." }
+    ],
+    relatedSlugs: ["dental-implants", "crowns-and-bridges", "dentures"]
   }
 ];
 

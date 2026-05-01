@@ -3,8 +3,11 @@ import ServiceCard from '@/components/ServiceCard';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Our Treatments | Dental Essential',
-  description: 'Explore our comprehensive dental treatments including root canal treatment, dental implants, braces, smile designing, and more.',
+  title: 'Dental Treatments in Panvel | Root Canal, Implants, Braces & More',
+  description: 'Explore comprehensive dental treatments at Dental Essential, Old Panvel — painless root canal, dental implants, braces, clear aligners, smile designing, pediatric dentistry, and more.',
+  alternates: {
+    canonical: 'https://www.dentalessential.co.in/services',
+  },
 };
 
 export default function ServicesPage() {

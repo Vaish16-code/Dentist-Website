@@ -21,8 +21,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${service.title} | Dental Essential`,
-    description: service.shortDescription,
+    title: service.metaTitle,
+    description: service.metaDescription,
+    alternates: {
+      canonical: `https://www.dentalessential.co.in/services/${service.slug}`,
+    },
+    openGraph: {
+      title: service.metaTitle,
+      description: service.metaDescription,
+      type: 'article',
+    },
   };
 }
 
@@ -36,8 +44,33 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
 
   const isFullMouthRehabilitation = service.slug === 'full-mouth-rehabilitation';
 
+  // Get related services
+  const relatedServices = service.relatedSlugs
+    .map(s => services.find(svc => svc.slug === s))
+    .filter(Boolean);
+
+  // FAQ Schema
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": service.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+
   return (
     <main className="min-h-screen">
+      {/* FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       {/* Banner Section */}
       <section className="relative bg-gradient-to-br from-sky-500 via-sky-600 to-blue-600 py-24">
         <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-10" />
@@ -53,7 +86,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
           </Link>
           
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            {service.title}
+            {service.title} in Panvel
           </h1>
           <p className="text-sky-100 max-w-2xl text-lg">
             {service.shortDescription}
@@ -80,7 +113,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             }`}>
               <img 
                 src={service.bannerImage} 
-                alt={service.title}
+                alt={`${service.title} treatment at Dental Essential clinic in Old Panvel`}
                 className={`w-full block ${
                   isFullMouthRehabilitation
                     ? 'h-auto object-contain'
@@ -95,7 +128,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 About This Treatment
               </span>
               <h2 className="text-3xl font-bold mb-6">
-                <span className="text-pink-500">What are</span>{' '}
+                <span className="text-pink-500">What is</span>{' '}
                 <span className="text-sky-500">{service.title}?</span>
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
@@ -106,8 +139,31 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
+      {/* Patient Problems Section */}
+      {service.patientProblems.length > 0 && (
+        <section className="py-12 bg-sky-50">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-center mb-8">
+              <span className="text-pink-500">Common Problems</span>{' '}
+              <span className="text-sky-500">This Treatment Solves</span>
+            </h2>
+            <div className="flex flex-wrap justify-center gap-3">
+              {service.patientProblems.map((problem) => (
+                <span key={problem} className="bg-white px-5 py-2.5 rounded-full border border-sky-200 text-gray-700 text-sm font-medium shadow-sm">
+                  {problem}
+                </span>
+              ))}
+            </div>
+            <p className="text-center text-gray-500 text-sm mt-6">
+              If you are experiencing any of these issues, {service.title.toLowerCase()} at Dental Essential in Panvel can help.{' '}
+              <Link href="/contact" className="text-sky-600 font-medium hover:underline">Book a consultation →</Link>
+            </p>
+          </div>
+        </section>
+      )}
+
       {/* Benefits Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
@@ -145,7 +201,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
       </section>
 
       {/* Treatment Steps */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">
@@ -153,7 +209,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
               <span className="text-sky-500">Process</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Here's what you can expect during your {service.title.toLowerCase()} treatment journey.
+              Here&apos;s what you can expect during your {service.title.toLowerCase()} treatment journey at our Panvel clinic.
             </p>
           </div>
 
@@ -195,19 +251,59 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
         </div>
       </section>
 
+      {/* FAQ Section */}
+      {service.faqs.length > 0 && (
+        <section className="py-16 bg-white" id="faqs">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-3xl font-bold text-center mb-8">
+              <span className="text-pink-500">Frequently Asked</span>{' '}
+              <span className="text-sky-500">Questions</span>
+            </h2>
+            <div className="space-y-4">
+              {service.faqs.map((faq, index) => (
+                <details key={index} className="bg-gray-50 rounded-xl border border-sky-100 overflow-hidden group">
+                  <summary className="px-6 py-4 cursor-pointer font-semibold text-gray-800 hover:text-sky-600 transition-colors list-none flex items-center justify-between">
+                    {faq.question}
+                    <svg className="w-5 h-5 text-sky-500 group-open:rotate-180 transition-transform flex-shrink-0 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                  </summary>
+                  <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">{faq.answer}</div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* CTA Section */}
+      <section className="py-12 bg-gradient-to-r from-sky-500 to-blue-600">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to Get {service.title}?
+          </h2>
+          <p className="text-sky-100 mb-6 max-w-2xl mx-auto">
+            Book your consultation at Dental Essential in Old Panvel. Our expert team will evaluate your condition and recommend the best treatment plan.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className="bg-white text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg" id={`cta-book-${service.slug}`}>
+              Book Appointment
+            </Link>
+            <a href="https://wa.me/918779646573" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-colors">
+              WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Related Treatments */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-center mb-8">
-            <span className="text-pink-500">Other</span>{' '}
+            <span className="text-pink-500">Related</span>{' '}
             <span className="text-sky-500">Treatments</span>
           </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services
-              .filter(s => s.slug !== service.slug)
-              .slice(0, 3)
-              .map((relatedService) => (
+            {relatedServices.map((relatedService) => relatedService && (
                 <Link
                   key={relatedService.slug}
                   href={`/services/${relatedService.slug}`}

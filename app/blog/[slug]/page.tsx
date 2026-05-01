@@ -23,12 +23,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 
   return {
-    title: `${post.title} | Dental Essential Blog`,
-    description: post.excerpt,
+    title: post.metaTitle || `${post.title} | Dental Essential Blog`,
+    description: post.metaDescription || post.excerpt,
+    alternates: {
+      canonical: `https://www.dentalessential.co.in/blog/${post.slug}`,
+    },
     keywords: `${post.category}, dental health, ${post.title.toLowerCase()}`,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title: post.metaTitle || post.title,
+      description: post.metaDescription || post.excerpt,
       type: 'article',
       publishedTime: post.publishDate,
       authors: [post.author.name],

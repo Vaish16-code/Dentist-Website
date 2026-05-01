@@ -6,6 +6,29 @@ import DoctorProfileCarousel from "@/components/DoctorProfileCarousel";
 import { services } from '@/data/services';
 import AppointmentPopup from "@/components/AppointmentPopup";
 
+export const metadata = {
+  title: 'Dental Essential | Tooth Pain, Missing Teeth & Smile Makeover Treatment in Panvel',
+  description: 'Facing tooth pain, jaw pain, missing teeth, or want a smile makeover? Dental Essential in Old Panvel offers painless root canal, dental implants, braces, aligners & more. Book your consultation today.',
+  alternates: {
+    canonical: 'https://www.dentalessential.co.in',
+  },
+};
+
+const dentalProblems = [
+  { problem: "Tooth Pain or Sensitivity", description: "Severe toothache, pain while eating hot or cold food, or throbbing pain that keeps you awake at night.", link: "/services/painless-root-canal", treatment: "Painless Root Canal" },
+  { problem: "Missing Teeth or Gaps", description: "Lost a tooth due to injury or decay? Struggling with gaps that affect your confidence and chewing ability.", link: "/services/dental-implants", treatment: "Dental Implants" },
+  { problem: "Crooked or Spaced Teeth", description: "Spacing in front teeth, overlapping teeth, or misalignment making you conscious about your smile.", link: "/services/braces", treatment: "Braces & Aligners" },
+  { problem: "Jaw Pain or Swelling", description: "Pain in the right or left jaw, difficulty opening your mouth, or swelling at the back of your mouth.", link: "/services/wisdom-tooth-extraction", treatment: "Wisdom Tooth Extraction" },
+  { problem: "Loose or Ill-Fitting Dentures", description: "Old dentures not fitting anymore? Cannot chew food properly or dentures keep slipping while talking.", link: "/services/dentures", treatment: "Custom Dentures" },
+  { problem: "Want a Confident Smile", description: "Planning a smile makeover for your wedding, career, or just everyday confidence? We can help.", link: "/services/smile-designing", treatment: "Smile Designing" },
+];
+
+const homeFaqs = [
+  { question: "What should I do if I have severe tooth pain?", answer: "Severe tooth pain usually indicates a deep cavity or infection that may require root canal treatment. Visit Dental Essential in Old Panvel for an immediate evaluation. We offer painless root canal treatment using advanced technology." },
+  { question: "What is the best replacement for missing teeth?", answer: "Dental implants are the gold standard for replacing missing teeth — they look, feel, and function like natural teeth. We also offer bridges and dentures depending on your needs and budget." },
+  { question: "Can crooked teeth be fixed without metal braces?", answer: "Yes! Clear aligners are an invisible, removable alternative to metal braces. They effectively straighten mild to moderate cases of crooked or spaced teeth without anyone noticing." },
+  { question: "Is dental treatment at Dental Essential expensive?", answer: "We offer affordable dental care with transparent pricing. EMI options are available for major treatments like implants and braces. Book a free consultation to get an accurate cost estimate." },
+];
 
 export default function HomePage() {
   const featuredServices = services.slice(0, 5);
@@ -17,7 +40,7 @@ export default function HomePage() {
     <main>
      {/* HERO SECTION */}
       <section className="bg-white overflow-hidden">
-        <div className="w-full h-[320px] sm:h-[420px] md:h-[520px] lg:h-[600px]" aria-hidden="true">
+        <div className="w-full h-80 sm:h-105 md:h-130 lg:h-150" aria-hidden="true">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -33,33 +56,32 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 lg:px-14 py-6 md:py-8">
           <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-left">
             <span className="inline-block bg-sky-100 text-sky-600 px-4 py-1.5 rounded-full text-base md:text-lg lg:text-xl font-semibold">
-                 Top Notch Dental Services in Panvel
+                 Top-Rated Dental Clinic in Panvel, Navi Mumbai
              </span>
 
             <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
-              <span className="text-pink-500">A smile is your best</span>{' '}
+              <span className="text-pink-500">Tooth Pain? Missing Teeth?</span>{' '}
               <span className="text-sky-500">
-                accessory let’s make it shine!
+                Get Expert Dental Care in Panvel
               </span>
             </h1>
 
             <p className="mt-6 text-gray-800 max-w-xl">
-              At{' '}
+              Whether you&apos;re dealing with a toothache, jaw pain, spacing in teeth, or want a complete smile makeover —{' '}
               <span className="font-semibold">
                 <span className="text-pink-500">Dental</span>{' '}
                 <span className="text-sky-500">Essential</span>
-              </span>
-              , we believe a healthy smile is the key to confidence and
-              well-being. Our expert team provides gentle, personalized care
-              using the latest technology.
+              </span>{' '}
+              provides gentle, advanced dental treatments in Old Panvel for the whole family.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3">
               <Link
                 href="/contact"
                 className="inline-block bg-sky-500 hover:bg-sky-600 transition text-white px-8 py-3 rounded-md shadow-lg"
+                id="hero-book-appointment"
               >
-                Book Appointment
+                Book Free Consultation
               </Link>
 
               <div className="bg-white shadow rounded-lg px-4 sm:px-6 py-3 inline-flex items-center gap-2 sm:gap-3 border border-gray-200 max-w-full">
@@ -83,7 +105,7 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden border-4 border-sky-100 shadow-lg">
               <Image
                 src="/images/home/receptionteam.jpeg"
-                alt="Dental Essential reception"
+                alt="Dental Essential reception team in Old Panvel clinic"
                 width={700}
                 height={500}
                 className="w-full h-auto object-cover"
@@ -94,8 +116,8 @@ export default function HomePage() {
           <div>
             <p className="text-sky-600 text-xl md:text-2xl font-semibold mb-2">Who are we?</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-5">
-              <span className="text-pink-500">The Essence of Dental Care</span>{' '}
-              <span className="text-sky-500">in Old Panvel</span>
+              <span className="text-pink-500">Advanced Dental Care</span>{' '}
+              <span className="text-sky-500">You Can Trust in Old Panvel</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
              At{' '}
@@ -103,18 +125,52 @@ export default function HomePage() {
                <span className="text-pink-500">Dental</span>{' '}
                <span className="text-sky-500">Essential</span>
              </span>{' '}
-             Clinic, we provide high-quality, patient-focused dental care in a comfortable and friendly environment. Led by Dr. Sameer Gharat, our team combines advanced technology with a compassionate approach to deliver personalized treatments with a strong emphasis on precision, hygiene, and patient comfort. From routine check-ups to advanced dental procedures, we are dedicated to helping you achieve a healthy, confident smile.
+             Clinic, we provide high-quality, patient-focused dental care in a comfortable and friendly environment. Led by Dr. Sameer Gharat, our team combines advanced technology with a compassionate approach to deliver personalized treatments — from relieving severe tooth pain to crafting the smile of your dreams. Whether it&apos;s missing teeth, jaw pain, or a child&apos;s first dental visit, we treat every concern with precision, hygiene, and genuine care.
             </p>
             <Link
               href="/about"
               className="inline-flex items-center gap-2 border-2 border-sky-500 text-sky-600 hover:bg-sky-50 px-6 py-3 rounded-lg font-medium transition"
             >
-              Learn More
+              Learn More About Us
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* FACING DENTAL PROBLEMS SECTION */}
+      <section className="py-16 bg-sky-50" id="dental-problems">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="text-center mb-10">
+            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Facing Dental Problems?</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
+              Tell Us Your Problem We&apos;ll Find the Right Treatment
+            </h2>
+            <p className="text-gray-600 max-w-3xl mx-auto">
+              Most patients don&apos;t know which treatment they need. That&apos;s okay! Just tell us what you&apos;re experiencing, and our expert team will guide you to the right solution.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {dentalProblems.map((item) => (
+              <Link
+                key={item.problem}
+                href={item.link}
+                className="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md hover:border-sky-300 transition-all p-6 group"
+                id={`problem-${item.problem.toLowerCase().replace(/\s+/g, '-')}`}
+              >
+                <h3 className="text-gray-800 font-semibold text-lg mb-2 group-hover:text-sky-600 transition-colors">{item.problem}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed mb-3">{item.description}</p>
+                <span className="text-sky-600 text-sm font-medium inline-flex items-center gap-1">
+                  Recommended: {item.treatment}
+                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                </span>
+              </Link>
+            ))}
+          </div>
+
         </div>
       </section>
 
@@ -125,12 +181,12 @@ export default function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="text-center mb-10">
-            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Treatments</p>
+            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Our Treatments</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
-              Comprehensive Dental Solutions for a Radiant Smile
+              Advanced Dental Solutions for Every Problem
             </h2>
             <p className="text-gray-600 max-w-3xl mx-auto">
-              Explore our most sought-after treatments designed to restore health, function, and confidence in every smile.
+              From painless root canal for severe toothache to dental implants for missing teeth — explore our expert treatments designed to restore your oral health and confidence.
             </p>
           </div>
 
@@ -144,7 +200,7 @@ export default function HomePage() {
                 <div className="relative bg-sky-50 rounded-xl mb-4 h-36 overflow-hidden">
                   <Image
                     src={service.image}
-                    alt={service.title}
+                    alt={`${service.title} treatment at Dental Essential Panvel`}
                     fill
                     sizes="(max-width: 1024px) 50vw, 20vw"
                     className="w-full h-full object-contain p-2"
@@ -166,6 +222,31 @@ export default function HomePage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-16 bg-white" id="home-faq">
+        <div className="max-w-4xl mx-auto px-6 md:px-10">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">
+              <span className="text-pink-500">Common Questions</span>{' '}
+              <span className="text-sky-500">From Our Patients</span>
+            </h2>
+            <p className="text-gray-600">Quick answers to help you make the right decision about your dental care.</p>
+          </div>
+
+          <div className="space-y-4">
+            {homeFaqs.map((faq, index) => (
+              <details key={index} className="bg-gray-50 rounded-xl border border-sky-100 overflow-hidden group">
+                <summary className="px-6 py-4 cursor-pointer font-semibold text-gray-800 hover:text-sky-600 transition-colors list-none flex items-center justify-between">
+                  {faq.question}
+                  <svg className="w-5 h-5 text-sky-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                </summary>
+                <div className="px-6 pb-4 text-gray-600 text-sm leading-relaxed">{faq.answer}</div>
+              </details>
+            ))}
           </div>
         </div>
       </section>
