@@ -216,8 +216,8 @@ export const services: Service[] = [
     slug: "full-mouth-rehabilitation",
     title: "Full Mouth Rehabilitation",
     shortDescription: "Comprehensive restoration of your entire mouth for optimal function and aesthetics.",
-    image: "/images/services/Full-Mouth-Rehablitation.jpg",
-    bannerImage: "/images/services/Full-Mouth-Rehablitation.jpg",
+    image: "/images/services/Full-Mouth-Rehablitation.jpeg",
+    bannerImage: "/images/services/Full-Mouth-Rehablitation.jpeg",
     description: "Full mouth rehabilitation is a comprehensive treatment plan that addresses multiple dental issues to restore your entire mouth. This may involve a combination of procedures including crowns, bridges, implants, and veneers to achieve optimal oral health and aesthetics.",
     benefits: [
       "Addresses multiple dental issues at once",

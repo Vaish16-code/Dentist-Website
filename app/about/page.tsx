@@ -42,7 +42,7 @@ const doctors = [
     title: "MDS (Paediatric Dentistry)",
     image: "/images/doctors/somya.jpeg",
     description: [
-      "Dr Soumya Goel is a Paediatric Dentist. She has completed her Master from Bharati Vidyapeeth Dental College and Hospital, Navi Mumbai.",
+      "Dr Soumya Goel is a Paediatric Dentist. She has completed her Master from Bharati Vidyapeeth Dental College and Hospital, Old Panvel.",
       "Dr Soumya has expertise in preventive and paediatric dental procedures like Pulpectomy, Fluoride application, space maintenance, as well as behaviour management in children.",
     ],
     specialties: [

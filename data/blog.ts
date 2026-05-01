@@ -217,7 +217,7 @@ Root canal treatment (RCT) is arguably the most feared dental procedure — but 
 
 Most patients return to normal activities the next day. Some mild soreness for 2–3 days is normal and managed with over-the-counter pain relief. Avoid chewing on the treated side until the crown is placed.
 
-### Cost of Root Canal Treatment in Navi Mumbai
+### Cost of Root Canal Treatment in Old Panvel
 
 Root canal treatment typically costs between INR 3,000 to INR 8,000 per tooth, depending on the tooth type and complexity. A crown adds INR 3,000 to INR 15,000 more.
 
@@ -282,7 +282,7 @@ The entire procedure typically takes 20–40 minutes per tooth.
 
 ### Full recovery** typically takes 3–7 days for simple extractions and up to 2 weeks for impacted teeth.
 
-### Cost of Wisdom Tooth Extraction in Navi Mumbai
+### Cost of Wisdom Tooth Extraction in Old Panvel
 
 Simple extraction: INR 1,500 – INR 3,000 per tooth
 Surgical extraction (impacted): INR 4,000 – INR 12,000 per tooth
@@ -294,8 +294,8 @@ At Dental Essential, we ensure a smooth, comfortable extraction experience using
   },
   {
     slug: "best-dentist-in-navi-mumbai-panvel",
-    title: "Why Dental Essential is the Best Dental Clinic in Navi Mumbai",
-    excerpt: "Looking for the best dentist in Navi Mumbai or Panvel? Discover what makes Dental Essential stand out — from expert doctors and advanced technology to compassionate patient care.",
+    title: "Why Dental Essential is the Best Dental Clinic in Old Panvel",
+    excerpt: "Looking for the best dentist in Old Panvel? Discover what makes Dental Essential stand out — from expert doctors and advanced technology to compassionate patient care.",
     featuredImage: "/images/blog/best-dentist.png",
     author: {
       name: "Dental Essential ",
@@ -306,9 +306,9 @@ At Dental Essential, we ensure a smooth, comfortable extraction experience using
     readTime: "5 min read",
     category: "About Us",
     content: `
-## Why Dental Essential is the Best Dental Clinic in Navi Mumbai
+## Why Dental Essential is the Best Dental Clinic in Old Panvel
 
-Finding a trusted dentist can feel overwhelming. With so many options available, how do you know which clinic is right for you and your family? Here's why patients across Panvel and Navi Mumbai trust Dental Essential for all their dental needs.
+Finding a trusted dentist can feel overwhelming. With so many options available, how do you know which clinic is right for you and your family? Here's why patients across Old Panvel trust Dental Essential for all their dental needs.
 
 ### Expert Team Led by Dr. Sameer Gharat
 
@@ -355,7 +355,7 @@ Every patient at Dental Essential receives personalized attention. We take time 
 
 ### Convenient Location & Hours
 
-**Address:** Panvel, Navi Mumbai, Maharashtra
+**Address:** Panvel, Old Panvel, Maharashtra
 **Timings:** 10:00 AM – 2:00 PM | 5:00 PM – 9:00 PM
 **Book Online:** Available on Practo
 

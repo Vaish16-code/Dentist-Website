@@ -39,7 +39,7 @@ export default function HomePage() {
             <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
               <span className="text-pink-500">A smile is your best</span>{' '}
               <span className="text-sky-500">
-                accessory—let’s make it shine!
+                accessory let’s make it shine!
               </span>
             </h1>
 
@@ -95,7 +95,7 @@ export default function HomePage() {
             <p className="text-sky-600 text-xl md:text-2xl font-semibold mb-2">Who are we?</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-5">
               <span className="text-pink-500">The Essence of Dental Care</span>{' '}
-              <span className="text-sky-500">in Navi Mumbai</span>
+              <span className="text-sky-500">in Old Panvel</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
              At{' '}
