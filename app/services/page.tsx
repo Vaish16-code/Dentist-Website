@@ -4,13 +4,15 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Dental Treatments in Panvel | Root Canal, Implants, Braces & More',
-  description: 'Explore comprehensive dental treatments at Dental Essential, Old Panvel — painless root canal, dental implants, braces, clear aligners, smile designing, pediatric dentistry, and more.',
+  description: 'Explore comprehensive dental treatments at Dental Essential, Panvel — painless root canal, dental implants, braces, clear aligners, smile designing, pediatric dentistry, and more.',
   alternates: {
     canonical: 'https://www.dentalessential.co.in/services',
   },
 };
 
 export default function ServicesPage() {
+  const orderedServices = [services[0], services[1], services[3], services[2], ...services.slice(4)];
+
   return (
     <main className="min-h-screen">
       {/* Hero Banner */}
@@ -21,7 +23,7 @@ export default function ServicesPage() {
             COMPREHENSIVE DENTAL CARE
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Treatments
+            Treatments
           </h1>
           <p className="text-sky-100 max-w-2xl mx-auto text-lg">
             From routine check-ups to advanced treatments, we offer a full range of dental treatments 
@@ -53,7 +55,7 @@ export default function ServicesPage() {
 
           {/* Treatments Grid */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service) => (
+            {orderedServices.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
           </div>

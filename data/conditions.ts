@@ -15,12 +15,12 @@ export const conditions: Condition[] = [
     slug: "tooth-pain-treatment-panvel",
     title: "Tooth Pain Treatment in Panvel",
     metaTitle: "Tooth Pain Treatment in Panvel | Relief for Severe Toothache",
-    metaDescription: "Suffering from severe tooth pain, sensitivity, or throbbing ache? Get immediate relief at Dental Essential, Old Panvel. Painless root canal & expert diagnosis.",
+    metaDescription: "Suffering from severe tooth pain, sensitivity, or throbbing ache? Get immediate relief at Dental Essential, Panvel. Painless root canal & expert diagnosis.",
     heroHeading: "Tooth Pain Treatment in Panvel",
     heroSubheading: "Don't suffer in silence — get fast, painless relief for your toothache",
     content: `Are you experiencing a sharp, throbbing pain in your upper or lower teeth? Tooth pain can range from mild sensitivity to severe, sleep-disrupting agony. The most common causes include deep cavities, tooth infection, cracked teeth, or gum disease.
 
-At Dental Essential in Old Panvel, we diagnose the exact cause of your tooth pain using digital X-rays and provide same-day relief. Whether you need a simple filling, a painless root canal, or gum treatment — our experienced team ensures you leave pain-free.
+At Dental Essential in Panvel, we diagnose the exact cause of your tooth pain using digital X-rays and provide same-day relief. Whether you need a simple filling, a painless root canal, or gum treatment — our experienced team ensures you leave pain-free.
 
 ## Common Causes of Tooth Pain
 
@@ -52,10 +52,10 @@ Visit a dentist immediately if you experience pain that lasts more than 1–2 da
     slug: "missing-teeth-replacement-panvel",
     title: "Missing Teeth Replacement in Panvel",
     metaTitle: "Missing Teeth Replacement in Panvel | Implants, Bridges & Dentures",
-    metaDescription: "Lost one or more teeth? Explore permanent and affordable missing teeth replacement options at Dental Essential — dental implants, bridges, and dentures in Old Panvel.",
+    metaDescription: "Lost one or more teeth? Explore permanent and affordable missing teeth replacement options at Dental Essential — dental implants, bridges, and dentures in Panvel.",
     heroHeading: "Missing Teeth Replacement in Panvel",
     heroSubheading: "Restore your smile, chewing ability, and confidence with permanent solutions",
-    content: `Missing teeth affect more than just your appearance — they impact your ability to chew food properly, speak clearly, and maintain jawbone health. Whether you've lost a tooth due to decay, injury, or gum disease, Dental Essential in Old Panvel offers multiple replacement options.
+    content: `Missing teeth affect more than just your appearance — they impact your ability to chew food properly, speak clearly, and maintain jawbone health. Whether you've lost a tooth due to decay, injury, or gum disease, Dental Essential in Panvel offers multiple replacement options.
 
 ## Options for Replacing Missing Teeth
 
@@ -90,10 +90,10 @@ The best replacement depends on how many teeth are missing, jawbone health, budg
     slug: "jaw-pain-dentist-panvel",
     title: "Jaw Pain Dentist in Panvel",
     metaTitle: "Jaw Pain Treatment in Panvel | Right & Left Jaw Pain Relief",
-    metaDescription: "Experiencing right or left jaw pain, difficulty opening mouth, or swelling? Expert jaw pain diagnosis and treatment at Dental Essential, Old Panvel. Book now.",
+    metaDescription: "Experiencing right or left jaw pain, difficulty opening mouth, or swelling? Expert jaw pain diagnosis and treatment at Dental Essential, Panvel. Book now.",
     heroHeading: "Jaw Pain Treatment in Panvel",
     heroSubheading: "Expert diagnosis and relief for jaw pain, TMJ issues, and oral discomfort",
-    content: `Jaw pain can be alarming and debilitating. Whether it's on the right side, left side, or both — the cause often lies in dental issues that need professional attention. At Dental Essential in Old Panvel, we accurately diagnose and treat the root cause of your jaw pain.
+    content: `Jaw pain can be alarming and debilitating. Whether it's on the right side, left side, or both — the cause often lies in dental issues that need professional attention. At Dental Essential in Panvel, we accurately diagnose and treat the root cause of your jaw pain.
 
 ## Common Causes of Jaw Pain
 
@@ -122,10 +122,10 @@ Depending on the cause, treatment may include wisdom tooth extraction, TMJ thera
     slug: "gap-in-front-teeth-treatment",
     title: "Gap in Front Teeth Treatment",
     metaTitle: "Gap in Front Teeth Treatment in Panvel | Close Teeth Spacing",
-    metaDescription: "Embarrassed by gaps or spacing in your front teeth? Get braces, clear aligners, or veneers to close the gap at Dental Essential, Old Panvel. Natural-looking results.",
+    metaDescription: "Embarrassed by gaps or spacing in your front teeth? Get braces, clear aligners, or veneers to close the gap at Dental Essential, Panvel. Natural-looking results.",
     heroHeading: "Gap in Front Teeth Treatment in Panvel",
     heroSubheading: "Close the gap and get the smile you've always wanted",
-    content: `A gap between the front teeth (called a diastema) is one of the most common cosmetic dental concerns. While some people embrace it, many feel self-conscious about the spacing. At Dental Essential in Old Panvel, we offer multiple effective treatments to close gaps in front teeth.
+    content: `A gap between the front teeth (called a diastema) is one of the most common cosmetic dental concerns. While some people embrace it, many feel self-conscious about the spacing. At Dental Essential in Panvel, we offer multiple effective treatments to close gaps in front teeth.
 
 ## Treatment Options for Gaps in Teeth
 
@@ -156,10 +156,10 @@ The ideal treatment depends on the size of the gap, your budget, and how quickly
     slug: "loose-dentures-solution",
     title: "Loose Dentures Solution",
     metaTitle: "Loose Dentures Solution in Panvel | Better-Fitting Dentures & Implants",
-    metaDescription: "Struggling with loose, uncomfortable dentures? Get custom-fitted dentures or implant-supported dentures at Dental Essential, Old Panvel. Eat and speak with confidence.",
+    metaDescription: "Struggling with loose, uncomfortable dentures? Get custom-fitted dentures or implant-supported dentures at Dental Essential, Panvel. Eat and speak with confidence.",
     heroHeading: "Loose Dentures Solution in Panvel",
     heroSubheading: "Stop struggling with ill-fitting dentures — get a permanent, comfortable solution",
-    content: `If your dentures keep slipping, clicking, or causing sore spots, you're not alone. Loose dentures are one of the most frustrating dental problems, affecting eating, speaking, and confidence. At Dental Essential in Old Panvel, we offer modern solutions to fix or replace loose dentures.
+    content: `If your dentures keep slipping, clicking, or causing sore spots, you're not alone. Loose dentures are one of the most frustrating dental problems, affecting eating, speaking, and confidence. At Dental Essential in Panvel, we offer modern solutions to fix or replace loose dentures.
 
 ## Why Do Dentures Become Loose?
 
@@ -194,12 +194,12 @@ They prevent further bone loss, eliminate the need for adhesives, restore full c
     slug: "smile-makeover-for-wedding",
     title: "Smile Makeover for Wedding",
     metaTitle: "Smile Makeover for Wedding in Panvel | Look Your Best on Your Big Day",
-    metaDescription: "Getting married soon? Get a stunning smile makeover at Dental Essential, Old Panvel — teeth whitening, veneers, aligners & more. Start 2–6 months before your wedding.",
+    metaDescription: "Getting married soon? Get a stunning smile makeover at Dental Essential, Panvel — teeth whitening, veneers, aligners & more. Start 2–6 months before your wedding.",
     heroHeading: "Smile Makeover for Your Wedding in Panvel",
     heroSubheading: "Your wedding photos will last forever — make sure your smile is perfect",
     content: `Your wedding day is one of the most photographed days of your life. Every smile, every laugh will be captured forever. A smile makeover before your wedding ensures you look and feel your absolute best.
 
-At Dental Essential in Old Panvel, we offer personalized wedding smile packages that combine multiple treatments for a stunning, natural-looking result.
+At Dental Essential in Panvel, we offer personalized wedding smile packages that combine multiple treatments for a stunning, natural-looking result.
 
 ## Wedding Smile Makeover Options
 

@@ -19,7 +19,7 @@ export default function BlogPage() {
             DENTAL HEALTH INSIGHTS
           </span>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Our Blog
+            Blogs
           </h1>
           <p className="text-sky-100 max-w-2xl mx-auto text-lg">
             Stay informed with the latest dental health tips, treatment guides, and expert advice 

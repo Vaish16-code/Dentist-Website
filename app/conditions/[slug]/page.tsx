@@ -151,9 +151,9 @@ export default async function ConditionPage({ params }: { params: Promise<{ slug
       <section className="py-12 bg-gradient-to-r from-sky-500 to-blue-600">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Get Expert Help Today</h2>
-          <p className="text-sky-100 mb-6">Book a consultation at Dental Essential in Old Panvel. Our team will diagnose your problem and recommend the best treatment.</p>
+          <p className="text-sky-100 mb-6">Book a consultation at Dental Essential in Panvel. Our team will diagnose your problem and recommend the best treatment.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg">Book Free Consultation</Link>
+            <Link href="/contact" className="bg-white text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg">Book Consultation</Link>
             <a href="https://wa.me/918779646573" target="_blank" rel="noopener noreferrer" className="border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-lg font-semibold transition-colors">WhatsApp Us</a>
           </div>
         </div>

@@ -122,7 +122,7 @@ export default function ContactPage() {
               </svg>
             ),
             label: 'Find Us',
-            value: 'Vishrali Naka, Old Panvel – 410206',
+            value: 'Vishrali Naka, Panvel – 410206',
             href: 'https://maps.google.com/?q=Dental+Essential+Panvel',
           },
           {
@@ -175,7 +175,7 @@ export default function ContactPage() {
               {
                 icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z" />,
                 title: 'Clinic Address',
-                content: 'Shop no. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka, Old Panvel – 410206'
+                content: 'Shop no. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka, Panvel – 410206'
               },
               {
                 icon: <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />,

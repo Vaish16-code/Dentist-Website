@@ -41,7 +41,7 @@ export const services: Service[] = [
       { step: 5, title: "Crown Placement", description: "A dental crown is placed to protect and restore the tooth's function." }
     ],
     metaTitle: "Painless Root Canal Treatment in Panvel | Tooth Pain Relief",
-    metaDescription: "Suffering from severe tooth pain or sensitivity? Get painless root canal treatment at Dental Essential, Old Panvel. Save your natural tooth with advanced laser technology.",
+    metaDescription: "Suffering from severe tooth pain or sensitivity? Get painless root canal treatment at Dental Essential, Panvel. Save your natural tooth with advanced laser technology.",
     patientProblems: ["Severe toothache", "Pain in upper teeth", "Pain in lower teeth", "Sensitivity to hot or cold food", "Deep cavity", "Swollen gums near a tooth", "Tooth pain while chewing"],
     faqs: [
       { question: "Is root canal treatment painful?", answer: "No. At Dental Essential, we use modern anesthesia and advanced rotary instruments to make the procedure virtually painless. Most patients feel relief immediately after treatment." },
@@ -73,7 +73,7 @@ export const services: Service[] = [
       { step: 5, title: "Crown Fitting", description: "A custom-made crown is attached, completing your new tooth." }
     ],
     metaTitle: "Dental Implants in Panvel | Missing Teeth Replacement",
-    metaDescription: "Missing teeth or struggling to chew? Get permanent dental implants at Dental Essential, Old Panvel. Natural-looking, long-lasting tooth replacement by expert implantologists.",
+    metaDescription: "Missing teeth or struggling to chew? Get permanent dental implants at Dental Essential, Panvel. Natural-looking, long-lasting tooth replacement by expert implantologists.",
     patientProblems: ["Missing teeth", "Cannot chew food properly", "Loose dentures", "Broken tooth", "Gap in teeth after extraction", "Denture replacement"],
     faqs: [
       { question: "Are dental implants permanent?", answer: "Yes. With proper care and oral hygiene, dental implants can last a lifetime. The titanium post fuses with your jawbone for a permanent, stable foundation." },
@@ -105,7 +105,7 @@ export const services: Service[] = [
       { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
     ],
     metaTitle: "Dental Braces in Panvel | Crooked Teeth & Spacing Correction",
-    metaDescription: "Have crooked teeth or spacing issues? Get metal or ceramic braces at Dental Essential, Old Panvel. Effective teeth straightening for all ages by expert orthodontists.",
+    metaDescription: "Have crooked teeth or spacing issues? Get metal or ceramic braces at Dental Essential, Panvel. Effective teeth straightening for all ages by expert orthodontists.",
     patientProblems: ["Crooked teeth", "Spacing in front teeth", "Overlapping teeth", "Bite problems", "Teeth not aligned properly", "Gap between teeth"],
     faqs: [
       { question: "At what age can braces be started?", answer: "Braces can be started from age 12 onwards. Adults can also get braces — there is no upper age limit for orthodontic treatment." },
@@ -117,7 +117,7 @@ export const services: Service[] = [
   },
   {
     slug: "clear-aligners",
-    title: "Clear Aligners",
+    title: "Clear Aligners or Invisalign",
     shortDescription: "Invisible aligners for discreet teeth straightening without metal brackets or wires.",
     image: "/images/services/Clear Aligners.jpg",
     bannerImage: "/images/services/Clear Aligners.jpg",
@@ -136,8 +136,8 @@ export const services: Service[] = [
       { step: 4, title: "Progress Check-ups", description: "Periodic visits to monitor your progress." },
       { step: 5, title: "Retention", description: "Retainers provided to maintain your new smile." }
     ],
-    metaTitle: "Clear Aligners in Panvel | Straight Teeth Without Braces",
-    metaDescription: "Want straight teeth without metal braces? Get invisible clear aligners at Dental Essential, Old Panvel. Removable, comfortable, and discreet teeth straightening.",
+    metaTitle: "Clear Aligners or Invisalign in Panvel | Straight Teeth Without Braces",
+    metaDescription: "Want straight teeth without metal braces? Get invisible clear aligners at Dental Essential, Panvel. Removable, comfortable, and discreet teeth straightening.",
     patientProblems: ["Straight teeth without braces", "Spacing in front teeth", "Crooked teeth", "Mild bite issues", "Teeth alignment for wedding", "Discreet orthodontic treatment"],
     faqs: [
       { question: "Can clear aligners fix crooked teeth?", answer: "Yes. Clear aligners effectively treat mild to moderate crowding, spacing, and bite issues. A consultation will determine if you are a good candidate." },
@@ -169,7 +169,7 @@ export const services: Service[] = [
       { step: 5, title: "Final Reveal", description: "Your transformed smile is revealed with care instructions." }
     ],
     metaTitle: "Smile Designing in Panvel | Smile Makeover & Cosmetic Dentistry",
-    metaDescription: "Boost your confidence with a complete smile makeover at Dental Essential, Old Panvel. Veneers, whitening, and contouring for the perfect wedding smile or everyday confidence.",
+    metaDescription: "Boost your confidence with a complete smile makeover at Dental Essential, Panvel. Veneers, whitening, and contouring for the perfect wedding smile or everyday confidence.",
     patientProblems: ["Smile makeover for wedding", "Uneven teeth", "Discoloured teeth", "Want a confident smile", "Chipped or broken front teeth", "Smile improvement"],
     faqs: [
       { question: "What is smile designing?", answer: "Smile designing is a combination of cosmetic treatments like veneers, teeth whitening, bonding, and contouring customized to enhance your facial aesthetics and smile." },
@@ -201,7 +201,7 @@ export const services: Service[] = [
       { step: 5, title: "Final Placement", description: "The custom crown or bridge is cemented in place." }
     ],
     metaTitle: "Crowns & Bridges in Panvel | Broken or Damaged Tooth Repair",
-    metaDescription: "Broken, cracked, or missing tooth? Restore your smile with durable crowns and bridges at Dental Essential, Old Panvel. Natural-looking, long-lasting dental restorations.",
+    metaDescription: "Broken, cracked, or missing tooth? Restore your smile with durable crowns and bridges at Dental Essential, Panvel. Natural-looking, long-lasting dental restorations.",
     patientProblems: ["Broken tooth", "Cracked tooth", "Damaged tooth after injury", "Missing tooth support", "Weak tooth after root canal", "Gap between teeth"],
     faqs: [
       { question: "What is the difference between a crown and a bridge?", answer: "A crown covers and protects a single damaged tooth. A bridge replaces one or more missing teeth by anchoring to adjacent teeth." },
@@ -265,7 +265,7 @@ export const services: Service[] = [
       { step: 5, title: "Adjustments", description: "Follow-up visits to ensure perfect fit and comfort." }
     ],
     metaTitle: "Dentures in Panvel | Comfortable Dentures for Missing Teeth",
-    metaDescription: "Struggling with loose dentures or missing teeth? Get custom-fitted, comfortable dentures at Dental Essential, Old Panvel. Restore your chewing ability and smile.",
+    metaDescription: "Struggling with loose dentures or missing teeth? Get custom-fitted, comfortable dentures at Dental Essential, Panvel. Restore your chewing ability and smile.",
     patientProblems: ["Loose dentures", "Multiple missing teeth", "Cannot chew food properly", "Old dentures not fitting", "Affordable tooth replacement", "Full set of teeth missing"],
     faqs: [
       { question: "What types of dentures are available?", answer: "We offer complete dentures (for all teeth), partial dentures (for some missing teeth), and implant-supported dentures for maximum stability." },
@@ -297,7 +297,7 @@ export const services: Service[] = [
       { step: 5, title: "Aftercare", description: "Instructions provided for quick and comfortable recovery." }
     ],
     metaTitle: "Wisdom Tooth Extraction in Panvel | Jaw Pain & Impacted Tooth",
-    metaDescription: "Jaw pain, swelling, or impacted wisdom tooth? Safe and comfortable wisdom tooth extraction at Dental Essential, Old Panvel. Quick recovery with experienced oral surgeons.",
+    metaDescription: "Jaw pain, swelling, or impacted wisdom tooth? Safe and comfortable wisdom tooth extraction at Dental Essential, Panvel. Quick recovery with experienced oral surgeons.",
     patientProblems: ["Right jaw pain", "Left jaw pain", "Swelling at back of mouth", "Impacted wisdom tooth", "Pain while opening mouth", "Difficulty chewing at the back"],
     faqs: [
       { question: "How do I know if my wisdom tooth needs extraction?", answer: "Common signs include pain at the back of the jaw, swelling, difficulty opening your mouth, or crowding of other teeth. An X-ray will confirm if extraction is needed." },
@@ -329,7 +329,7 @@ export const services: Service[] = [
       { step: 5, title: "Maintenance Plan", description: "Long-term care plan to maintain your restored smile." }
     ],
     metaTitle: "Full Mouth Rehabilitation in Panvel | Complete Dental Restoration",
-    metaDescription: "Multiple missing teeth, bite issues, or difficulty chewing? Get comprehensive full mouth rehabilitation at Dental Essential, Old Panvel. Restore your complete smile.",
+    metaDescription: "Multiple missing teeth, bite issues, or difficulty chewing? Get comprehensive full mouth rehabilitation at Dental Essential, Panvel. Restore your complete smile.",
     patientProblems: ["Multiple missing teeth", "Bite issues", "Cannot chew food properly", "Worn down teeth", "Full mouth restoration needed", "Severely damaged teeth"],
     faqs: [
       { question: "What is full mouth rehabilitation?", answer: "It is a comprehensive treatment combining multiple procedures like crowns, bridges, implants, and veneers to restore the function and aesthetics of your entire mouth." },

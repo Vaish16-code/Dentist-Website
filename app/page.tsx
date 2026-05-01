@@ -8,7 +8,7 @@ import AppointmentPopup from "@/components/AppointmentPopup";
 
 export const metadata = {
   title: 'Dental Essential | Tooth Pain, Missing Teeth & Smile Makeover Treatment in Panvel',
-  description: 'Facing tooth pain, jaw pain, missing teeth, or want a smile makeover? Dental Essential in Old Panvel offers painless root canal, dental implants, braces, aligners & more. Book your consultation today.',
+  description: 'Facing tooth pain, jaw pain, missing teeth, or want a smile makeover? Dental Essential in Panvel offers painless root canal, dental implants, braces, aligners & more. Book your consultation today.',
   alternates: {
     canonical: 'https://www.dentalessential.co.in',
   },
@@ -24,14 +24,14 @@ const dentalProblems = [
 ];
 
 const homeFaqs = [
-  { question: "What should I do if I have severe tooth pain?", answer: "Severe tooth pain usually indicates a deep cavity or infection that may require root canal treatment. Visit Dental Essential in Old Panvel for an immediate evaluation. We offer painless root canal treatment using advanced technology." },
+  { question: "What should I do if I have severe tooth pain?", answer: "Severe tooth pain usually indicates a deep cavity or infection that may require root canal treatment. Visit Dental Essential in Panvel for an immediate evaluation. We offer painless root canal treatment using advanced technology." },
   { question: "What is the best replacement for missing teeth?", answer: "Dental implants are the gold standard for replacing missing teeth — they look, feel, and function like natural teeth. We also offer bridges and dentures depending on your needs and budget." },
   { question: "Can crooked teeth be fixed without metal braces?", answer: "Yes! Clear aligners are an invisible, removable alternative to metal braces. They effectively straighten mild to moderate cases of crooked or spaced teeth without anyone noticing." },
-  { question: "Is dental treatment at Dental Essential expensive?", answer: "We offer affordable dental care with transparent pricing. EMI options are available for major treatments like implants and braces. Book a free consultation to get an accurate cost estimate." },
+  { question: "Is dental treatment at Dental Essential expensive?", answer: "We offer affordable dental care with transparent pricing. EMI options are available for major treatments like implants and braces. Book a consultation to get an accurate cost estimate." },
 ];
 
 export default function HomePage() {
-  const featuredServices = services.slice(0, 5);
+  const featuredServices = [services[0], services[1], services[3], services[2], services[4]];
 
   return (
     <>
@@ -72,7 +72,7 @@ export default function HomePage() {
                 <span className="text-pink-500">Dental</span>{' '}
                 <span className="text-sky-500">Essential</span>
               </span>{' '}
-              provides gentle, advanced dental treatments in Old Panvel for the whole family.
+              provides gentle, advanced dental treatments in Panvel for the whole family.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center md:justify-start gap-3">
@@ -81,7 +81,7 @@ export default function HomePage() {
                 className="inline-block bg-sky-500 hover:bg-sky-600 transition text-white px-8 py-3 rounded-md shadow-lg"
                 id="hero-book-appointment"
               >
-                Book Free Consultation
+                Book Consultation
               </Link>
 
               <div className="bg-white shadow rounded-lg px-4 sm:px-6 py-3 inline-flex items-center gap-2 sm:gap-3 border border-gray-200 max-w-full">
@@ -105,7 +105,7 @@ export default function HomePage() {
             <div className="relative rounded-3xl overflow-hidden border-4 border-sky-100 shadow-lg">
               <Image
                 src="/images/home/receptionteam.jpeg"
-                alt="Dental Essential reception team in Old Panvel clinic"
+                alt="Dental Essential reception team in Panvel clinic"
                 width={700}
                 height={500}
                 className="w-full h-auto object-cover"
@@ -117,7 +117,7 @@ export default function HomePage() {
             <p className="text-sky-600 text-xl md:text-2xl font-semibold mb-2">Who are we?</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-5">
               <span className="text-pink-500">Advanced Dental Care</span>{' '}
-              <span className="text-sky-500">You Can Trust in Old Panvel</span>
+              <span className="text-sky-500">You Can Trust in Panvel</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
              At{' '}
@@ -181,7 +181,7 @@ export default function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-10">
           <div className="text-center mb-10">
-            <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Our Treatments</p>
+              <p className="text-sky-600 text-2xl md:text-3xl font-bold mb-2">Treatments</p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">
               Advanced Dental Solutions for Every Problem
             </h2>

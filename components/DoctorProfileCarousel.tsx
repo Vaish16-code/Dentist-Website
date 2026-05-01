@@ -46,14 +46,6 @@ export default function DoctorProfileCarousel() {
 
             {/* Image Carousel */}
               <div className="relative h-[360px] sm:h-[500px] md:h-[650px] bg-gradient-to-br from-amber-50 to-white">              
-              {/* Decorative dots */}
-              <div className="absolute left-0 top-1/2 -translate-y-1/2 hidden md:block z-10">
-                <div className="grid grid-cols-6 gap-2 p-4">
-                  {[...Array(36)].map((_, i) => (
-                    <div key={i} className="w-2 h-2 rounded-full bg-sky-300"></div>
-                  ))}
-                </div>
-              </div>
 
               {/* Images */}
               <div className="relative h-full w-full p-2 sm:p-3">

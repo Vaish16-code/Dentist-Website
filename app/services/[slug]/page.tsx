@@ -113,7 +113,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             }`}>
               <img 
                 src={service.bannerImage} 
-                alt={`${service.title} treatment at Dental Essential clinic in Old Panvel`}
+                alt={`${service.title} treatment at Dental Essential clinic in Panvel`}
                 className={`w-full block ${
                   isFullMouthRehabilitation
                     ? 'h-auto object-contain'
@@ -281,7 +281,7 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
             Ready to Get {service.title}?
           </h2>
           <p className="text-sky-100 mb-6 max-w-2xl mx-auto">
-            Book your consultation at Dental Essential in Old Panvel. Our expert team will evaluate your condition and recommend the best treatment plan.
+            Book your consultation at Dental Essential in Panvel. Our expert team will evaluate your condition and recommend the best treatment plan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="bg-white text-sky-600 hover:bg-sky-50 px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg" id={`cta-book-${service.slug}`}>

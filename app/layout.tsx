@@ -4,14 +4,14 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'Dental Essential | Best Dentist in Panvel for Tooth Pain, Missing Teeth & Smile Makeover',
-  description: 'Facing tooth pain, jaw pain, missing teeth, or spacing issues? Dental Essential in Old Panvel offers painless root canal, dental implants, braces, smile makeover & more. Book a consultation today.',
-  keywords: 'dentist in Panvel, tooth pain treatment, missing teeth replacement, dental implants Panvel, root canal Panvel, braces Panvel, smile makeover, jaw pain dentist, best dental clinic Old Panvel',
+  description: 'Facing tooth pain, jaw pain, missing teeth, or spacing issues? Dental Essential in Panvel offers painless root canal, dental implants, braces, smile makeover & more. Book a consultation today.',
+  keywords: 'dentist in Panvel, tooth pain treatment, missing teeth replacement, dental implants Panvel, root canal Panvel, braces Panvel, smile makeover, jaw pain dentist, best dental clinic in Panvel',
   alternates: {
     canonical: 'https://www.dentalessential.co.in',
   },
   openGraph: {
     title: 'Dental Essential | Best Dentist in Panvel',
-    description: 'Expert dental care for tooth pain, missing teeth, jaw pain, and smile makeover in Old Panvel, Navi Mumbai.',
+    description: 'Expert dental care for tooth pain, missing teeth, jaw pain, and smile makeover in Panvel, Navi Mumbai.',
     type: 'website',
     locale: 'en_IN',
     siteName: 'Dental Essential',
@@ -27,13 +27,13 @@ const localBusinessSchema = {
   "@type": "Dentist",
   "name": "Dental Essential",
   "alternateName": "Dental Essential Advanced Dental Clinic",
-  "description": "Best dental clinic in Old Panvel offering painless root canal, dental implants, braces, clear aligners, smile makeover, and more.",
+  "description": "Best dental clinic in Panvel offering painless root canal, dental implants, braces, clear aligners, smile makeover, and more.",
   "url": "https://www.dentalessential.co.in",
   "telephone": "+918779648573",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Shop No. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka",
-    "addressLocality": "Old Panvel",
+    "addressLocality": "Panvel",
     "addressRegion": "Maharashtra",
     "postalCode": "410206",
     "addressCountry": "IN"

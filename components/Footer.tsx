@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* ── Services ── */}
           <div>
-            <h3 className="text-slate-800 text-sm font-bold uppercase tracking-wider mb-5">Our Treatments</h3>
+            <h3 className="text-slate-800 text-sm font-bold uppercase tracking-wider mb-5">Treatments</h3>
             <ul className="space-y-2.5 text-sm">
               {[
                 { label: 'Painless Root Canal', path: '/services/painless-root-canal' },
@@ -104,7 +104,7 @@ export default function Footer() {
                   </svg>
                 </div>
                 <span className="text-slate-500 leading-relaxed">
-                  Shop 16, Bldg 7/B, Gurusharnam Complex,<br />Vishrali Naka, Old Panvel – 410206
+                  Shop 16, Bldg 7/B, Gurusharnam Complex,<br />Vishrali Naka, Panvel – 410206
                 </span>
               </li>
               <li className="flex items-center gap-3">
