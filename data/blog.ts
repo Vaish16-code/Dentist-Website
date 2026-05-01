@@ -96,7 +96,7 @@ By getting referrals from friends and relatives, reading internet reviews, and m
   },
   {
     slug: "clear-aligners-vs-braces-complete-guide",
-    title: "Clear Aligners vs Braces: A Complete Guide for 2024",
+    title: "Clear Aligners vs Braces: A Complete Guide for 2026",
     excerpt: "Confused between clear aligners and traditional braces? This comprehensive guide breaks down the pros, cons, costs, and suitability of each option to help you make the right choice.",
     featuredImage: "/images/blog/clear-aligners vs braces.jpeg",
     author: {
