@@ -363,28 +363,30 @@ export default function AboutPage() {
           </div>
 
           <div className="relative grid lg:grid-cols-2 gap-8 lg:gap-14 items-center">
-            {/* Left Side */}
-            <div className="relative flex justify-center lg:justify-start">
 
-              <button
-                onClick={prevDoctor}
-                className="absolute left-2 sm:left-0 lg:-left-5 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M15 19l-7-7 7-7"
-                  />
-                </svg>
-              </button>
+            {/* ── BOTH arrows on outer container: same line always ── */}
+            <button
+              onClick={prevDoctor}
+              aria-label="Previous doctor"
+              className="absolute left-2 sm:left-0 lg:-left-5 top-[170px] sm:top-[210px] lg:top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
 
+            <button
+              onClick={nextDoctor}
+              aria-label="Next doctor"
+              className="absolute right-2 sm:right-0 lg:-right-4 top-[170px] sm:top-[210px] lg:top-1/2 -translate-y-1/2 z-30 w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center shadow-md hover:bg-sky-600 transition"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+
+            {/* Left Side — image only */}
+            <div className="flex justify-center lg:justify-start">
               <div className="relative z-10 mx-auto w-[260px] sm:w-[320px] h-[340px] sm:h-[420px] lg:h-[400px] overflow-hidden rounded-2xl shadow-lg">
                 <Image
                   src={doctor.image}
@@ -395,27 +397,8 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Side */}
-            <div className="relative">
-              <button
-                onClick={nextDoctor}
-                className="hidden lg:flex absolute -right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 rounded-full bg-sky-500 text-white items-center justify-center shadow-md hover:bg-sky-600 transition"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </button>
-
+            {/* Right Side — text only */}
+            <div>
               <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                 {doctor.name}
               </h3>
@@ -437,18 +420,8 @@ export default function AboutPage() {
                     className="flex items-center gap-2 text-gray-700 text-xs md:text-sm font-medium"
                   >
                     <div className="w-5 h-5 rounded-full border-2 border-green-500 flex items-center justify-center text-green-500 shrink-0">
-                      <svg
-                        className="w-3 h-3"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={3}
-                          d="M5 13l4 4L19 7"
-                        />
+                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                     <span>{item}</span>
@@ -480,6 +453,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
+
       </section>
 
       {/* ── FACILITIES SECTION ── */}
