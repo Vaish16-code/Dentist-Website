@@ -128,7 +128,9 @@ export default async function ServiceDetailPage({ params }: { params: Promise<{ 
                 About This Treatment
               </span>
               <h2 className="text-3xl font-bold mb-6">
-                <span className="text-pink-500">What is</span>{' '}
+                <span className="text-pink-500">
+                  {['Dentures', 'Braces', 'Implants', 'Aligners'].some(word => service.title.includes(word)) ? 'What are' : 'What is'}
+                </span>{' '}
                 <span className="text-sky-500">{service.title}?</span>
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
