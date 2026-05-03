@@ -3,4 +3,10 @@ Allow: /
 Disallow: /_next/
 Disallow: /api/
 
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://www.dentalessential.co.in/sitemap.xml
