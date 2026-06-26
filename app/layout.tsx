@@ -20,6 +20,9 @@ export const metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    google: 'euWP9OpTDOka20dM9H4FP7bBZlRcc2s_NVIIoxgcl3g',
+  },
 };
 
 const localBusinessSchema = {

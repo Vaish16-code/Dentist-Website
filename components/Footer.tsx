@@ -42,7 +42,7 @@ export default function Footer() {
 
             {/* Social icons */}
             <div className="flex gap-3">
-              <a href="https://wa.me/918779646573" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="WhatsApp">
+              <a href="https://wa.me/918779648573" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="WhatsApp">
                 <img src="/images/whatsapp-icon.png" className="h-9 w-9 hover:opacity-80 transition-opacity" alt="WhatsApp" />
               </a>
               <a href="https://www.instagram.com/dentalessential_drsameergharat?igsh=MXZiNmVpZmlkMHplcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="Instagram">
