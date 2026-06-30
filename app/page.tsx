@@ -24,10 +24,26 @@ const dentalProblems = [
 ];
 
 const homeFaqs = [
-  { question: "What should I do if I have severe tooth pain?", answer: "Severe tooth pain usually indicates a deep cavity or infection that may require root canal treatment. Visit Dental Essential in Panvel for an immediate evaluation. We offer painless root canal treatment using advanced technology." },
-  { question: "What is the best replacement for missing teeth?", answer: "Dental implants are the gold standard for replacing missing teeth — they look, feel, and function like natural teeth. We also offer bridges and dentures depending on your needs and budget." },
-  { question: "Can crooked teeth be fixed without metal braces?", answer: "Yes! Clear aligners are an invisible, removable alternative to metal braces. They effectively straighten mild to moderate cases of crooked or spaced teeth without anyone noticing." },
-  { question: "Is dental treatment at Dental Essential expensive?", answer: "We offer affordable dental care with transparent pricing. EMI options are available for major treatments like implants and braces. Book a consultation to get an accurate cost estimate." },
+  { question: "Which is the best dental clinic in Panvel?", answer: "Dental Essential is one of the leading dental clinics in Panvel, offering advanced treatments including dental implants, smile designing, Invisalign, aligners, root canal treatment, and full mouth rehabilitation under the care of experienced dental specialists." },
+  { question: "What dental treatments do you offer in Panvel?", answer: "We provide a comprehensive range of dental services, including dental implants, root canal treatment, teeth cleaning, tooth extraction, smile makeovers, veneers, crowns and bridges, Invisalign, aligners, dentures, and pediatric dentistry." },
+  { question: "Do you offer dental implants in Panvel?", answer: "Yes, we provide high-quality dental implant treatment to replace missing teeth. Dental implants are a long-lasting and natural-looking solution that restores both function and aesthetics." },
+  { question: "How much do dental implants cost in Panvel?", answer: "The cost of dental implants varies depending on the number of implants required, the complexity of the case, and any additional procedures needed. We recommend scheduling a consultation for a personalized treatment plan and cost estimate." },
+  { question: "Do you provide Invisalign and clear aligners?", answer: "Yes, we offer Invisalign and other clear aligner solutions to help patients achieve straighter teeth without traditional metal braces. A consultation can determine your suitability for aligner treatment." },
+  { question: "Is root canal treatment painful?", answer: "Modern root canal treatment is performed under local anesthesia and is generally comfortable. Most patients experience minimal discomfort during the procedure and significant relief from tooth pain afterward." },
+  { question: "How often should I visit a dentist?", answer: "Most patients should visit a dentist every six months for routine checkups and professional cleaning. Regular visits help detect dental issues early and maintain optimal oral health." },
+  { question: "Do you offer emergency dental treatment in Panvel?", answer: "Yes, we provide emergency dental care for severe toothaches, broken teeth, dental infections, knocked-out teeth, and other urgent dental concerns. Contact us immediately for prompt assistance." },
+  { question: "What is smile designing?", answer: "Smile designing is a cosmetic dental procedure that enhances the appearance of your smile through treatments such as veneers, teeth whitening, aligners, and gum contouring. The treatment plan is customized to your facial features and goals." },
+  { question: "Do you treat children?", answer: "Yes, we provide pediatric dental care, including routine checkups, cavity treatment, preventive care, fluoride application, and oral health education for children." },
+  { question: "What is full mouth rehabilitation?", answer: "Full mouth rehabilitation involves restoring the function, health, and appearance of all teeth using a combination of treatments such as crowns, bridges, implants, veneers, and restorative procedures." },
+  { question: "Do you offer teeth whitening treatment?", answer: "Yes, we provide professional teeth whitening treatments that can safely and effectively brighten your smile and remove stains caused by food, beverages, smoking, and aging." },
+  { question: "How can I book an appointment at your dental clinic in Panvel?", answer: "You can book an appointment by calling our clinic, sending a WhatsApp message, or filling out the appointment form on our website." },
+  { question: "Why should I choose Dental Essential in Panvel?", answer: "Dental Essential combines advanced technology, experienced specialists, personalized treatment plans, and patient-focused care to deliver high-quality dental solutions for individuals and families." },
+  { question: "Do you provide free consultations for Invisalign and aligners?", answer: "Yes, we offer consultation appointments for patients interested in Invisalign and clear aligner treatments. During the consultation, our specialists will assess your teeth and discuss suitable treatment options." },
+  { question: "What are the signs that I may need a dental checkup?", answer: "Common signs include tooth pain, bleeding gums, sensitivity to hot or cold foods, bad breath, loose teeth, swollen gums, or visible cavities. Early diagnosis can prevent more serious dental problems." },
+  { question: "Is dental treatment covered by insurance?", answer: "Many dental insurance plans cover preventive and restorative treatments. Our team can assist you in understanding your coverage and available payment options." },
+  { question: "How long does a dental implant procedure take?", answer: "The treatment timeline depends on individual cases. While implant placement can often be completed in a single visit, the full healing and restoration process may take several months for optimal results." },
+  { question: "Are cosmetic dental treatments safe?", answer: "Yes, cosmetic treatments such as veneers, teeth whitening, and smile designing are safe when performed by qualified dental professionals using approved materials and techniques." },
+  { question: "Do you accept patients from New Panvel, Kamothe, Kalamboli, and Kharghar?", answer: "Yes, patients regularly visit our clinic from Panvel, New Panvel, Kamothe, Kalamboli, Kharghar, Taloja, and nearby areas for specialized dental care and advanced treatments." },
 ];
 
 export default function HomePage() {
@@ -60,10 +76,7 @@ export default function HomePage() {
              </span>
 
             <h1 className="mt-6 text-4xl md:text-5xl font-bold leading-tight">
-              <span className="text-pink-500">Tooth Pain? Missing Teeth?</span>{' '}
-              <span className="text-sky-500">
-                Get Expert Dental Care in Panvel
-              </span>
+              <span className="text-pink-500">Consult the Best Dentist in Panvel</span>
             </h1>
 
             <p className="mt-6 text-gray-800 max-w-xl">
@@ -116,7 +129,7 @@ export default function HomePage() {
           <div>
             <p className="text-sky-600 text-xl md:text-2xl font-semibold mb-2">Who are we?</p>
             <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-5">
-              <span className="text-pink-500">Advanced Dental Care</span>{' '}
+              <span className="text-pink-500">Advanced Dental Clinic</span>{' '}
               <span className="text-sky-500">You Can Trust in Panvel</span>
             </h2>
             <p className="text-gray-600 leading-relaxed mb-6">
@@ -125,7 +138,9 @@ export default function HomePage() {
                <span className="text-pink-500">Dental</span>{' '}
                <span className="text-sky-500">Essential</span>
              </span>{' '}
-             Clinic, we provide high-quality, patient-focused dental care in a comfortable and friendly environment. Led by Dr. Sameer Gharat, our team combines advanced technology with a compassionate approach to deliver personalized treatments — from relieving severe tooth pain to crafting the smile of your dreams. Whether it&apos;s missing teeth, jaw pain, or a child&apos;s first dental visit, we treat every concern with precision, hygiene, and genuine care.
+             Clinic, we provide high-quality, patient-focused dental care in a comfortable and friendly environment. Led by Dr. Sameer Gharat, our team combines advanced technology with a compassionate approach to
+             deliver personalized treatments — from relieving severe tooth pain to crafting the smile of your dreams. Whether it&apos;s missing teeth, jaw pain, or a child&apos;s first dental visit, we treat every concern with precision, hygiene, and genuine
+             care.
             </p>
             <Link
               href="/about"
@@ -253,6 +268,64 @@ export default function HomePage() {
 
       {/* GOOGLE REVIEWS SECTION */}
       <ReviewsCarousel />
+
+      {/* AREAS WE SERVE SECTION */}
+      <section className="py-16 bg-gray-50" id="areas-we-serve">
+        <div className="max-w-7xl mx-auto px-6 md:px-10">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* Left: Content */}
+            <div>
+              <p className="text-pink-500 text-sm font-bold uppercase tracking-widest mb-3">
+                Panvel &amp; Beyond
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                Areas We Proudly Serve
+              </h2>
+              <p className="text-gray-500 mb-8 max-w-lg">
+                We welcome patients looking for high-quality, trusted dental care from across Panvel and these surrounding communities:
+              </p>
+
+              {/* Area Tags Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-8">
+                {[
+                  "New Panvel", "Old Panvel", "Kharghar",
+                  "Kamothe", "Kalamboli", "Taloja",
+                  "Ulwe", "Khandeshwar", "Panvel City",
+                  "Navi Mumbai",
+                ].map((area) => (
+                  <div
+                    key={area}
+                    className="bg-white border border-gray-200 rounded-lg px-4 py-3 text-sm font-medium text-gray-700 hover:border-sky-400 hover:text-sky-600 hover:shadow-sm transition-all text-center"
+                  >
+                    {area}
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-gray-400 text-xs leading-relaxed max-w-md">
+                Are you searching for a <strong>dentist near me</strong>, <strong>dental clinic near me</strong>, or <strong>best dentist in Navi Mumbai</strong>? Patients choose Dental Essential for expert care, a gentle approach, and advanced dental solutions.
+              </p>
+            </div>
+
+            {/* Right: Google Maps */}
+            <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-200 h-80 lg:h-[420px]">
+              <iframe
+                src="https://www.google.com/maps?q=Dental%20Essential%20Advanced%20Dental%20Clinic&ll=18.980009,73.1144911&z=18&output=embed"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Dental Essential Clinic Location - Panvel, Navi Mumbai"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
      </>
   );
