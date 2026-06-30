@@ -7,8 +7,8 @@ import { services } from '@/data/services';
 import AppointmentPopup from "@/components/AppointmentPopup";
 
 export const metadata = {
-  title: 'Dental Essential | Tooth Pain, Missing Teeth & Smile Makeover Treatment in Panvel',
-  description: 'Facing tooth pain, jaw pain, missing teeth, or want a smile makeover? Dental Essential in Panvel offers painless root canal, dental implants, braces, aligners & more. Book your consultation today.',
+  title: 'Dental Essential Dental Clinic | Best Dentist in Panvel',
+  description: 'Dental Essential Dental Clinic - Your trusted dentist serving Panvel, Kharghar, Kamothe, Kalamboli and Navi Mumbai for implants, root canals, Invisalign and smile design.',
   alternates: {
     canonical: 'https://www.dentalessential.co.in',
   },
