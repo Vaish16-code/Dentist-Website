@@ -134,9 +134,18 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             <div className="text-gray-700 leading-relaxed space-y-6">
               {post.content.split('\n').map((paragraph, index) => {
                 const trimmed = paragraph.trim();
-                
+
                 // Skip empty lines
                 if (!trimmed) return null;
+
+                // Helper: process bold + markdown links [text](url)
+                const processInline = (text: string) =>
+                  text
+                    .replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-800">$1</strong>')
+                    .replace(
+                      /\[([^\]]+)\]\(([^)]+)\)/g,
+                      '<a href="$2" class="text-sky-600 underline underline-offset-2 hover:text-sky-800 font-medium transition-colors">$1</a>'
+                    );
 
                 // H2 headings
                 if (trimmed.startsWith('## ')) {
@@ -162,8 +171,8 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                     <p key={index} className="ml-6 mb-2">
                       <span className="font-semibold text-sky-600">{trimmed.split('.')[0]}.</span>
                       {' '}
-                      <span dangerouslySetInnerHTML={{ 
-                        __html: trimmed.replace(/^\d+\.\s/, '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-800">$1</strong>') 
+                      <span dangerouslySetInnerHTML={{
+                        __html: processInline(trimmed.replace(/^\d+\.\s/, ''))
                       }} />
                     </p>
                   );
@@ -174,20 +183,20 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
                   return (
                     <div key={index} className="flex gap-3 ml-4 mb-2">
                       <span className="text-sky-500 mt-1">•</span>
-                      <span dangerouslySetInnerHTML={{ 
-                        __html: trimmed.replace('- ', '').replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-800">$1</strong>') 
+                      <span dangerouslySetInnerHTML={{
+                        __html: processInline(trimmed.replace('- ', ''))
                       }} />
                     </div>
                   );
                 }
 
-                // Regular paragraphs with bold text support
+                // Regular paragraphs
                 return (
-                  <p 
-                    key={index} 
+                  <p
+                    key={index}
                     className="mb-4"
-                    dangerouslySetInnerHTML={{ 
-                      __html: trimmed.replace(/\*\*(.*?)\*\*/g, '<strong class="text-gray-800">$1</strong>') 
+                    dangerouslySetInnerHTML={{
+                      __html: processInline(trimmed)
                     }}
                   />
                 );
