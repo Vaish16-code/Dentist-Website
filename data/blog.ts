@@ -22,7 +22,7 @@ export const blogPosts: BlogPost[] = [
     slug: "dental-veneers-in-panvel-everything-you-need-to-know",
     title: "Dental Veneers in Panvel: Everything You Need to Know for a Beautiful Smile",
     excerpt: "Whether you have stained, chipped, uneven or slightly misaligned teeth, dental veneers offer a minimally invasive solution to achieve a natural-looking, confident smile.",
-    featuredImage: "/images/blog/Dental veener in panvel.jpeg",
+    featuredImage: "/images/blog/dental-veneers-in-panvel.jpeg",
     author: {
       name: "Dental Essential",
       avatar: "/doctors/dr-sameer.jpg",
@@ -297,7 +297,7 @@ Dental Essential offers customized veneer treatments, advanced cosmetic dentistr
     slug: "baby-teeth-vs-permanent-teeth-key-differences-panvel",
     title: "Baby Teeth vs Permanent Teeth: Key Differences Every Parent Should Know (Panvel Guide)",
     excerpt: "A healthy smile starts long before your child's permanent teeth appear. Learn the key differences between baby and permanent teeth, eruption timelines, and how to care for both at every stage.",
-    featuredImage: "/images/blog/baby teeth vs permanent teeth.jpeg",
+    featuredImage: "/images/blog/baby-teeth-vs-permanent-teeth-blog.jpeg",
     author: {
       name: "Dental Essential",
       avatar: "/doctors/dr-sameer.jpg",
