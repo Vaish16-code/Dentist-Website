@@ -53,6 +53,56 @@ export default function HomePage() {
     <>
     <AppointmentPopup />
 
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dentist",
+          "@id": "https://www.dentalessential.co.in/#dentist",
+          "name": "Dental Essential",
+          "url": "https://www.dentalessential.co.in/",
+          "image": "https://www.dentalessential.co.in/images/logo.png",
+          "telephone": "+91-8779648573",
+          "priceRange": "₹₹",
+          "email": "info@dentalessential.co.in",
+          "description": "Dental Essential is an advanced dental clinic in Panvel providing dental implants, root canal treatment, Invisalign, smile designing, pediatric dentistry, wisdom tooth extraction and full mouth rehabilitation.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop 16, Building 7/B, Gurusharnam Complex, Vishrali Naka",
+            "addressLocality": "Panvel",
+            "addressRegion": "Maharashtra",
+            "postalCode": "410206",
+            "addressCountry": "IN"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "18.9894",
+            "longitude": "73.1175"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+              "opens": "10:00",
+              "closes": "14:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+              "opens": "17:00",
+              "closes": "21:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.google.com/maps/place/Dental+Essential",
+            "https://www.facebook.com/dentalessential",
+            "https://www.instagram.com/dentalessential"
+          ]
+        })
+      }}
+    />
+
     <main>
      {/* HERO SECTION */}
       <section className="bg-white overflow-hidden">
