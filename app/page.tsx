@@ -51,7 +51,7 @@ export default function HomePage() {
 
   return (
     <>
-    {/* Schema 1: Full Dentist Schema */}
+    {/* Dentist Schema */}
     <script
       type="application/ld+json"
       dangerouslySetInnerHTML={{
@@ -61,15 +61,13 @@ export default function HomePage() {
           "@id": "https://www.dentalessential.co.in/#dentist",
           "name": "Dental Essential",
           "url": "https://www.dentalessential.co.in/",
-          "logo": "https://www.dentalessential.co.in/wp-content/uploads/logo.png",
-          "image": "https://www.dentalessential.co.in/wp-content/uploads/clinic-front.jpg",
+          "image": "https://www.dentalessential.co.in/images/clinic.jpg",
+          "priceRange": "₹₹",
           "telephone": "+91-8779648573",
           "email": "info@dentalessential.co.in",
-          "priceRange": "₹₹",
-          "description": "Dental Essential is a modern dental clinic in Panvel, Navi Mumbai offering dental implants, root canal treatment, Invisalign, smile designing, cosmetic dentistry, pediatric dentistry, wisdom tooth removal, crowns, bridges, dentures and complete oral care.",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Shop No. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka",
+            "streetAddress": "Shop 16, Bldg 7/B, Gurusharnam Complex, Vishrali Naka",
             "addressLocality": "Panvel",
             "addressRegion": "Maharashtra",
             "postalCode": "410206",
@@ -77,10 +75,9 @@ export default function HomePage() {
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": "18.9896",
+            "latitude": "18.9890",
             "longitude": "73.1175"
           },
-          "hasMap": "https://maps.google.com/?q=Dental+Essential+Panvel",
           "openingHoursSpecification": [
             {
               "@type": "OpeningHoursSpecification",
@@ -95,65 +92,17 @@ export default function HomePage() {
               "closes": "21:00"
             }
           ],
-          "areaServed": ["Panvel","New Panvel","Kamothe","Kalamboli","Kharghar","Taloja","Ulwe","Navi Mumbai"],
           "currenciesAccepted": "INR",
-          "paymentAccepted": ["Cash","Credit Card","Debit Card","UPI","Net Banking"],
-          "sameAs": [
-            "https://www.facebook.com/dentalessential",
-            "https://www.instagram.com/dentalessential",
-            "https://g.page/r/your-google-business-profile"
-          ]
-        })
-      }}
-    />
-
-    {/* Schema 2: Dentist Schema with Opening Hours */}
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Dentist",
-          "@id": "https://www.dentalessential.co.in/#dentist",
-          "name": "Dental Essential",
-          "url": "https://www.dentalessential.co.in/",
-          "image": "https://www.dentalessential.co.in/images/logo.png",
-          "telephone": "+91-8779648573",
-          "priceRange": "₹₹",
-          "email": "info@dentalessential.co.in",
-          "description": "Dental Essential is an advanced dental clinic in Panvel providing dental implants, root canal treatment, Invisalign, smile designing, pediatric dentistry, wisdom tooth extraction and full mouth rehabilitation.",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Shop 16, Building 7/B, Gurusharnam Complex, Vishrali Naka",
-            "addressLocality": "Panvel",
-            "addressRegion": "Maharashtra",
-            "postalCode": "410206",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": "18.9896",
-            "longitude": "73.1175"
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-              "opens": "10:00",
-              "closes": "14:00"
-            },
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-              "opens": "17:00",
-              "closes": "21:00"
-            }
+          "paymentAccepted": "Cash, Credit Card, Debit Card, UPI",
+          "areaServed": [
+            "Panvel","Old Panvel","New Panvel","Kharghar",
+            "Kamothe","Kalamboli","Taloja","Ulwe","Navi Mumbai"
           ],
-          "sameAs": [
-            "https://www.google.com/maps/place/Dental+Essential",
-            "https://www.facebook.com/dentalessential",
-            "https://www.instagram.com/dentalessential"
-          ]
+          "hasMap": "https://maps.google.com/?q=Dental+Essential+Panvel",
+          "founder": {
+            "@type": "Person",
+            "name": "Dr. Sameer Ramchandra Gharat"
+          }
         })
       }}
     />
