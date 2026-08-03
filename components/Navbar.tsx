@@ -84,10 +84,10 @@ const topBarBg = 'bg-[#00AFCB] border-[#009BB3]';  const accentText = 'text-slat
                 <img src="/images/whatsapp-icon.png" className="h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7 hover:opacity-80 transition-opacity" alt="WhatsApp" />
               </a>
 
-              <a href="tel:+918779648573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
+              <a href="tel:+918779646573" className="flex items-center gap-1.5 sm:gap-2 text-slate-800 hover:text-slate-900 shrink-0">
                 <img src="/images/phone.png" className="w-4 h-4 md:w-5 md:h-5" alt="Phone" />
                 <span className="font-semibold text-xs sm:text-sm md:text-base leading-none">
-                  +91 877-9648573
+                  +91 877-9646573
                 </span>
               </a>
             </div>

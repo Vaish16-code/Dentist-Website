@@ -63,7 +63,7 @@ export default function HomePage() {
           "url": "https://www.dentalessential.co.in/",
           "image": "https://www.dentalessential.co.in/images/clinic.jpg",
           "priceRange": "₹₹",
-          "telephone": "+91-8779648573",
+          "telephone": "+91-8779646573",
           "email": "info@dentalessential.co.in",
           "address": {
             "@type": "PostalAddress",

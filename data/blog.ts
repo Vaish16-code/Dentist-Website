@@ -262,7 +262,7 @@ Age alone is not usually a limiting factor. Overall oral health, bone quality an
 Missing teeth don't have to affect your confidence, comfort or quality of life. Whether you need to replace a single tooth or are considering full-mouth rehabilitation, our experienced team will guide you through every stage of your treatment with personalized care and clear communication.
 
 📍 [Shop 16, Bldg 7/B, Gurusharnam Complex, Vishrali Naka, Panvel – 410206](https://maps.google.com/?q=Dental+Essential+Panvel)
-📞 [+91 877-9648573](tel:+918779648573)
+📞 [+91 877-9646573](tel:+918779646573)
 
 Book your consultation today to learn how [dental implants](https://www.dentalessential.co.in/services/dental-implants) can restore your smile and improve your oral health.
     `,
@@ -532,7 +532,7 @@ You can contact [Dental Essential](https://www.dentalessential.co.in) directly t
 If you're looking for a dental clinic that combines comprehensive care, modern technology, personalized attention and a patient-first approach, [Dental Essential](https://www.dentalessential.co.in) is dedicated to helping individuals and families in Panvel achieve healthier smiles.
 
 📍 [Shop 16, Bldg 7/B, Gurusharnam Complex, Vishrali Naka, Panvel – 410206](https://maps.google.com/?q=Dental+Essential+Panvel)
-📞 [+91 877-9648573](tel:+918779648573)
+📞 [+91 877-9646573](tel:+918779646573)
 
 Book your consultation today and take the first step toward healthier teeth, healthier gums and a confident smile.
     `,
@@ -775,7 +775,7 @@ If you're looking for high-quality [dental veneers](https://www.dentalessential.
 Whether you're interested in porcelain or composite veneers, we'll guide you through every step of the process to ensure beautiful, natural-looking results.
 
 📍 [Shop 16, Bldg 7/B, Gurusharnam Complex, Vishrali Naka, Panvel – 410206](https://maps.google.com/?q=Dental+Essential+Panvel)
-📞 [+91 877-9648573](tel:+918779648573)
+📞 [+91 877-9646573](tel:+918779646573)
 
 Book your consultation today and discover how dental veneers can enhance your smile and boost your confidence.
 
@@ -997,7 +997,7 @@ Whether your child is getting their very first tooth or transitioning to permane
 If you're looking for trusted [paediatric dental care](https://www.dentalessential.co.in/services/pediatric-dentistry) in Panvel, the team at [Dental Essential](https://www.dentalessential.co.in) is committed to helping your child maintain a healthy, confident smile from infancy through adolescence.
 
 📍 [Shop 16, Bldg 7/B, Gurusharnam Complex, Vishrali Naka, Panvel – 410206](https://maps.google.com/?q=Dental+Essential+Panvel)
-📞 [+91 877-9648573](tel:+918779648573)
+📞 [+91 877-9646573](tel:+918779646573)
 
 Book your child's dental check-up today and give them the best start toward a lifetime of healthy smiles.
 
@@ -1397,7 +1397,7 @@ Every patient at Dental Essential receives personalized attention. We take time 
 
 Don't settle for less when it comes to your smile. Book an appointment with Dental Essential today and experience dental care that combines expertise, technology, and genuine compassion.
 
-**Call us at +91 877-9648573 or book online on Practo.**
+**Call us at +91 877-9646573 or book online on Practo.**
     `,
     metaTitle: "Best Dental Clinic in Panvel | Why Choose Dental Essential",
     metaDescription: "Looking for the best dentist in Panvel? Award-winning Dr. Sameer Gharat, advanced technology, and compassionate care. Dental Essential — your trusted dental clinic.",
