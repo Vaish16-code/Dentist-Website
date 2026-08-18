@@ -357,10 +357,10 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
               </div>
               <div className="flex flex-col sm:flex-row gap-3 shrink-0 w-full md:w-auto">
                 <a
-                  href="tel:+918779648573"
+                  href="tel:+918779646573"
                   className="px-6 py-3 bg-white text-sky-700 hover:bg-sky-50 font-bold rounded-xl text-center text-sm shadow-md transition-all flex items-center justify-center gap-2"
                 >
-                  📞 Call +91 877-9648573
+                  📞 Call +91 877-9646573
                 </a>
                 <Link
                   href="/contact"
