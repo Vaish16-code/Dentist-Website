@@ -63,7 +63,7 @@ const localBusinessSchema = {
   "priceRange": "₹₹",
   "image": "https://www.dentalessential.co.in/images/logo.png",
   "sameAs": [
-    "https://www.instagram.com/dentalessential_drsameergharat",
+    "https://www.instagram.com/dentalessentialpanvel",
     "https://www.practo.com/navi-mumbai/clinic/dental-essential-old-panvel"
   ],
   "founder": {
