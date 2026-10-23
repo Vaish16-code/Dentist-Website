@@ -1510,7 +1510,7 @@ Positive early experiences create confident kids and healthier smiles for life. 
     metaTitle: "Pediatric Dentistry: When Should Your Child First Visit a Dentist?",
     metaDescription: "Worried about your child's teeth? Learn about pediatric dentistry — first dental visit, cavity prevention, fluoride treatment & parent tips. Dental Essential, Panvel.",
     relatedServiceSlugs: ["pediatric-dentistry"]
-  }
+  },
   {
     slug: "invisalign-panvel",
     title: "Invisalign in Panvel: Complete Guide to Clear Aligners, Cost, Procedure & Choosing the Right Invisalign Dentist",
