@@ -32,7 +32,7 @@ const localBusinessSchema = {
   "alternateName": "Dental Essential Advanced Dental Clinic",
   "description": "Best dental clinic in Panvel offering painless root canal, dental implants, braces, clear aligners, smile makeover, and more.",
   "url": "https://www.dentalessential.co.in",
-  "telephone": "+918779648573",
+  "telephone": "+918779646573",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Shop No. 16, Building No. 7/B, Gurusharnam Complex, Vishrali Naka",
