@@ -45,7 +45,7 @@ export default function Footer() {
               <a href="https://wa.me/918779646573" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="WhatsApp">
                 <img src="/images/whatsapp-icon.png" className="h-9 w-9 hover:opacity-80 transition-opacity" alt="WhatsApp" />
               </a>
-              <a href="https://www.instagram.com/dentalessential_drsameergharat?igsh=MXZiNmVpZmlkMHplcQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="Instagram">
+              <a href="https://www.instagram.com/dentalessentialpanvel?stkn=MTQ2b243anBlczZseQ==" target="_blank" rel="noopener noreferrer" className="shrink-0" aria-label="Instagram">
                 <img src="/images/instagram-icon.png" className="h-9 w-9 hover:opacity-80 transition-opacity" alt="Instagram" />
               </a>
             </div>
