@@ -97,6 +97,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Google tag (Google Ads conversion tracking) */}
+        <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PCN9CB4H"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());`,
+          }}
+        />
+      </head>
       <body className="bg-white">
         <script
           type="application/ld+json"
